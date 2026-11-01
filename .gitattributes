@@ -1,0 +1,2 @@
+# Frozen experiment hashes include original line endings. Preserve bytes on every platform.
+* -text

@@ -1,6 +1,7 @@
 {
   "version": "v0.19",
   "files": {
+    ".gitattributes": "6ce15f723911e7b269e3e63f449124484cd2f3f28808b9bb8eb67b605f9b26b1",
     ".gitignore": "9d562156a14fa5611b912b8376311b3c347a5c8922e49b38cf119fca90238114",
     "code/configs/adapted_criterion_v01.json": "43a864ba9af6c0082255e6aaf99eba26b0f4873aeed381a5422a9133c8c2daf6",
     "code/configs/allocation_lowcap_followup_v01.json": "40fa9ae955452fce58b525d68b525974ac8f42ff4bce2c4d907a7eacecf14238",
