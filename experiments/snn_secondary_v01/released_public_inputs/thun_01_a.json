@@ -1,0 +1,5 @@
+{
+  "path": "datasets/dsec_confirmation/test/thun_01_a/events/left/events.h5",
+  "sha256": "ee2f8808cdc714db42a22e97ef1fd9a56e02a7a24d723621915cf9a1a609e4da",
+  "reason": "Exact reacquired new public member only, after both SNN complete raw caches/72 actual points and annotation joins. Parent primary outputs/old data unchanged."
+}

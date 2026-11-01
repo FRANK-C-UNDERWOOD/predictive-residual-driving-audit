@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checked_hashes": 9175,
+  "total_final_point_query_rows": 654120,
+  "independent_primary_group_query_rows": 163530,
+  "actual_primary_raw_replays": 36340,
+  "other_sampled_raw_replays": 1428,
+  "exact_source_identity_query_rows": 107580,
+  "independently_checked_loss_runs": 21280,
+  "recording_groups": 7,
+  "models_new_data": [
+    "rvt_stream"
+  ],
+  "secondary_SNN_new_data": "not_executed",
+  "protected_old_numeric_receipts": 32,
+  "verifier_sha256": "4048275edf8335534ba386470854ed8be0fce776c1539586f9efcfd2d3d18e87",
+  "scope": "Frozen-input integrity; separately reconstructed annotation strata; all primary A/B rawNMS with independent GT matching, all-method primary subgroup counts and all-point integer totals. Upstream NMS/raw model outputs shared; not independent hardware/sensor evidence."
+}

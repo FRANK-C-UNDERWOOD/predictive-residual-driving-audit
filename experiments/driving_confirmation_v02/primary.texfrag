@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{Prospectively specified RVT primary contrast on seven named new DSEC recording groups. At 20\% site capacity and the actually replayed retrospective whole-recording 1 FP/query point, $\Delta R$ is absolute EMA minus current activity complete-GT recall (percentage points); $I=\Delta R_{low}-\Delta R_{high}$. Low/high are annotation-center image-motion strata, not ego-motion or risk labels. GT counts identity/query instances; FP A/B are complete-recording counts. Matching applies to the whole recording, with the same declared integer tolerance; no subgroup threshold is fitted. All seven planned groups are retained.}\label{tab:new_primary}
+\begin{tabularx}{\linewidth}{@{}l*{7}{>{\raggedleft\arraybackslash}X}@{}}
+\toprule
+Record & GT$_L$ & $\Delta R_L$ & GT$_H$ & $\Delta R_H$ & $I$ & FP A/B & Matched \\
+\midrule
+Thun01 & 31 & -9.68 & 369 & +0.54 & -10.22 & 183/183 & yes \\
+Thun02 & 5728 & -6.11 & 15420 & +0.16 & -6.27 & 3887/3887 & yes \\
+Inter01 & 366 & -9.84 & 1829 & +0.11 & -9.95 & 2249/2249 & yes \\
+Z12 & 40 & -5.00 & 1561 & +1.54 & -6.54 & 751/751 & yes \\
+Z13 & 198 & -30.30 & 189 & -1.06 & -29.24 & 365/365 & yes \\
+Z14 & 165 & +1.82 & 744 & +1.21 & +0.61 & 425/425 & yes \\
+Z15 & 1002 & -10.38 & 3433 & +0.82 & -11.19 & 1225/1225 & yes \\
+\bottomrule
+\end{tabularx}
+\end{table}

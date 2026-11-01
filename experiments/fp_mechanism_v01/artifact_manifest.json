@@ -1,0 +1,1202 @@
+{
+  "sources": [
+    {
+      "path": "code/scripts/run_fp_mechanism.py",
+      "sha256": "3f20feaa9724dbd8ce8cb41c4dfeea8563d06cfc295dc441ef5e3288e89eb74f"
+    },
+    {
+      "path": "code/scripts/run_final_analyses.py",
+      "sha256": "76accb8d0510a48f9fe85c32d907cdae0669f724b31f800424095c5667d86c05"
+    },
+    {
+      "path": "code/configs/fp_mechanism_v01.json",
+      "sha256": "5a43a263ef7d8aecc51a94d5394ea52cb7a07404ea871da1fb168af4e4bfd518"
+    },
+    {
+      "path": "docs/31_\u540c\u8bef\u62a5\u4e0e\u53cd\u8f6c\u673a\u5236\u5206\u6790\u534f\u8bae.md",
+      "sha256": "9e15f8eec3c3576eed674e640b9602b31ed5384cf2096a4235ff8d53bf997877"
+    },
+    {
+      "path": "code/scripts/confirmation_common.py",
+      "sha256": "c62a9742b6e036ff9a53deef9d12370122e069f3374368f05c70d0af796cdf2d"
+    },
+    {
+      "path": "code/scripts/confirmation_evaluate.py",
+      "sha256": "20b4f1f4d34def7706db5cbd6b8c60b6cacff762892a720178f5c5163dc6c74f"
+    },
+    {
+      "path": "code/riskaware/criterion_audit.py",
+      "sha256": "7a4c32cf83128990ddac9e59e0db40dabbd8b55abe2de2b9fb98b5e2acda180f"
+    },
+    {
+      "path": "code/riskaware/metrics.py",
+      "sha256": "7462d98679345826294b7bfbc021c2cd8607028d41bda11ba33808fd215c6ecd"
+    },
+    {
+      "path": "code/riskaware/calibration_audit.py",
+      "sha256": "dc92b4b857156a73516088204440b49729d8d22a7078215230343f33429806e0"
+    },
+    {
+      "path": "vendor/spikefpn_snapshot/utils/tools.py",
+      "sha256": "626bca20423f74dff74bd96af6d76b69d375f036a13d002bae20fee04ac9bf6c"
+    },
+    {
+      "path": "code/scripts/verify_fp_mechanism.py",
+      "sha256": "340371d98d63d72bb36552f40b627f26ed53dc5720b4d36b97d791947ba416fa"
+    },
+    {
+      "path": "code/scripts/summarize_fp_mechanism.py",
+      "sha256": "28dfca1548f1d1f00daa1c6d8783ca087fa268b34946329b344c1f73fc9c305a"
+    },
+    {
+      "path": "code/scripts/trace_source_survival.py",
+      "sha256": "3860ce46bab72c4ba4cb18639931373b422b3bbf4bdf75d58ba312b4cfa5c39e"
+    }
+  ],
+  "files": [
+    {
+      "path": "experiments/fp_mechanism_v01/calibration_freeze.json",
+      "sha256": "f595f2dcfeeb8c3f92b510397b3b22191af6d572fbcbc650dcc6ec96cc86b67e"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/calibration_points.json",
+      "sha256": "b020f3e9ce6d20f1b217dbf7e034604680beea5c49f90fbe55ac3ef99e9c4264"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/environment.json",
+      "sha256": "179757b9bea3013192c1e001a3c9cb79146e6823e402060ca6088eb3b70b4058"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/extraction_complete.json",
+      "sha256": "ac2199d298697d1ffd1ff5fca42aa71d031307dc5940fb968e1ec1ea7f33e932"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/fp_recall.png",
+      "sha256": "fdc3cd975cdbd91b6bd405ac7e9670d2323c9dc25c1f64a3cd3b273874a60832"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/fp_recall.svg",
+      "sha256": "f09eca2dbebbbb6dfdcdfef84b5a2fd930ba3922708e23afe38297bf6e41713a"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/freeze.json",
+      "sha256": "f9bcb80111dbd7d1086617a17be1ec5ef9a13a426d33f81b3b01f118d5337327"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/mechanism_reversal.png",
+      "sha256": "4b51e560b6ae3c3eb284697c7a2c61b778093fbd40d402e03b3cb513a0c19c94"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/mechanism_reversal.svg",
+      "sha256": "d10cd4f69bc76207d76c2f1700ef8c69e6ab8a3108e76c97e02294e3a8c3e8b7"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/mechanism_summary.json",
+      "sha256": "b08dd27f2d344fcd72b8619051c0e1de9e54a3f59813926342c55e5edb77b2a3"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/operating_points.csv",
+      "sha256": "36ba4b9b069fdc4b87d7d26a9463f7864e8f7dd5fe226161dd8b23987b43a9b4"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/operating_points.json",
+      "sha256": "8be0e93e3c9ede2883969683186c215147e0087c67dc06f73744dd1ddafdeaa5"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/paired_fp_contrasts.csv",
+      "sha256": "07ee90fe4f9b1dcb0382fe85a3213b6cc24bf3bd7b364c5e04839eb364032443"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/paired_fp_contrasts.json",
+      "sha256": "2dd0900ea492f80eedccd45771615581af734284096517c7f882b97243bcccc7"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points_complete.json",
+      "sha256": "ac2199d298697d1ffd1ff5fca42aa71d031307dc5940fb968e1ec1ea7f33e932"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/primary_comparisons.json",
+      "sha256": "fdfa8f34f444a11855f09f2c88b2123297036ab5a964e821bf10d97229302201"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/primary_group_summaries.json",
+      "sha256": "da5dc39643bcf9d5203c62dd2ceb321dd7fbadc63bf8490155319843cd67e4c3"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/REPORT.md",
+      "sha256": "19afef765de3a6373094f1b6617897b11d5b2834c5af762c8155971abd3b413d"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/rvt_stream__thun_00_a.json",
+      "sha256": "f2fb603e23e50b321fac0a57b9f889ede111c8c65d4e3b0dff1a92c98c337d2c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/rvt_stream__zurich_city_07_a.json",
+      "sha256": "c5818bf69d889c50f0a5606d3da4958f9fbae53ea69ca6b91671d688ecf52385"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/rvt_stream__zurich_city_08_a.json",
+      "sha256": "d470a700f41b5d5300d98a5c979730ee17d1ddad9b477505fd1bd86118aac79c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/rvt_stream__zurich_city_09_a.json",
+      "sha256": "89840a0fb31419b6663e091f1502089ce5b391f172717bcd1956656de39afaed"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/rvt_stream__zurich_city_10_a.json",
+      "sha256": "86d83386865280716d5b35eb64152da7c18a3a762d701677083909806e0bbf86"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_partition_contrasts.json",
+      "sha256": "87684f05a8808994ec44906ddb9cd0061c743b68c98f036dad15ced4b8d526eb"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/spike_adapted__thun_00_a.json",
+      "sha256": "757fd0290b38b48f5d28c736236b10d672a52e03e7955a0cdd52eb92d3516ba0"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/spike_adapted__zurich_city_07_a.json",
+      "sha256": "87eb67c88de280a41ce0ad87208162b5d47be06a523c08fc22158881d352a8d3"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/spike_adapted__zurich_city_08_a.json",
+      "sha256": "4d6ea54356f1883eb357ebdfc6248310aefc427260d8d45a1d1dd0aac4dc9092"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/spike_adapted__zurich_city_09_a.json",
+      "sha256": "503c8bf296cba7566120b4b013ac9cc63e2b9255eda5b8daba7d803881d53a28"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/spike_adapted__zurich_city_10_a.json",
+      "sha256": "ef6b39a3b6cfa56af897c06fe29223d39e5d54978e4c63e4ce0cd66ce7ec581b"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/spike_original__thun_00_a.json",
+      "sha256": "65d0bbfc7aeb79cf169ee56a4f6ab1fee1104987e31a45b76d2d8789708d8b35"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/spike_original__zurich_city_07_a.json",
+      "sha256": "174cf78bb83f2ff0039192550e607d69ab698e53fbeea02e0350ff5f7ed98f49"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/spike_original__zurich_city_08_a.json",
+      "sha256": "a3deb212cd9c869452872b53428234bd5edd348eaa30a5175d33758ebb2c8a2a"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/spike_original__zurich_city_09_a.json",
+      "sha256": "5b9f3d1effb0b8092d819064e017381991543ef707272fcb51e7a2c91f3648ac"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/spike_original__zurich_city_10_a.json",
+      "sha256": "1cef2509c71786f869d39070a9146520d6ba3262d1e28556aa5f74ddcb2854e7"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/STATUS.json",
+      "sha256": "1db2115042665caca35d752d02eec3cafcc6d1a672b3195a76fc3fbf02289576"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/verification.json",
+      "sha256": "b0f4c4801bb11e83dace676f3bc1c46e22e67be3061a0dc5e6517a1a552dfbaf"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/verification_status.json",
+      "sha256": "44ee740e8b1723bc30ec4fc2b5d705ff60ce94ef116b5a50bf5b2e8a47b94978"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/rvt_stream__zurich_city_07_a.json",
+      "sha256": "24bad02a725ba12c96008553ad8eca2505aa03f0f1d167d5ea92268933313e29"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/rvt_stream__zurich_city_08_a.json",
+      "sha256": "ceaaa72a5d30def51012bc68378510fe7e39ecd14c18e78cbbaa4f4854ccee48"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/rvt_stream__zurich_city_09_a.json",
+      "sha256": "b5a24719c14d39228128e35c9ae87267693c6d506aa18b6ab8b126847e185019"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/rvt_stream__zurich_city_10_a.json",
+      "sha256": "a6f40793ccf0d075bcb3cdbd547009a60cf673606cc3fc2488e275cf0848ae76"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_adapted__zurich_city_07_a.json",
+      "sha256": "ee60d4d2f625ff82d723b9d893687f7ade42fd673213f7f7c4a25e72b37f9dde"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_adapted__zurich_city_08_a.json",
+      "sha256": "4a2dc53f51f69fad764bf483db37a1e07fbc9630b743a73cae9fae1044c31cc2"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_adapted__zurich_city_09_a.json",
+      "sha256": "c054e0a55251779dd9a9e317a35f8c8f72e39172c94bec97fae54494f3353b9c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_adapted__zurich_city_10_a.json",
+      "sha256": "a625ed59727b4c25484548f5ba73fa79e00efea2c77c7b9a7e2a9fe5f96d44b9"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_original__zurich_city_07_a.json",
+      "sha256": "24867395a596e3df5c7f5e54009f94ee1ebab0e6885de523a30317e957f9dcc2"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_original__zurich_city_08_a.json",
+      "sha256": "8440ca44423907f222496a48f6e425372704cc9bd3b47e1487e8320bbecd30fb"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_original__zurich_city_09_a.json",
+      "sha256": "ab64f0d708d0d4c8603407e3c23c22c532ba76d89c6898b1516db6d5dd94ba5c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_original__zurich_city_10_a.json",
+      "sha256": "7570080ed28f6fce47a8c67d22a6958af710960099386a630458e3da205918b5"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/rvt_stream__zurich_city_07_a.json",
+      "sha256": "4b19ec359c2807fd176af09379689b1e3b3e17e2b86b16f4058ad4c7efdb2282"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/rvt_stream__zurich_city_07_a.jsonl",
+      "sha256": "cb4fab6d8d1a8126e91178aa59305291ecde822de766764c393f06f6e5d61ad5"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/rvt_stream__zurich_city_08_a.json",
+      "sha256": "46c32cb7d002eb794fe6946ff3f3a68715f27f3a44d36c376cd8b19e14523eaa"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/rvt_stream__zurich_city_08_a.jsonl",
+      "sha256": "a6205bdc34541f704c291cd30a0da05db75c3d1109253bf07fb5d0812897ceac"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/rvt_stream__zurich_city_09_a.json",
+      "sha256": "e9397665249daa449de86f07fed0bf2a592e4e56bbe6adc83062ee615964b589"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/rvt_stream__zurich_city_09_a.jsonl",
+      "sha256": "e50e5d8c201f26de68872f11c7cc3a4bf256e3e0ad75768890a2d63c1a1d262f"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/rvt_stream__zurich_city_10_a.json",
+      "sha256": "a6cc09ed828ba175943bb4fed1d2e85f6c0ae37c8f4548776443868e2c6ca253"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/rvt_stream__zurich_city_10_a.jsonl",
+      "sha256": "8c43d5111eafde2d6563078a61917b92f9bacac4903691f73c94141e6ae61f1a"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_adapted__zurich_city_07_a.json",
+      "sha256": "241b797956990a4b41480671e093f5f0eece8244fc106ebafd70f03ab0841a2c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_adapted__zurich_city_07_a.jsonl",
+      "sha256": "17a2331c82480aa40dd7c563a16b56add37c524654d82fc4898cc3f4ba3af97c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_adapted__zurich_city_08_a.json",
+      "sha256": "f16f7410bfc9a7ce7da6f1091a255935d2ea91d89ceb1a6ae27767babcab6f6d"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_adapted__zurich_city_08_a.jsonl",
+      "sha256": "27a8e50f9c7a7556cf2d5c816a150b72a8b3a732b55162c648d887421c733f3d"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_adapted__zurich_city_09_a.json",
+      "sha256": "9e9c9444e53b9f8d29080859e8c1553a71bbeac2f716713b148e7bddeefd680c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_adapted__zurich_city_09_a.jsonl",
+      "sha256": "4a57336e301290f603bfe33fc4ff774ef20d650ad60e2343b08b69107d39459c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_adapted__zurich_city_10_a.json",
+      "sha256": "8646f4f0e0d89cac62990137538b38128c6fc2eece79b93ea37dbc88a66e7d90"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_adapted__zurich_city_10_a.jsonl",
+      "sha256": "3aaa9fc171200c7b8ac51f4880e7e929e1088cea7d132762138ca33d414dd161"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_original__zurich_city_07_a.json",
+      "sha256": "ebcf52cafa7621a70ed9d16b82ecf64da9bfea5f40fc9b21b6dcdc0fc536e4ec"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_original__zurich_city_07_a.jsonl",
+      "sha256": "c5411ec385098b554ce834b73dc2f1ad5ac4f660d186ee9a0ff2aab60bf352b7"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_original__zurich_city_08_a.json",
+      "sha256": "759160d85ec1d505808a1d436ca7d3a9807929216525a521c22154edddcda967"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_original__zurich_city_08_a.jsonl",
+      "sha256": "7ed023279eedabf8d5aa801ea81f3715b82b8796b00ef88e684657c6615b5018"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_original__zurich_city_09_a.json",
+      "sha256": "de48dfe69eb309ceb89fe50e61f0b3a78f1a4902e69bc4c3f9e30e084ef48911"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_original__zurich_city_09_a.jsonl",
+      "sha256": "9d3400f294906f203c041cee7f4a57e6e7d954f6b0809ccc6441cbc62ea5018c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_original__zurich_city_10_a.json",
+      "sha256": "ec2a58041c3d6eef98b5a1c895982151eab1abbc0255b1751b0b3d297df30532"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/spike_original__zurich_city_10_a.jsonl",
+      "sha256": "bac2df4135ec0d7ce7dd6bfc1b4e8c6efbc699fb68dba12ceb5fce78320ea4a9"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/status.json",
+      "sha256": "44ee740e8b1723bc30ec4fc2b5d705ff60ce94ef116b5a50bf5b2e8a47b94978"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/summary.json",
+      "sha256": "44c403e64d69700c70408d380978b14a38ee528ebc1c3ec7b242c852d35ff480"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/source_survival/verification.json",
+      "sha256": "f38d69dbbebf13133715823f3acfbe696524cc7b5e6f9f3f4dccab5a7ef1330c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/thun_00_a/common_frames.jsonl",
+      "sha256": "8603c04f7d3a847d9229d8dcaeeb839467f6c6ac42f0033f059ae281dea82c97"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/thun_00_a/current_activity.npz",
+      "sha256": "e279a02cb6f12d7ede5e013537ec718cfd9ee11dadb3efb5229fdd37b1d3aaa5"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/thun_00_a/dense.npz",
+      "sha256": "e6e7be118ba22a6016c7af775225f19f4531a308ff7705cc3ce36bbda999afa8"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/thun_00_a/dense_support.jsonl",
+      "sha256": "fe7eddac59c51275603def02b46bcf2f02b1266680866fd1863c67a4a7536738"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/thun_00_a/ema_absolute.npz",
+      "sha256": "59b409bbe4bae56ba07c87b5e897cf49aab4ae31bb6b427fc0a948e5a764331e"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/thun_00_a/ema_activity.npz",
+      "sha256": "b059dbc0458e2c0774b70d40add929a89f21100b6a003eb49d44d2b033a21f16"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/thun_00_a/ema_current.npz",
+      "sha256": "051e27859e3cde3cfd10ab21a49802ee4e0a3deb3a65838aa84db8cbb74666a1"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/thun_00_a/ema_lag3_current.npz",
+      "sha256": "39c1b3015021db9ad04a0994478eb45ae00ecde7598180ce1c7cb10acb5a6bcf"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/thun_00_a/ema_roll_absolute.npz",
+      "sha256": "db3a4e183736d2147659473e1032e8587b2abb0b68e076b602108c021f6cb3cd"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/thun_00_a/masks.npz",
+      "sha256": "845163c372be463dacf055a98caea78f7c48d0774e37990068ff28616babb24c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/thun_00_a/persistence_absolute.npz",
+      "sha256": "437ca6dcc255df717500b62da025b55e0a035d223992fdd6b2bbb3f254ca2f84"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/thun_00_a/query_mechanism.jsonl",
+      "sha256": "bb2b8e26a9feee2adf1151da6e8f368a372522afc9d7e9d837849d360591a84d"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/thun_00_a/unsigned_residual.npz",
+      "sha256": "01e7d4e2ff30c6cc2024ba4f94d902051b7f1bb9825392b95d62717fe56be5e4"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_07_a/common_frames.jsonl",
+      "sha256": "c722c75eaf6f79d77a55dc380f305b9625f9ec957a88836c4371e74712359972"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_07_a/current_activity.npz",
+      "sha256": "62646b90c4b2a4b6cef81f30acf81f4567df9243e31264df8103c45f089f4747"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_07_a/dense.npz",
+      "sha256": "3e85d6ff352c4bad2de2174da1f0ede7f67d539b5e8be9c87e40eaedc3ee8d71"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_07_a/dense_support.jsonl",
+      "sha256": "77123c3422b64e595992ab140340dfefe2528e4c02faba3925aec475f612d069"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_07_a/ema_absolute.npz",
+      "sha256": "c6a9f69a26ae1c5e973ba0de5aa89090e0f8c38aaebc85e6c3d71f0f51e4db86"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_07_a/ema_activity.npz",
+      "sha256": "c4d9c18004531191468ba91b1bd7a84f6c4ae934bac26ee51f21899bd6e8fba1"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_07_a/ema_current.npz",
+      "sha256": "378f3b8aefaaea1ab592c6bf452ee14f1d5f69f6bfe02a11ea02e7bea108c079"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_07_a/ema_lag3_current.npz",
+      "sha256": "4541384f2ce13daa89c8ebce9a014aa6241f40049d65c4d327c6ce7abfcc94ed"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_07_a/ema_roll_absolute.npz",
+      "sha256": "f61117791e6b3809765584568638bbcc369a8a273cf0abb1a11350251cc6036d"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_07_a/masks.npz",
+      "sha256": "e23d95e4e2afeaf3322e8966f7dfc42f7f63ab9ecf3b3316a31e86770429ff62"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_07_a/persistence_absolute.npz",
+      "sha256": "d3b8d6507fecc23db0dad622d02d52ad6cd458301f888cf072b108ac4ce9e151"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_07_a/query_mechanism.jsonl",
+      "sha256": "c4549e01e0dbaa7f12f3eca0aded2440bb1d28229701838e080a5b4cc8db2d20"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_07_a/unsigned_residual.npz",
+      "sha256": "26113f89dedace93dbc24206999b168a3b68e684134043bc0e46461cb09e0894"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_08_a/common_frames.jsonl",
+      "sha256": "4af904c17f9a1d334f5b2ec956f463bb1f08ba9de253f6a28d46b1c7d9be8545"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_08_a/current_activity.npz",
+      "sha256": "84b42a510b231fdf0ac517a6503df28cfb4ee2bb21933171a8fa48f40605d01c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_08_a/dense.npz",
+      "sha256": "8326520f69cfa3013f2718e4513c8db22fd5c307b77356587a81b209a447d86a"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_08_a/dense_support.jsonl",
+      "sha256": "0e16dfbc1c395c3cc625016a9803f753b39116244954524c510bb8eeb9f52b92"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_08_a/ema_absolute.npz",
+      "sha256": "b7c29b12af76308aa5cb307735823fc9d193cae32e983caf9b8049cfdcf27eb7"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_08_a/ema_activity.npz",
+      "sha256": "8e77939a8266781279d96d1b95acacccbf88c8d4b69741b34b09c398d868e86a"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_08_a/ema_current.npz",
+      "sha256": "41b32e7684d21a9bb1d245b98d8382d93c7f2bcb2c17f7d3eb998281e2b0cf52"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_08_a/ema_lag3_current.npz",
+      "sha256": "9815d2a1a7ca75d9732e92818e8dcfbcf65a8888fedbb59804f9738ec9b05605"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_08_a/ema_roll_absolute.npz",
+      "sha256": "eca359ef3c901d68116d52016fec6848751cfbc30cf1a04c03296c5ccbe567cc"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_08_a/masks.npz",
+      "sha256": "0c5e3eb07431aef1c65d8546a1c9c1560aab51457b7d4c27ebf7342db31f75e6"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_08_a/persistence_absolute.npz",
+      "sha256": "1b20eaea0646ed18590344f9f88183d53b314df5539fc8f705f5cdde7427f1e5"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_08_a/query_mechanism.jsonl",
+      "sha256": "fdf0464ce32322cf0a56fd206faf4b30dd361aa16a0476103fb79b4a352459dd"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_08_a/unsigned_residual.npz",
+      "sha256": "84929ffd651f5ee7dac2861fc575d2aea8bb1ca1a1c40279fbbd6218de0d8f77"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_09_a/common_frames.jsonl",
+      "sha256": "7f4d5b56e30f01126038e7530308983150a9b3059b54e6f95bb97f13eeb9b562"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_09_a/current_activity.npz",
+      "sha256": "a1a3243695f9e82a8e34e7d7757008789b17d8d8235b53e7588c9d85a11efc7b"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_09_a/dense.npz",
+      "sha256": "38a1be4796263b42be45dc15cf53fc00e249bdfb4e4f6d0c8ff0afa573ca6158"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_09_a/dense_support.jsonl",
+      "sha256": "1f73aeb5c5172efb51d8262ac0c0104f809d32c2a558e063c84b2e1765cb136a"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_09_a/ema_absolute.npz",
+      "sha256": "a97c997fbccfcd45f6c5d02f754a081302f809036fd03179e0a9eca708dd2f83"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_09_a/ema_activity.npz",
+      "sha256": "fec3ebef8ccd1be539579cb3ba9fd1199677b38040c3119e09f69707a51f7000"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_09_a/ema_current.npz",
+      "sha256": "355dd03e02f8334673674231fa4c4197cd0448925c697b2e072f6ff902a15229"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_09_a/ema_lag3_current.npz",
+      "sha256": "6d8e8c4c65b5c11014ca6b9cc457354bbbcd2d1ea3f47863d8c8ba4ab67c4324"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_09_a/ema_roll_absolute.npz",
+      "sha256": "6a2e22ad2edd429975ca8512a93bfa75da9b793ca1c2849fd3ea6600da6dbfb3"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_09_a/masks.npz",
+      "sha256": "ad39cbf0a442610b430aa02335f2cdf1a474c82f65238dd9f239ffc07ade6cd2"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_09_a/persistence_absolute.npz",
+      "sha256": "b88f47f234af4a236eed52151de306cc458de175729320f9c28d442280f6d6fc"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_09_a/query_mechanism.jsonl",
+      "sha256": "12b95312ea68a4bf63af6e837d913c1d40aceee5e31f8dbcc0d795a4ae884e73"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_09_a/unsigned_residual.npz",
+      "sha256": "2b41c3f851496d40fb2ba9ad0b75a11a33d1d48e00b924117c72945f83bc6dd2"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_10_a/common_frames.jsonl",
+      "sha256": "ac7f1d5e0bcef0f83f768c8adddcbfbf0841ca6cd729ff7b3a00f3e9f4ee77d3"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_10_a/current_activity.npz",
+      "sha256": "beec56ed8508226f8ce1435386bc69be8d7adf527c10be315f2d84d25340dcf8"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_10_a/dense.npz",
+      "sha256": "9699e976e1d66f00b552e363692a82be5de112c048a3f08d00ec9fd477e8e03d"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_10_a/dense_support.jsonl",
+      "sha256": "09243feadc8d66ab959e38431ed50d107ea83fd40d0526942edaffaa72e57e87"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_10_a/ema_absolute.npz",
+      "sha256": "671adcf012f803355f716550cb026942aaed3e51133a87c7eb137434915e0489"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_10_a/ema_activity.npz",
+      "sha256": "8717e766c4a90bac28e9c093a506e84501fe97886f0f54b92867ab3ea9631afa"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_10_a/ema_current.npz",
+      "sha256": "6ad2dc2ed6a322ef143ea9fc8975c13bb07b3b11da8f9799b07713586f57d6b2"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_10_a/ema_lag3_current.npz",
+      "sha256": "10a034b0eca7034dec6dfbaab824a13ae1bd21c616b703a71ae9c4dc7dec0899"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_10_a/ema_roll_absolute.npz",
+      "sha256": "8e86254bedd47eed4b9c257ead881d0241f61faea98b0de4e4f11a003729402a"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_10_a/masks.npz",
+      "sha256": "7b6a12eac28f4ef35ae5cb3445b5348cca1904ce5e0bac53bc20e50ba1dc048d"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_10_a/persistence_absolute.npz",
+      "sha256": "96c172bb6caa42b6f98badbbcbaa02b81acb562ff0ed9fd9ed16e90e22b1cb14"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_10_a/query_mechanism.jsonl",
+      "sha256": "08223b9df1adaf2354e77ba0a19e1e70406cc225d4499f49544373811f0e2006"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/rvt_stream/zurich_city_10_a/unsigned_residual.npz",
+      "sha256": "a4272fb48dc70daeb061967a10f5917f94d0978d37a45ca8b1329d54ea347c38"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/thun_00_a/common_frames.jsonl",
+      "sha256": "c79c41be06986955e57474b753960aa2c422ad0680165a1791b1f7ba5d5edb2d"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/thun_00_a/current_activity.npz",
+      "sha256": "6141b4a430fb937834f85c2e2f21bd7a3ee4e0d26f3fb8604af74e0e71e050ea"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/thun_00_a/dense.npz",
+      "sha256": "e6faa6e87d810fd291145273acc0cd34f1b82dab4b970df48788a061f2c7abf8"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/thun_00_a/dense_support.jsonl",
+      "sha256": "715b9f6df0e79fa6e274fba013102cd10d2b548722a0da1360d297b2a0bd6429"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/thun_00_a/ema_absolute.npz",
+      "sha256": "61aba0182df2e45a444b0c54e151b9baeb7c6c291e14909f13a9d9ee0311d73a"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/thun_00_a/ema_activity.npz",
+      "sha256": "4465b80248e6732cfa326ac1b96d94f93df9711cdf43998503f6302dc67ca954"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/thun_00_a/ema_current.npz",
+      "sha256": "2dee6c08a48868b4bfbe1ed2d719f2c7b54c9121e32912d4dd503e09d6aa587d"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/thun_00_a/ema_lag3_current.npz",
+      "sha256": "1eeca540f7c513c17cbb78d2ebd4aab1c444ba6be551586bc79159881329be8a"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/thun_00_a/ema_roll_absolute.npz",
+      "sha256": "2f6efe5811d2bfbc86784afc8fc03848a3508e4602ef76405156ddfcbb90c900"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/thun_00_a/masks.npz",
+      "sha256": "5d3102971df147ccea059c8e9b86648f9d523da77fbc5fbd03e046d0987fe03c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/thun_00_a/persistence_absolute.npz",
+      "sha256": "a6145486ceb14c54602605a8089ad99e724ff4cede326021b69c4784e07ebf08"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/thun_00_a/query_mechanism.jsonl",
+      "sha256": "705ca56cdd5ef170aa12c9ff06fadffd621208c08b77d88c7ec717e8ae8a04ec"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/thun_00_a/unsigned_residual.npz",
+      "sha256": "61aba0182df2e45a444b0c54e151b9baeb7c6c291e14909f13a9d9ee0311d73a"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_07_a/common_frames.jsonl",
+      "sha256": "79bf87cdcbcf724958cf33f65c6b99f73673c4ce72b518f850ed96a8bdbb3eaf"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_07_a/current_activity.npz",
+      "sha256": "1f7b554df55bbea49b0c2b421f1d7fd00baa4854f563a4f7787f1001ae6a65e3"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_07_a/dense.npz",
+      "sha256": "bc303b55c9d0398f17fb0af240152a873f836a201e232c4a1aa534d67b9277f8"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_07_a/dense_support.jsonl",
+      "sha256": "6fef03d67a5f5e9f87ed8caef54b7a42d8ec59bc9cc3cb1952b1b6b0cd711006"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_07_a/ema_absolute.npz",
+      "sha256": "5d81b01f5dbaae85c3fafc3058611eed4cb4288949ee57d7d5966b7a0f68d357"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_07_a/ema_activity.npz",
+      "sha256": "4c10b018c878bdc8dc1d4c899735f4d2a77305c632d8f2e721268798c0c8833c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_07_a/ema_current.npz",
+      "sha256": "9112a89476d2b8fd92c15ce541ba3e30478eeb727fda4f2403cb8d1f96c773a3"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_07_a/ema_lag3_current.npz",
+      "sha256": "78e4a3c2ea4e2d74e0cc39792485f2739ffc433bb78a1e669c763ff973a49547"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_07_a/ema_roll_absolute.npz",
+      "sha256": "c916b554767498bfd60d1d350916444b3b87b36ead0c6d0caa968a6bed641cd2"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_07_a/masks.npz",
+      "sha256": "99565fed18ca43a2e751085e2e0fd17307118883f894832d220e99ee0d00406c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_07_a/persistence_absolute.npz",
+      "sha256": "b83d0b7d815505c182e2ae8506af86db07db32682d9598f06071db851b7c96a9"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_07_a/query_mechanism.jsonl",
+      "sha256": "ee2843eb2dbe9eccac9ea68a4a0707c4a43023b172ab7dd4fc8022236d09ea9b"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_07_a/unsigned_residual.npz",
+      "sha256": "5d81b01f5dbaae85c3fafc3058611eed4cb4288949ee57d7d5966b7a0f68d357"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_08_a/common_frames.jsonl",
+      "sha256": "7112bc641f8e4b5e900bc5bbc00193d2a0ff93c08ff77f12afa8e881d75fb0b7"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_08_a/current_activity.npz",
+      "sha256": "3577b70b7dc0f3bee569952d067d68a4eab11227ac2c84e9ec0f923bbfa5324f"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_08_a/dense.npz",
+      "sha256": "a78ef03bd0a66af347a8b653bc6a802b072dca0ce4288e955f36d343fc272d57"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_08_a/dense_support.jsonl",
+      "sha256": "c1bb05ed4a0a63c7754fdab8702fa866d16eb4b8c68864a28c6d84cd9fe249f0"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_08_a/ema_absolute.npz",
+      "sha256": "ff822e280b84f84744165f90355c364efd20ee9cb44aca4687b51245ea6cf4dd"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_08_a/ema_activity.npz",
+      "sha256": "4169dea87598a4e4008f975f0116a447c4e5c06b26376af63b49684853ebcae6"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_08_a/ema_current.npz",
+      "sha256": "7bf6883cb9a6e9a8721be56d76073f47aa503cd6f9096928784030d32698111f"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_08_a/ema_lag3_current.npz",
+      "sha256": "6ef390b001cae08bf9a9bd04690f2e33f374e555569886d50427a74738f6027f"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_08_a/ema_roll_absolute.npz",
+      "sha256": "083800a6b8be3edc815d1de27b6f18165509aaf67b173f99833380197a3665ab"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_08_a/masks.npz",
+      "sha256": "96d23a4abf512e719b79828c7a3870976f845613b8686546f5bfd80771da218c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_08_a/persistence_absolute.npz",
+      "sha256": "ce3dfb8dc3aadaa84e717f1d59bafe0ee92268d2ec7f890e6362ff85db29efd6"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_08_a/query_mechanism.jsonl",
+      "sha256": "33f2b751f258eb91c2430db38c2400b96b6e8b76d124a97c4d237bf3df3e4ecf"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_08_a/unsigned_residual.npz",
+      "sha256": "ff822e280b84f84744165f90355c364efd20ee9cb44aca4687b51245ea6cf4dd"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_09_a/common_frames.jsonl",
+      "sha256": "f31cf1fb437e3b8917aba7a796cbd4f97eaf1727cf82a1976bf64d4ea87b161b"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_09_a/current_activity.npz",
+      "sha256": "da893c2220873e18dfcb41a74f793094aefdd1b0372ff9333a7e56abd96159fa"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_09_a/dense.npz",
+      "sha256": "e2e4752dd6ae89c400cc82939ea3246dd75568d90bde94acfd3e22d7a671fbda"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_09_a/dense_support.jsonl",
+      "sha256": "f6e857a88c5893e4caddc7c8a7baf799845c051828387896f2fa64a30b095867"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_09_a/ema_absolute.npz",
+      "sha256": "486399ac65e4a3367a3af01f8c61639770b4b6ac80eec9f13398f949389fbc05"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_09_a/ema_activity.npz",
+      "sha256": "3148e7f5bec6783fbc66136d307a38fa8619b421291199ac2aa4a8706aba4154"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_09_a/ema_current.npz",
+      "sha256": "89372264a0d36ec02723ad03b2ab27d897400bb0c18b167e400fbbe22f4e9faa"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_09_a/ema_lag3_current.npz",
+      "sha256": "2fca65162e054aa12b345f268b6a45be61705960c7e92a2c3c5cc6f0caba40ce"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_09_a/ema_roll_absolute.npz",
+      "sha256": "fd3936be904cb7a5c447e8c881a8e5e9c6ca0e6110c195ca1f8a879d572dd349"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_09_a/masks.npz",
+      "sha256": "3153e6d4a31d99770f743958aafe590ee675547d930ef9213141741be4d2b591"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_09_a/persistence_absolute.npz",
+      "sha256": "98572eedeeb15c7948df1f097cd42b00d1db8398c1cffa0cb747267c3b890695"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_09_a/query_mechanism.jsonl",
+      "sha256": "a65879a3a41e09bcee17844e2dd3e4f530ff54ce6b26e44f76bae74470a2b7da"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_09_a/unsigned_residual.npz",
+      "sha256": "486399ac65e4a3367a3af01f8c61639770b4b6ac80eec9f13398f949389fbc05"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_10_a/common_frames.jsonl",
+      "sha256": "f341995596a40fadb496b7e03b0e6bc531b71bd4917f21eb6f218bb5ca434e46"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_10_a/current_activity.npz",
+      "sha256": "e81f2297e8bdb6dd7d9248ff41d570a4346c3b372c3a337884fdc7a0aef971d3"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_10_a/dense.npz",
+      "sha256": "fd8372b0509da001c3b79eafc6bb9438e6eaef2106fed778957d2cad5f9c3eb2"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_10_a/dense_support.jsonl",
+      "sha256": "111eb66355883797413a9f65813fb31344befe2c810c74a8d6cba15c0d04e9d3"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_10_a/ema_absolute.npz",
+      "sha256": "062c8332ef8636cb7611227a320ce0644b0220f724f45028072016747e755a46"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_10_a/ema_activity.npz",
+      "sha256": "2f8c65651516186507830801b8f993a58b06ae8fd2ac123c4876d4f9045144e2"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_10_a/ema_current.npz",
+      "sha256": "1950e012a5ef3186a6c0153b84548e03f82730114613e0f0729e6441ebecc064"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_10_a/ema_lag3_current.npz",
+      "sha256": "713a1300842668fc2131faa430d920fef40344ea6f7db2d9d5023750995d16bb"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_10_a/ema_roll_absolute.npz",
+      "sha256": "76fbf5e2d431a3b44a1905940c2c433157fa25cda08123cf445cc329829cc1c5"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_10_a/masks.npz",
+      "sha256": "690ccafc5502119264f8ce654d5400430d9e38dcdfcc71ad71e5e7af48fc7fdb"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_10_a/persistence_absolute.npz",
+      "sha256": "513da2d538e3e11b6218ef60bd88ea395b8034db814a2362b897ca8b3da39be9"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_10_a/query_mechanism.jsonl",
+      "sha256": "43cd2d101df53752c8d0647acf515b60814b2217d94f3d8413beabd0f60e5e29"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_adapted/zurich_city_10_a/unsigned_residual.npz",
+      "sha256": "062c8332ef8636cb7611227a320ce0644b0220f724f45028072016747e755a46"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/thun_00_a/common_frames.jsonl",
+      "sha256": "cae639fd94c859e0e19399c7cb58c36ab0ee8edae9e7e826e49355a246d4bbc0"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/thun_00_a/current_activity.npz",
+      "sha256": "4c1ccc852ee9dde949bc0f648b46324fe261e870b8cdf5cf4631568e0a91273d"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/thun_00_a/dense.npz",
+      "sha256": "3ca7f804fc5f463b38daac3fb154c438dad9b86920b6438737761f5984cc14f9"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/thun_00_a/dense_support.jsonl",
+      "sha256": "ad59b11416bdf1a1764d69d86981a4596c13a063035ea1955afbcc268f2b6c29"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/thun_00_a/ema_absolute.npz",
+      "sha256": "821fa3ddac1fc769a4ec78f033c6ab432714332b5260f99a1c287dd7059143d7"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/thun_00_a/ema_activity.npz",
+      "sha256": "8ba3d7580120ba88c1d298239b59d9829bcdf17920ccd0c25332eddaa4218be6"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/thun_00_a/ema_current.npz",
+      "sha256": "822054dc09188fff37c46f74f353e9dea46ac890d67a802fe1579cfb910b818d"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/thun_00_a/ema_lag3_current.npz",
+      "sha256": "1d32d1c71edf55f056b0ccc3edff3992b1789e10953cda67d4a6459ba9c4fa16"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/thun_00_a/ema_roll_absolute.npz",
+      "sha256": "4cccc944bf018976156e99715699b577883acb469565a4c60f783ccb3080af12"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/thun_00_a/masks.npz",
+      "sha256": "f698f8633fe940f13967780e53f916c8679ce57e09402d6aad6c7e1dc436ca76"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/thun_00_a/persistence_absolute.npz",
+      "sha256": "46555466e8edd81af0595b3cb2cf5c763455d22c28d089ff0c4b3ae54d84b352"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/thun_00_a/query_mechanism.jsonl",
+      "sha256": "f3816b4ea9094c5eb7fa3dc9426798621d84d0e32a88012ed987c36af391d44f"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/thun_00_a/unsigned_residual.npz",
+      "sha256": "821fa3ddac1fc769a4ec78f033c6ab432714332b5260f99a1c287dd7059143d7"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_07_a/common_frames.jsonl",
+      "sha256": "5ce89cc43c28a82e9c00231b4f376b16388f6ab3e0f965a31f4d4ac6ccb9343c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_07_a/current_activity.npz",
+      "sha256": "732d26eec7d3fd20c3d38c285de9d7be00be6540a18b5b03d713020237b91017"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_07_a/dense.npz",
+      "sha256": "6e9d91fd8aae34980250f6b29a9035467add421f3047ad081c3259a5f386c3a1"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_07_a/dense_support.jsonl",
+      "sha256": "713fd0c8662367b1229499602a5d9d8571bae2da68e8910d98028283eb9da328"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_07_a/ema_absolute.npz",
+      "sha256": "dac7ae20fe74a3c4dbd77f0c1a3dbede2ef4330fb5fa3129421c26ffc810a355"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_07_a/ema_activity.npz",
+      "sha256": "a065f84ff77bc22b25e6f5363b8cc104a4609250a8289b03b754110381e4f4e4"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_07_a/ema_current.npz",
+      "sha256": "b1a9eb3bf8fe3217265e9164417cffe193fbbe226b7efbad39e591ef9b5ae238"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_07_a/ema_lag3_current.npz",
+      "sha256": "daa529131e52df972eefccabd0b7ed1135d6459ebb53e7f0b7bb6ab78018c932"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_07_a/ema_roll_absolute.npz",
+      "sha256": "51404013d47275749c2ccd0d55153bfb5a60bec36abab1b47a115eca805043d3"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_07_a/masks.npz",
+      "sha256": "b323c65b1d8773e9a3488dd7e6ecaffd1b4f60a53f08d86c58d20e610d670d24"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_07_a/persistence_absolute.npz",
+      "sha256": "207c8bb5079c0c6c98cb5cdcaa1e3dcf35f008a44899bba490faa7c0c88e5277"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_07_a/query_mechanism.jsonl",
+      "sha256": "345815036205cf82219149ca833f68d5b7db7ce9b7092144881682431bc6c432"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_07_a/unsigned_residual.npz",
+      "sha256": "dac7ae20fe74a3c4dbd77f0c1a3dbede2ef4330fb5fa3129421c26ffc810a355"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_08_a/common_frames.jsonl",
+      "sha256": "32f34575cfe944af874ad2a3dd287dbdb8eff83f81250414d7539090fa7a02ca"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_08_a/current_activity.npz",
+      "sha256": "95f6956e204b4ac441a2bb7196466efef043bfa3268f22800e367689c8f44416"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_08_a/dense.npz",
+      "sha256": "4c1e0d1599f826ec83dff30bb9bce4402173d3ee0e0ab1532630d40b85c22d3f"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_08_a/dense_support.jsonl",
+      "sha256": "306477ada49bff9dbe4c0b6bf940898ae1b9f5df7918ef0706bd7584692e0ef9"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_08_a/ema_absolute.npz",
+      "sha256": "a3986a6c2b1024ac83acf740a0a1ed67ea33a366b50f690f847f966d616c60a1"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_08_a/ema_activity.npz",
+      "sha256": "cd093d62ed7d033b9d95023c8f6ac2aef0e9f9bac74af6178b75e6fbaf22abc4"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_08_a/ema_current.npz",
+      "sha256": "5ad86114e3bac827d84dc48cec8b4a0296a4e4245999d1c4701c3e6924de97c2"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_08_a/ema_lag3_current.npz",
+      "sha256": "2efe38d2d0bd8f45149d5655010a2008d1155085a227c173407e12ab3218d2e1"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_08_a/ema_roll_absolute.npz",
+      "sha256": "f6001674b8dbc55a72143e2d09bb28fff3d4962d854d3b22e668020c9abccde6"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_08_a/masks.npz",
+      "sha256": "60a8e345cffbf0b6308d1ad24e88492ef44ed99df3e589d33a07899e1f1f8b61"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_08_a/persistence_absolute.npz",
+      "sha256": "b56acb2c7ba8054846ce822ca703b2c71472075699908b3920c8d74492ac47fc"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_08_a/query_mechanism.jsonl",
+      "sha256": "cd00c8ac1f0dc31ad8acb54d7302ffa08b268e229f8afdb7f9f1c10dd3f232ec"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_08_a/unsigned_residual.npz",
+      "sha256": "a3986a6c2b1024ac83acf740a0a1ed67ea33a366b50f690f847f966d616c60a1"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_09_a/common_frames.jsonl",
+      "sha256": "ebb9663de03ba19e1621fcfc44c1a867857203d938443f7b20614e258e299666"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_09_a/current_activity.npz",
+      "sha256": "f03592f4f02643272de25d4e39c022f1e7284a0ada654328601cf5c97c1161b3"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_09_a/dense.npz",
+      "sha256": "6bcb4461869b3c3248df8e2dbccd3a71265784815c521b3757bfabe394d0c838"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_09_a/dense_support.jsonl",
+      "sha256": "19e1c3ebd2f928f51eea975dc18aa1ab43e9156eca59f3bfcb8b02811fd2b5cc"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_09_a/ema_absolute.npz",
+      "sha256": "26ee34341e2350ca0129124410d27b8c755922d7d6a4ee049a5a4e104963a903"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_09_a/ema_activity.npz",
+      "sha256": "41044a91020ffa41b2ca6f3e6653c1ffedeeba41729d34289513ba14fb03bcf4"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_09_a/ema_current.npz",
+      "sha256": "27e344bee1512f9bb9c6e0ebe2ed0eadabeeb464c5a7df5756d891be944a3257"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_09_a/ema_lag3_current.npz",
+      "sha256": "23cd2f21a6d656bad69c61fd588785ea9a07eff4abb24f0625fcef20a4f9492b"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_09_a/ema_roll_absolute.npz",
+      "sha256": "2d37ceef4ba26ecd2c0b2e45006b2f662d4a70b9f83f6fed055485e3f649077c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_09_a/masks.npz",
+      "sha256": "5817ea935d80cde48d20d3502bf35c8b5607107978d6eef89e98bbade8511a63"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_09_a/persistence_absolute.npz",
+      "sha256": "87a6a86f2814d23d1fa92d5a2e5cecbe08920258610e813b61d33ee6ecb87b0c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_09_a/query_mechanism.jsonl",
+      "sha256": "e4d770b014f57f7adec18a426cf43ffbaae1922c377d0f942d04ee9df7334006"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_09_a/unsigned_residual.npz",
+      "sha256": "26ee34341e2350ca0129124410d27b8c755922d7d6a4ee049a5a4e104963a903"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_10_a/common_frames.jsonl",
+      "sha256": "87e82b1e071fdd45f204581e29073cd9594eed43469dd2638fccc7f9cfc4bc97"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_10_a/current_activity.npz",
+      "sha256": "28be6474b273f2e27a7f3b67f7183916af5273ef81ce26e0fda7e57231400de9"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_10_a/dense.npz",
+      "sha256": "5167400adb252102e4b3455a5ef040728e3ead807bbeed6af0f3580c0d7d407a"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_10_a/dense_support.jsonl",
+      "sha256": "2131f3204b01a4ae77ae3952f21cf9da52d1f8a6c6c2576d74d0823afb84c0f6"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_10_a/ema_absolute.npz",
+      "sha256": "02e144a30faa02a3a76a58652b9f12cfb2bc58535517868b8323afdcde82b844"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_10_a/ema_activity.npz",
+      "sha256": "f6f2f8df58f79ff49d6108ba88cbb7a05fa51f3562b4e1088ec8a1ac7315e55c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_10_a/ema_current.npz",
+      "sha256": "b08227ef500257fefedabb00800a9c291413efa462bb89d74e2f2412bd6003b4"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_10_a/ema_lag3_current.npz",
+      "sha256": "39731baa85f7db7a4a9c025bc72ca3acda92768c68372cd11df71895a6f32a29"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_10_a/ema_roll_absolute.npz",
+      "sha256": "417f3a123bf0990760712bec86840b7c45c242768023e3261605d12fbbd2628c"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_10_a/masks.npz",
+      "sha256": "c5ecd1b2715020ceb26c64c24a364a29fd827ca2f187b7966a830ab09e88fb6d"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_10_a/persistence_absolute.npz",
+      "sha256": "9c730ea657eef31f0893cd7c2d8ff186fc01bdf3fff118cf92db14c03b290517"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_10_a/query_mechanism.jsonl",
+      "sha256": "0107377843065a8a38e515b8febb88ebef57f24f92a29ce584f0036e0cbd1fd6"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/floor/spike_original/zurich_city_10_a/unsigned_residual.npz",
+      "sha256": "02e144a30faa02a3a76a58652b9f12cfb2bc58535517868b8323afdcde82b844"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/rvt_stream/thun_00_a.jsonl",
+      "sha256": "67f405d3cc9cd18d87e6d87c094a11df536d411dee5de3dc6ba760a8e00cbcf6"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/rvt_stream/zurich_city_07_a.jsonl",
+      "sha256": "91c5a88cc04b648d6872c7b4c44839a0fd8475b58fb3329ae8080d8fc34dd7db"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/rvt_stream/zurich_city_08_a.jsonl",
+      "sha256": "1c23168e956417822130de225c11c39ded0abb9c258e5504236667bd98ae6528"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/rvt_stream/zurich_city_09_a.jsonl",
+      "sha256": "3b98a2c5ddb3be1916e0fcd13c81263f4319c389e31f36016194e505c7625fe8"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/rvt_stream/zurich_city_10_a.jsonl",
+      "sha256": "797181f128246a19c012dc63ae3b9af1315c277ecda93ae3f0b5ea89144cce3e"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_adapted/thun_00_a.jsonl",
+      "sha256": "0051b62427bd2ffa50ea8473e986dbac5760816ef2b9a7647a8f75175ac33d65"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_adapted/zurich_city_07_a.jsonl",
+      "sha256": "f9486747b4555f2f43386540bd8daf6cf0daaac257ea19aee4cf21529ef95fdb"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_adapted/zurich_city_08_a.jsonl",
+      "sha256": "ae66966b2be6080cda0593c4f66f7a3d8e350981e6168c7dab9922a80eab5fe6"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_adapted/zurich_city_09_a.jsonl",
+      "sha256": "ceba1b659044d2bdcacb85a5a90abbd8c6806913a16a5a1cce8610d171725676"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_adapted/zurich_city_10_a.jsonl",
+      "sha256": "a227c14cfd8be6d3424c63763a3a0927a71d035a6cc6d17fb35267a2fd67269b"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_original/thun_00_a.jsonl",
+      "sha256": "f19815dd367e99ae27a05b4343716f3cd49525b17456268edfadebe78db4be87"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_original/zurich_city_07_a.jsonl",
+      "sha256": "6ec832a0036dcab1d492c6b03c6932f80a520c7007470d0be5131fdb54a1b945"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_original/zurich_city_08_a.jsonl",
+      "sha256": "1282c978259c75c8ebaa311cd77252d1b6769f99c6fca3f73db1753d9a786517"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_original/zurich_city_09_a.jsonl",
+      "sha256": "8ac175c52e16b274f97cd67471f86b45c2aed448a9d55ae8ee1a06601af8f4c3"
+    },
+    {
+      "path": "experiments/fp_mechanism_v01/points/spike_original/zurich_city_10_a.jsonl",
+      "sha256": "5eb0cb9d6f078eecd2be5b0f1cee0a8870c724f9a50ec1aa902089500134bb94"
+    }
+  ]
+}

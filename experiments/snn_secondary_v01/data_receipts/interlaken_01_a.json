@@ -1,0 +1,38 @@
+{
+  "sequence": "interlaken_01_a",
+  "event": {
+    "path": "datasets/dsec_confirmation/test/interlaken_01_a/events/left/events.h5",
+    "bytes": 2129986283,
+    "sha256": "3567542bd73f08f4df88f9b384f9b25995b26e1b22bd682c217c0e6e831e4ba8",
+    "zip_member": "events.h5",
+    "zip_crc32": 1994979205,
+    "zip_crc_verified": true,
+    "preserved_partial_bytes": 0,
+    "original_partial_sha256": null,
+    "appended_bytes": 2129986283
+  },
+  "metadata": [
+    {
+      "path": "datasets/dsec_confirmation/test/interlaken_01_a/image_timestamps.txt",
+      "bytes": 27156,
+      "sha256": "b8b9bb6192c9f246ecc6e7c1add4537e6cf458a6cfe0175e82e899650be5deb6"
+    },
+    {
+      "path": "datasets/dsec_confirmation/test/interlaken_01_a/object_detections/left/tracks.npy",
+      "bytes": 139087,
+      "sha256": "08931c53cc49f5d6067b36b3d1b727137a924cb9aa2c69154d0db8ddbc487bae"
+    }
+  ],
+  "requested_url": "https://download.ifi.uzh.ch/rpg/DSEC/test/interlaken_01_a/interlaken_01_a_events_left.zip",
+  "etag": "\"7d984ca5-5ce8c55d1b9cb\"",
+  "last_modified": "Sun, 17 Oct 2021 13:23:34 GMT",
+  "archive_bytes": 2107133093,
+  "HTTP_range_requests": 511,
+  "downloaded_bytes": 2105135441,
+  "checksum_scope": "Local extracted member SHA256 and publisher ZIP CRC; not an independently published SHA256",
+  "storage": "Direct range extraction of selected public member; no duplicate multi-GB ZIP retained",
+  "secondary_reacquisition": true,
+  "original_receipt_sha256": "df29f04693538b4a20cbec06d616deac271844772cd84ac1f213649548adb936",
+  "retries": 1,
+  "recovery_transport": "v06 unchanged exact-member CRC/SHA; retained raw member and resumable compressed-range cache"
+}

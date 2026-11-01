@@ -1,0 +1,37 @@
+{
+  "version": "crossed-criterion-v01",
+  "date": "2026-10-30",
+  "parent": "experiments/adapted_criterion_v01",
+  "sequences": ["thun_00_a", "zurich_city_01_a", "interlaken_00_c", "zurich_city_02_a", "zurich_city_04_a"],
+  "calibration_sequence": "thun_00_a",
+  "carriers": ["original", "full_conv"],
+  "capacities": [0.2, 0.35, 0.6],
+  "primary_capacity": 0.2,
+  "regimes": ["output_locked", "common_original_theta", "common_adapted_theta"],
+  "primary_regime": "output_locked",
+  "primary_methods": ["ema/current", "ema/absolute"],
+  "sensitivity_methods": ["ema/current", "ema/absolute"],
+  "primary_scope": "All 22 pre-existing rankings at 3 capacities plus dense, crossed 2 ranking sources x 2 detector outputs; each output keeps its prior dense-Thun threshold",
+  "sensitivity_scope": "EMA current/absolute at all 3 capacities plus dense, crossed 2x2 at each of the two already frozen numeric dense thresholds; no new threshold selection",
+  "negative_controls": ["event_rate", "random"],
+  "iou": 0.5,
+  "nms": 0.5,
+  "class_map": {"0": 1, "2": 0},
+  "small_area_fraction": 0.01,
+  "gap_factor": 1.5,
+  "decomposition": "Shared-dense identity cohort fixed within each sequence/regime. Let y[d,r] be kept shared instances for output d and ranking r. Ranking contribution = ((y01-y00)+(y11-y10))/2; output-path contribution = ((y10-y00)+(y11-y01))/2. Sum equals diagonal change exactly in integer half-counts. Also report both order-specific effects and interaction. Output-locked output-path includes threshold differences; common-numeric regimes remove that difference.",
+  "full_outcomes": "Own-dense preservation, shared-dense preservation, all eligible GT recall, TP/lost/gained/FP, small-object subset, trajectory-equal preservation, sampled loss runs with censoring, and mask overlaps",
+  "interpretation_forks": [
+    "If ranking effects persist on a fixed output and at common numeric thresholds, output confidence changes alone cannot explain them",
+    "If output-path effects dominate under fixed ranking, do not attribute the diagonal decline solely to the residual criterion",
+    "If signs or interactions differ across recordings, report the heterogeneity rather than a universal explanation"
+  ],
+  "limits": [
+    "Descriptive software intervention using cached full-network candidates; no new GPU inference, training, calibration or deployable policy",
+    "All five recordings already exposed to development; same architecture, two checkpoints, one adaptation-order seed",
+    "Interlaken has only two dense-detectable trajectories; query counts are not independent sample counts",
+    "Shared cohort is diagnostic, never a replacement for full GT and own-dense outcomes",
+    "Equal output-position capacity is not equal total compute or matched evaluation false positives",
+    "No environmental causal claim, risk/importance correction, physical skip, energy result or formal H1/H2/H3 verdict"
+  ]
+}

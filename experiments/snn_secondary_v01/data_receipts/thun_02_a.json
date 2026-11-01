@@ -1,0 +1,39 @@
+{
+  "sequence": "thun_02_a",
+  "event": {
+    "path": "datasets/dsec_confirmation/test/thun_02_a/events/left/events.h5",
+    "bytes": 3806802081,
+    "sha256": "25bc971c0a7d9bc2fbcea5e64b92f11f83863e9779c4ead3e2d1be14eb15643d",
+    "zip_member": "test/thun_02_a/events/left/events.h5",
+    "zip_crc32": 1102962175,
+    "zip_crc_verified": true,
+    "preserved_partial_bytes": 3556769792,
+    "original_partial_sha256": "3bd61a86bbf322c364251dadf6054c5c91a4a7dadc703a32c7f444b28a8df3bc",
+    "appended_bytes": 250032289
+  },
+  "metadata": [
+    {
+      "path": "datasets/dsec_confirmation/test/thun_02_a/image_timestamps.txt",
+      "bytes": 46812,
+      "sha256": "f5fc6c2a1250df47b63d540dbd6677b01880dba47aaec24bfb7843d4b0344347"
+    },
+    {
+      "path": "datasets/dsec_confirmation/test/thun_02_a/object_detections/left/tracks.npy",
+      "bytes": 1682035,
+      "sha256": "af9f8fd2ca81630bfd1f0051ef584564f8f27aed672a60459203d44a20e225ad"
+    }
+  ],
+  "requested_url": "https://download.ifi.uzh.ch/rpg/DSEC/test_object_detection_coarse/test_events.zip",
+  "etag": "\"1bc0ff56b-5fc5c4b5cdc17\"",
+  "last_modified": "Tue, 23 May 2023 13:23:35 GMT",
+  "archive_bytes": 7450129771,
+  "HTTP_range_requests": 701,
+  "downloaded_bytes": 2927419805,
+  "checksum_scope": "Local extracted member SHA256 and publisher ZIP CRC; not an independently published SHA256",
+  "storage": "Direct range extraction of selected public member; no duplicate multi-GB ZIP retained",
+  "secondary_reacquisition": true,
+  "original_receipt_sha256": "14f3028fcd108b1bc077b71d732cd1cbeaca9aaa95ed15d87014da169c84a108",
+  "recovery_transport": "persistent concurrent ranges; raw prefix compared before append",
+  "transport_retries": 0,
+  "recovery_source_sha256": "345c1c2976e5f608a055d5a863764ee9d213342301202c598e731218a11c5924"
+}

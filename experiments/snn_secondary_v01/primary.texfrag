@@ -1,0 +1,26 @@
+\begin{table}[!htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{Completion of the specified SNN secondary size contrast on the same seven new DSEC recording groups. A/B is absolute EMA/current activity at 20\% site capacity and the actually replayed whole-recording 1 FP/query point. $\Delta R$ is complete-GT recall A minus B (percentage points); $J=\Delta R_{small}-\Delta R_{large}$. Small is at most 1\% native image area. GT counts identity/query instances; actual FP pairs and matching failures remain explicit. No subgroup threshold is fitted. S0/S1 are two checkpoints of one architecture on the same records, not independent architecture replications.}\label{tab:snn_secondary}
+\begin{tabularx}{\linewidth}{@{}ll*{6}{>{\raggedleft\arraybackslash}X}@{}}
+\toprule
+Carrier & Record & GT S/L & $\Delta R_S$ & $\Delta R_L$ & $J$ & FP A/B & Matched \\
+\midrule
+S0 & Thun01 & 538/152 & +1.86 & +11.84 & -9.98 & 183/183 & yes \\
+S0 & Thun02 & 36410/5973 & +0.03 & +4.77 & -4.74 & 3887/3887 & yes \\
+S0 & Inter01 & 3285/793 & +1.70 & +14.88 & -13.18 & 2249/2249 & yes \\
+S0 & Z12 & 1332/942 & +0.53 & +24.20 & -23.68 & 751/751 & yes \\
+S0 & Z13 & 839/74 & +3.69 & -2.70 & +6.40 & 365/365 & yes \\
+S0 & Z14 & 1782/77 & +0.67 & +22.08 & -21.40 & 425/425 & yes \\
+S0 & Z15 & 6140/1799 & +0.80 & +21.57 & -20.77 & 1225/1225 & yes \\
+S1 & Thun01 & 538/152 & +4.09 & +0.66 & +3.43 & 183/183 & yes \\
+S1 & Thun02 & 36410/5973 & +0.46 & +2.08 & -1.61 & 3887/3887 & yes \\
+S1 & Inter01 & 3285/793 & +2.59 & +10.47 & -7.88 & 2249/2249 & yes \\
+S1 & Z12 & 1332/942 & +1.65 & +22.29 & -20.64 & 751/750 & yes \\
+S1 & Z13 & 839/74 & +3.34 & -8.11 & +11.45 & 365/365 & yes \\
+S1 & Z14 & 1782/77 & -0.06 & +23.38 & -23.43 & 425/425 & yes \\
+S1 & Z15 & 6140/1799 & +2.04 & +18.23 & -16.20 & 1225/1225 & yes \\
+\bottomrule
+\end{tabularx}
+\end{table}

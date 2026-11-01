@@ -1,0 +1,9 @@
+{
+  "fixed_utc": "2026-10-31T06:30:11.730889+00:00",
+  "sources": {
+    "code/scripts/verify_snn_secondary.py": "7fc30f22ca061649662d2478225b4053b6526d3ab19aa1c837d4c925b4e06529",
+    "code/scripts/monitor_snn_secondary_verification.py": "888d5fc690ef91b6c19957b83721441df66278e1f3201f7f7f43ffa9f315e94e",
+    "code/scripts/verify_driving_confirmation_v02.py": "4048275edf8335534ba386470854ed8be0fce776c1539586f9efcfd2d3d18e87"
+  },
+  "scope": "Read-only independent reconstruction code fixed after first completed source; no scientific endpoint/rule changes. Exact native mapping and three-anchors-per-site verified."
+}

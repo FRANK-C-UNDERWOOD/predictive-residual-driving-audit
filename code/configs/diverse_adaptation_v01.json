@@ -1,0 +1,22 @@
+{
+  "version":"diverse-adaptation-v01",
+  "scope":"Multi-recording-group development pilot, fixed update budget and internal validation selection",
+  "train_sequences":["zurich_city_00_a","zurich_city_03_a","zurich_city_05_a"],
+  "validation_sequences":["zurich_city_06_a"],
+  "calibration_sequences":["thun_00_a"],
+  "evaluation_sequences":["zurich_city_01_a","interlaken_00_c","zurich_city_02_a","zurich_city_04_a"],
+  "selection":"Groups 03/05 for training and 06 for internal validation fixed by names before event downloads or predictions. Retain regardless of results; all evaluation groups already exposed.",
+  "variants":["original","readout","full_conv"],
+  "updates":348,
+  "checkpoint_updates":[116,232,348],
+  "selection_rule":"Highest full-GT recall at validation-label-selected <=1 FP/query with score floor0.3 among updates116/232/348; ties choose earlier update. Validation thresholds are selection diagnostics, then selected weights get separate Thun calibration. Never use the four evaluation sequences for selection.",
+  "seed":0,"effective_batch_size":16,"micro_batch_size":2,
+  "head_lr":0.0003,"feature_conv_lr":0.00003,"weight_decay":0.0001,"gradient_clip_norm":10.0,
+  "input":{"size":256,"steps":3,"channels":3,"bin_us":20000},
+  "warmup_complete_windows":10,
+  "calibration_floor":0.01,"calibration_target_fppi":1.0,"confidence_fixed":0.3,
+  "nms_threshold":0.5,"iou_threshold":0.5,"small_area_fraction":0.01,
+  "class_map_dsec_to_detector":{"0":1,"2":0},
+  "training":"Same inherited input, positive-normalized loss and autograd-preserving fixed-BN fusion. All feature Conv2d + heads versus heads only. BN/neuron states frozen. Global shuffled window pool; identical sample schedule and updates in both trained variants.",
+  "limitations":["One sample-order seed", "Internal validation has few recording groups", "All four evaluation groups have historical exposure", "Same updates as prior single-group pilot does not imply same epoch count or training cost", "No gate training or formal hypothesis confirmation"]
+}

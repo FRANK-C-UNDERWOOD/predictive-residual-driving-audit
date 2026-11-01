@@ -1,0 +1,18 @@
+# Independent GPU reproduction environment; do not install into the authoring runtime.
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.3.1+cu121
+torchvision==0.18.1+cu121
+numpy==1.26.4
+Pillow==10.4.0
+matplotlib==3.8.3
+tqdm==4.66.2
+opencv-python==4.9.0.80
+scikit-learn==1.4.1.post1
+thop==0.1.1.post2209072238
+timm==0.9.16
+# Windows wheel; upstream requested 2.0.7. Evaluator parity must be checked.
+pycocotools==2.0.10
+imageio==2.34.0
+# DSEC raw-event loading, not a change to SpikeFPN's GEN1 encoder.
+h5py==3.11.0
+hdf5plugin==5.1.0

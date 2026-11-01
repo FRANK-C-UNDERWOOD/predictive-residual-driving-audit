@@ -1,0 +1,20 @@
+{
+  "files": {
+    "experiments/driving_factors_v01/conditions.json": "3e9c4cbaca463f0ecda46e20b452ce44d012d39a08f10659cbae09a683eb21ce",
+    "experiments/driving_factors_v01/pairs.json": "8e1c589aa60b2fd9fef156669714c9301ab7abd58e8d408ff0858d6aeebcfb46",
+    "experiments/driving_factors_v01/group_summaries.json": "287f11156ec9b845692e71e17591a4a56690bc102c49db004f3540d6faac6f62",
+    "experiments/driving_factors_v01/populations.json": "39b9f4d518701000c81ffcd6f15518c080ddf43c48f9f97af029a1ff03a99ef1",
+    "experiments/driving_factors_v01/continuity_summary.json": "fee94252376563a810ce6b1b34f518814a833883b7484d1a6c17da53b7547758",
+    "experiments/driving_factors_v01/source_partitions.json": "207bdaefa9809de6bd32053841f2eb1dc512bf30b3db7869f8f73d3d36221f74",
+    "experiments/driving_factors_v01/verification.json": "cf6efa2b2b6b3ec163606b801c03e17694a917cefbefdf57155bd77bfdca2899",
+    "experiments/driving_factors_v01/REPORT.md": "d7dc36a513404c17d2ed0d40965bf26f5741fedaeb06eac821b74ab52614ea28",
+    "experiments/driving_factors_v01/driving_strata.png": "398f484b5aec19a680e18cc01bb4d83714c73cc2b119526b0000ab8200030d8a",
+    "experiments/driving_factors_v01/driving_strata.svg": "6e9359bf205e6f09f8a0e412b1d4bad17bf36a127d7def554407ca02e7d77a34",
+    "experiments/driving_factors_v01/population.texfrag": "55fd3ead21ac529dc356fd529c558d5520a048333e2256333953bcae338dd7a3",
+    "experiments/driving_factors_v01/contrasts.texfrag": "16a83cd74947334857371c163f7f5d033effff28c51581beb367e62d65d6c930",
+    "experiments/driving_factors_v01/continuity.texfrag": "794cb1bfacff8f2ffa367a9378b64fd6219479019725992d1b1eedfe54579633"
+  },
+  "reporter_sha256": "fe02e2739c654a61a5b6e1821d921120b4abe53018d7c5ace92be2868f54dca7",
+  "role": "Reporting checked retrospective results; no new scientific sample",
+  "visual_refinement_archive": "before_figure_layout.zip"
+}

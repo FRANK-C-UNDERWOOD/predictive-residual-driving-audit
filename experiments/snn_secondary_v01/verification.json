@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "recording_groups": 7,
+  "checkpoints": [
+    "spike_original",
+    "spike_adapted"
+  ],
+  "pair_receipts": 14,
+  "checked_hashes": 18170,
+  "total_final_point_query_rows": 1308240,
+  "independent_primary_group_query_rows": 327060,
+  "actual_primary_raw_replays": 72680,
+  "other_sampled_raw_replays": 2856,
+  "exact_source_identity_query_rows": 72188,
+  "independently_checked_loss_runs": 41384,
+  "protected_old_numeric_receipts": 32,
+  "verifier_sha256": "7fc30f22ca061649662d2478225b4053b6526d3ab19aa1c837d4c925b4e06529",
+  "scope": "Independent annotation/matching reconstruction, all point integer totals, all primary group/source/loss paths. Shared raw model outputs/upstreamNMS. Two checkpoints are not independent architectures."
+}

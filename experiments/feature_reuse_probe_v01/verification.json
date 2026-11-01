@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "all_open_exact": 235,
+  "independently_replayed_condition_queries": 2250,
+  "verifier_sha256": "f7f5b93edc26dace44a4d5a3af681a5d1d02c97f74a70d62f003551f0587c9d4",
+  "sources": {
+    "code/scripts/verify_snn_secondary.py": "7fc30f22ca061649662d2478225b4053b6526d3ab19aa1c837d4c925b4e06529",
+    "code/scripts/verify_driving_confirmation_v02.py": "4048275edf8335534ba386470854ed8be0fce776c1539586f9efcfd2d3d18e87"
+  },
+  "scope": "Every raw operator output at each reported fixed threshold; independent nativeGT/matching, shared upstreamNMS. Old calibration data only."
+}

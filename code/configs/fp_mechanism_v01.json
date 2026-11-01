@@ -1,0 +1,23 @@
+{
+  "version": "fp-mechanism-v01",
+  "role": "Retrospective secondary analysis of exposed confirmation-v01 recordings. Not new confirmation or a deployable evaluation-label threshold policy.",
+  "parent": "experiments/confirmation_v01",
+  "calibration_sequence": "thun_00_a",
+  "sequences": ["zurich_city_07_a", "zurich_city_08_a", "zurich_city_09_a", "zurich_city_10_a"],
+  "models": ["spike_original", "spike_adapted", "rvt_stream"],
+  "methods": ["dense", "ema/current", "ema/absolute", "ema_lag3/current", "current_activity", "ema_activity", "persistence/absolute", "ema_roll/absolute", "unsigned_residual"],
+  "capacity": 0.2,
+  "fp_targets": [0.25, 0.5, 1.0, 2.0],
+  "primary_fp_target": 1.0,
+  "confidence_floor": 0.01,
+  "nms": 0.5,
+  "iou": 0.5,
+  "alpha": 0.8,
+  "match_tolerance": "Actual FP count spread between a named pair <=max(1, floor(0.01*target_FP_count)), both counts <=target. Report actual counts and attainment. Otherwise not matched; no threshold interpolation or invented fractional detections.",
+  "regimes": ["thun_calibrated", "retrospective_sequence_budget"],
+  "threshold_rule": "Initial threshold from floor-output FP confidences with float32 successor. Re-run actual upstream NMS and one-to-one matching at every reported threshold. If actual FP exceeds budget raise threshold using actual FP scores and re-run. Unused budget, ties and floor-limited operating range retained. Retrospective thresholds use the evaluated sequence labels and are diagnostic only.",
+  "reference": "Original fixed dense Thun threshold defines identity-query evidence denominator at every operating point. Full-GT recall is the primary matched-FP task endpoint. Dense under a changed threshold need not preserve 100% of this reference.",
+  "contrasts": [["ema/absolute", "current_activity"], ["ema_lag3/current", "ema/current"], ["ema/absolute", "ema/current"], ["ema/absolute", "ema_roll/absolute"], ["unsigned_residual", "ema/absolute"]],
+  "mechanism": "Fixed head outputs. Exact original dense TP anchor/site support; four-way residual/activity source coverage versus actual NMS/matching; score-head Spearman by query; padding and GT-center occupancy; signed-overlap identity N=M+B-2O; unsigned residual=sum||H|-|P||/C removes sign opposition, not a retrained detector. Spatial roll preserves historical value distribution but breaks its spatial correspondence. All variants reported; no chosen hybrid.",
+  "limits": ["Four exposed same-city public training clips", "Model, representation, resolution and state differ; no intrinsic ANN-vs-SNN causal claim", "No frame-independent p-values", "Only candidate admission; all detector work and state updates executed", "No new risk policy, computation saving or safety claim"]
+}

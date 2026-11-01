@@ -1,0 +1,282 @@
+[
+  {
+    "sequence": "thun_01_a",
+    "target": 0.25,
+    "low_difference_pp": -3.225806451612903,
+    "high_difference_pp": 0.27100271002710025,
+    "interaction_pp": -3.4968091616400034,
+    "matched": true,
+    "fp_a": 45,
+    "fp_b": 45
+  },
+  {
+    "sequence": "thun_02_a",
+    "target": 0.25,
+    "low_difference_pp": -5.534217877094972,
+    "high_difference_pp": 0.13618677042801555,
+    "interaction_pp": -5.670404647522988,
+    "matched": true,
+    "fp_a": 971,
+    "fp_b": 971
+  },
+  {
+    "sequence": "interlaken_01_a",
+    "target": 0.25,
+    "low_difference_pp": -8.19672131147541,
+    "high_difference_pp": 0.2733734281027884,
+    "interaction_pp": -8.470094739578197,
+    "matched": true,
+    "fp_a": 562,
+    "fp_b": 562
+  },
+  {
+    "sequence": "zurich_city_12_a",
+    "target": 0.25,
+    "low_difference_pp": 0.0,
+    "high_difference_pp": 0.9609224855861627,
+    "interaction_pp": -0.9609224855861627,
+    "matched": true,
+    "fp_a": 187,
+    "fp_b": 187
+  },
+  {
+    "sequence": "zurich_city_13_a",
+    "target": 0.25,
+    "low_difference_pp": -30.80808080808081,
+    "high_difference_pp": -2.1164021164021163,
+    "interaction_pp": -28.691678691678693,
+    "matched": true,
+    "fp_a": 91,
+    "fp_b": 91
+  },
+  {
+    "sequence": "zurich_city_14_a",
+    "target": 0.25,
+    "low_difference_pp": 0.0,
+    "high_difference_pp": 0.5376344086021505,
+    "interaction_pp": -0.5376344086021505,
+    "matched": true,
+    "fp_a": 106,
+    "fp_b": 106
+  },
+  {
+    "sequence": "zurich_city_15_a",
+    "target": 0.25,
+    "low_difference_pp": -1.4970059880239521,
+    "high_difference_pp": 1.398193999417419,
+    "interaction_pp": -2.895199987441371,
+    "matched": true,
+    "fp_a": 306,
+    "fp_b": 306
+  },
+  {
+    "sequence": "thun_01_a",
+    "target": 0.5,
+    "low_difference_pp": -6.451612903225806,
+    "high_difference_pp": 0.8130081300813008,
+    "interaction_pp": -7.264621033307106,
+    "matched": true,
+    "fp_a": 91,
+    "fp_b": 91
+  },
+  {
+    "sequence": "thun_02_a",
+    "target": 0.5,
+    "low_difference_pp": -5.691340782122905,
+    "high_difference_pp": 0.2204928664072633,
+    "interaction_pp": -5.911833648530169,
+    "matched": true,
+    "fp_a": 1943,
+    "fp_b": 1943
+  },
+  {
+    "sequence": "interlaken_01_a",
+    "target": 0.5,
+    "low_difference_pp": -9.01639344262295,
+    "high_difference_pp": 0.3827227993439038,
+    "interaction_pp": -9.399116241966855,
+    "matched": true,
+    "fp_a": 1124,
+    "fp_b": 1124
+  },
+  {
+    "sequence": "zurich_city_12_a",
+    "target": 0.5,
+    "low_difference_pp": -5.0,
+    "high_difference_pp": 1.2171684817424728,
+    "interaction_pp": -6.217168481742473,
+    "matched": true,
+    "fp_a": 375,
+    "fp_b": 375
+  },
+  {
+    "sequence": "zurich_city_13_a",
+    "target": 0.5,
+    "low_difference_pp": -31.31313131313131,
+    "high_difference_pp": -2.6455026455026456,
+    "interaction_pp": -28.667628667628666,
+    "matched": true,
+    "fp_a": 182,
+    "fp_b": 182
+  },
+  {
+    "sequence": "zurich_city_14_a",
+    "target": 0.5,
+    "low_difference_pp": 0.6060606060606061,
+    "high_difference_pp": 0.26881720430107525,
+    "interaction_pp": 0.3372434017595308,
+    "matched": true,
+    "fp_a": 212,
+    "fp_b": 212
+  },
+  {
+    "sequence": "zurich_city_15_a",
+    "target": 0.5,
+    "low_difference_pp": -4.69061876247505,
+    "high_difference_pp": 1.0486454995630643,
+    "interaction_pp": -5.739264262038114,
+    "matched": true,
+    "fp_a": 612,
+    "fp_b": 612
+  },
+  {
+    "sequence": "thun_01_a",
+    "target": 1.0,
+    "low_difference_pp": -9.67741935483871,
+    "high_difference_pp": 0.5420054200542005,
+    "interaction_pp": -10.21942477489291,
+    "matched": true,
+    "fp_a": 183,
+    "fp_b": 183
+  },
+  {
+    "sequence": "thun_02_a",
+    "target": 1.0,
+    "low_difference_pp": -6.110335195530726,
+    "high_difference_pp": 0.1621271076523995,
+    "interaction_pp": -6.272462303183126,
+    "matched": true,
+    "fp_a": 3887,
+    "fp_b": 3887
+  },
+  {
+    "sequence": "interlaken_01_a",
+    "target": 1.0,
+    "low_difference_pp": -9.836065573770492,
+    "high_difference_pp": 0.10934937124111536,
+    "interaction_pp": -9.945414945011608,
+    "matched": true,
+    "fp_a": 2249,
+    "fp_b": 2249
+  },
+  {
+    "sequence": "zurich_city_12_a",
+    "target": 1.0,
+    "low_difference_pp": -5.0,
+    "high_difference_pp": 1.5374759769378603,
+    "interaction_pp": -6.53747597693786,
+    "matched": true,
+    "fp_a": 751,
+    "fp_b": 751
+  },
+  {
+    "sequence": "zurich_city_13_a",
+    "target": 1.0,
+    "low_difference_pp": -30.303030303030305,
+    "high_difference_pp": -1.0582010582010581,
+    "interaction_pp": -29.244829244829248,
+    "matched": true,
+    "fp_a": 365,
+    "fp_b": 365
+  },
+  {
+    "sequence": "zurich_city_14_a",
+    "target": 1.0,
+    "low_difference_pp": 1.8181818181818181,
+    "high_difference_pp": 1.2096774193548387,
+    "interaction_pp": 0.6085043988269794,
+    "matched": true,
+    "fp_a": 425,
+    "fp_b": 425
+  },
+  {
+    "sequence": "zurich_city_15_a",
+    "target": 1.0,
+    "low_difference_pp": -10.379241516966069,
+    "high_difference_pp": 0.8156131663268279,
+    "interaction_pp": -11.194854683292897,
+    "matched": true,
+    "fp_a": 1225,
+    "fp_b": 1225
+  },
+  {
+    "sequence": "thun_01_a",
+    "target": 2.0,
+    "low_difference_pp": -3.225806451612903,
+    "high_difference_pp": 1.897018970189702,
+    "interaction_pp": -5.122825421802605,
+    "matched": true,
+    "fp_a": 366,
+    "fp_b": 366
+  },
+  {
+    "sequence": "thun_02_a",
+    "target": 2.0,
+    "low_difference_pp": -6.389664804469274,
+    "high_difference_pp": 0.2140077821011673,
+    "interaction_pp": -6.6036725865704415,
+    "matched": true,
+    "fp_a": 7774,
+    "fp_b": 7774
+  },
+  {
+    "sequence": "interlaken_01_a",
+    "target": 2.0,
+    "low_difference_pp": -11.475409836065573,
+    "high_difference_pp": 0.6014215418261345,
+    "interaction_pp": -12.076831377891708,
+    "matched": true,
+    "fp_a": 4498,
+    "fp_b": 4498
+  },
+  {
+    "sequence": "zurich_city_12_a",
+    "target": 2.0,
+    "low_difference_pp": -5.0,
+    "high_difference_pp": 1.4093529788597052,
+    "interaction_pp": -6.4093529788597055,
+    "matched": true,
+    "fp_a": 1502,
+    "fp_b": 1502
+  },
+  {
+    "sequence": "zurich_city_13_a",
+    "target": 2.0,
+    "low_difference_pp": -29.7979797979798,
+    "high_difference_pp": -1.5873015873015872,
+    "interaction_pp": -28.21067821067821,
+    "matched": true,
+    "fp_a": 730,
+    "fp_b": 730
+  },
+  {
+    "sequence": "zurich_city_14_a",
+    "target": 2.0,
+    "low_difference_pp": -1.2121212121212122,
+    "high_difference_pp": 0.13440860215053763,
+    "interaction_pp": -1.34652981427175,
+    "matched": true,
+    "fp_a": 850,
+    "fp_b": 850
+  },
+  {
+    "sequence": "zurich_city_15_a",
+    "target": 2.0,
+    "low_difference_pp": -14.870259481037925,
+    "high_difference_pp": 0.058258083309059135,
+    "interaction_pp": -14.928517564346985,
+    "matched": true,
+    "fp_a": 2450,
+    "fp_b": 2450
+  }
+]

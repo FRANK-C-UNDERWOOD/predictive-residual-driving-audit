@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "model": "spike_adapted",
+  "sequence": "thun_01_a",
+  "interaction_pp": 3.4313245940129136,
+  "matched": true,
+  "checked_hashes": 183,
+  "total_final_point_query_rows": 13176,
+  "independent_primary_group_query_rows": 3294,
+  "actual_primary_raw_replays": 732,
+  "other_sampled_raw_replays": 204,
+  "exact_source_identity_query_rows": 464,
+  "independently_checked_loss_runs": 489,
+  "inputs": {
+    "experiments/snn_secondary_v01/carriers/spike_adapted__thun_01_a.json": "780c3896ab12f32959a99e0325b584d35376a66cb1ef1101bbde6cf65a9a0d72",
+    "experiments/snn_secondary_v01/points/spike_adapted__thun_01_a.json": "99607678c6fac1349ff2c4cc129c48e40c2120102ee3a2bbdea4424bb2ce0ed7",
+    "experiments/snn_secondary_v01/aggregates/spike_adapted__thun_01_a.json": "b5b6bb236b8ffda33febc831e13739e6f903eb74fc53aaca016d434e582638dd"
+  },
+  "verifier_sha256": "7fc30f22ca061649662d2478225b4053b6526d3ab19aa1c837d4c925b4e06529",
+  "annotation_matcher_source_sha256": "4048275edf8335534ba386470854ed8be0fce776c1539586f9efcfd2d3d18e87"
+}

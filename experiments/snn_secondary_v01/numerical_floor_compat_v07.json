@@ -1,0 +1,24 @@
+{
+  "fixed_utc": "2026-10-31T13:15:14.926616+00:00",
+  "sources": {
+    "code/scripts/snn_float32_floor_compat.py": "5344d6dfaf611beb7f016227f5a5e694302069f0f7a57a5e3b89a65b420ab5c3",
+    "code/scripts/evaluate_snn_secondary_v07.py": "f05f3092b1f052f4913e5b96b5148cde907979ef9d742bf184a72a72d7a29d53",
+    "code/scripts/run_snn_continuation_v07.py": "341121166cc68a1963937fbbafb08a7601e3cddca9b33b2f95556cba445c1ebd",
+    "code/scripts/check_snn_floor_compat_v07.py": "cdec729a67ab79582085eb8172d7e95b4ba7ca42aaa77d8a54d483f3e8196110",
+    "code/scripts/record_snn_floor_amendment_v07.py": "632e553d28450044807442d1456f9a20924d3c870d528061b2226636768ac45e"
+  },
+  "failed_attempt_archive": "provenance/snn_float32_floor_failure_v07.zip",
+  "archive_sha256": "f6702ce4b85fdfc36c379cdff38a2e42d89ea99268083eeb368abfd90c253f9c",
+  "verification_path": "experiments/snn_secondary_v01/numerical_floor_recovery_v07/verification.json",
+  "verification_sha256": "54df36f05140b71d219235d12a5ccc726c590eac2f3079f4f23b42b34fa18eb3",
+  "initial_freeze_sha256": "346c54094547c6651b7d039bf10c94a612f1e8cdf75ab831d8dbe26669307fab",
+  "observed_before_amendment": "Four Thun01/02 checkpoint-recording pairs complete; Interlaken raw outputs cached, original replay failed before point production.",
+  "prior_complete_point_hashes": {
+    "experiments/snn_secondary_v01/points/spike_adapted__thun_01_a.json": "99607678c6fac1349ff2c4cc129c48e40c2120102ee3a2bbdea4424bb2ce0ed7",
+    "experiments/snn_secondary_v01/points/spike_adapted__thun_02_a.json": "3e7f5ad095c07f668055c05e6e0895afe3237d7ade0c687200ab65c4a474a7e0",
+    "experiments/snn_secondary_v01/points/spike_original__thun_01_a.json": "c3707adaab2b39b37e6bb3b5d9a4c48f0af1145dfb1c53957b00ddc888c772b7",
+    "experiments/snn_secondary_v01/points/spike_original__thun_02_a.json": "523128cda3097f7490f338e2f72f7b1eb4f20111799ed7f9479d9980858e26ae"
+  },
+  "amendment": "Accept only the exact float32 encoding of the declared floor during float64 input validation. Raw probabilities, selector comparisons, returned threshold semantics, native model execution, cohorts, estimands and FP targets unchanged.",
+  "status": "Post-failure numerical compatibility repair, not part of original pre-output freeze; all prior completed results retained"
+}

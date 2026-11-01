@@ -1,0 +1,20 @@
+{
+  "version": "criterion-calibration-v01",
+  "scope": "Development-only sequence-separated FP threshold calibration; both sequences were previously explored",
+  "calibration_sequence": "thun_00_a",
+  "evaluation_sequence": "zurich_city_01_a",
+  "retention_ratio": 0.35,
+  "target_calibration_fppi": 1.0,
+  "confidence_floor": 0.3,
+  "policies": ["dense", "random", "event_rate", "current_activity", "past_activity", "residual_ema", "residual_persistence"],
+  "threshold_rule": "Next representable float32 threshold above the first excluded FP score; never below 0.3. Freeze on calibration labels, rerun NMS at that threshold, require achieved calibration FPPI <= target before evaluation.",
+  "development_amendment": "First attempt stopped on the exact calibration FPPI guard before evaluation: float64 nextafter rounded back in float32 comparison. Archived as failed_attempt_01.zip; threshold precision corrected before evaluation.",
+  "timing": "Reuse all eligible episodes from criterion_audit_v01; new fresh run of length 3, deadline 0.2 s, horizon 0.5 s",
+  "limitations": [
+    "Neither sequence is a pristine held-out test set; this is a new declared development analysis.",
+    "Matching calibration FPPI does not ensure matching evaluation FPPI.",
+    "The floor excludes thresholds below 0.3; this is not an exhaustive ROC or optimal detector calibration.",
+    "One evaluation sequence supports no sequence-generalization confidence interval.",
+    "No DSEC training, importance/hybrid results, efficiency claim or H1/H2/H3 verdict."
+  ]
+}

@@ -1,0 +1,884 @@
+{
+  "repository": "https://github.com/uzh-rpg/RVT",
+  "commit": "b80f5683a6e2d5de65d4bde8105d796ccb50dbb1",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_blob_sha1": "7e8e6bac08ad7287b8a106ebd9228c4b9181e7c2",
+      "sha256": "2a40dcb82a3a518bd12812aae652294806e7bbef8acfe215ea33780d4b5f7f3c",
+      "bytes": 1071
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha1": "3fecc8527b093e5e87f119da56297c5497eefd91",
+      "sha256": "1f062737912c004da05b7ae5bc859bb2caf68c5a4345ea42eeb14398d1b5dac7",
+      "bytes": 8293
+    },
+    {
+      "path": "callbacks/custom.py",
+      "git_blob_sha1": "50bcb1a864eb3e68f93f591b6b9db6fec4a14d41",
+      "sha256": "4510a34b025acf9ccc2ecddf33a5b285e1a3635a709af0d5686653eb26de3f54",
+      "bytes": 1292
+    },
+    {
+      "path": "callbacks/detection.py",
+      "git_blob_sha1": "c0c97f14ea8e6d0e302eaa60790a3df2bc491533",
+      "sha256": "6662c3031008a904cfc2ffa59b9abd5cb7847f9813bd0188422915d8695008b0",
+      "bytes": 4027
+    },
+    {
+      "path": "callbacks/gradflow.py",
+      "git_blob_sha1": "733bd45aeed75b0a48fd991a324fa7d1c98fad62",
+      "sha256": "a5b4ebf0f6f62f30e8929427061a616f9f2fb3bf5961fc8f23ab6a25cc581ab8",
+      "bytes": 1133
+    },
+    {
+      "path": "callbacks/utils/visualization.py",
+      "git_blob_sha1": "af307d62aaf8c003fe4838f812fb064a196fd3f8",
+      "sha256": "f8a63085f7c49bd138df60d9a8a3f7210821faf34ebb02b13e01cdad917dde8a",
+      "bytes": 786
+    },
+    {
+      "path": "callbacks/viz_base.py",
+      "git_blob_sha1": "7d0401c4ad71c6772995b245ff6f833b7e4b631a",
+      "sha256": "99d523abe8b25722195781ec6fc7ef4d5e2ee9705c09af5a168ebecdfa58a6ce",
+      "bytes": 6391
+    },
+    {
+      "path": "config/dataset/base.yaml",
+      "git_blob_sha1": "093467ec78475dd103dbc627f446c13840077486",
+      "sha256": "c45b98f4ad5228fd502740c02303282880a11d5dcf0841750ababc00f0c03b3f",
+      "bytes": 699
+    },
+    {
+      "path": "config/dataset/gen1.yaml",
+      "git_blob_sha1": "0b4fa47f717361c72dc804213b12aec02c8e4c50",
+      "sha256": "dbf486a785695329fca14ae3d95f23a7a1c74556c294e0abd233f954fdb8e399",
+      "bytes": 183
+    },
+    {
+      "path": "config/dataset/gen4.yaml",
+      "git_blob_sha1": "753301d0511a9209eaa9fb6f8c7cd7daa2af8731",
+      "sha256": "6f6c1338538050ac55b7810e531a86f011058869d274f9937a8a916138b0251f",
+      "bytes": 182
+    },
+    {
+      "path": "config/experiment/gen1/base.yaml",
+      "git_blob_sha1": "17ee61093c1ff5890b10e3b6df777db126baa284",
+      "sha256": "883f0889d0f4d53bb8ed6d9cc06d2f68d8a518cffe4ed04deec921b40d1dc07b",
+      "bytes": 103
+    },
+    {
+      "path": "config/experiment/gen1/default.yaml",
+      "git_blob_sha1": "9e448f03617b74f24d7317bc60beee8e22288c78",
+      "sha256": "9fd63157130753ef8b6ff2659332e3682c37c743e8ad550d1a96f5e05438e911",
+      "bytes": 775
+    },
+    {
+      "path": "config/experiment/gen1/small.yaml",
+      "git_blob_sha1": "f4fcbe45cb9877f9cce139ed80ed1f04f871d337",
+      "sha256": "0c4ba63a5b4a8a46740a9c16fbe50c0d2c4cb816bcfb01c5a1f7e91c0fe77409",
+      "bytes": 151
+    },
+    {
+      "path": "config/experiment/gen1/tiny.yaml",
+      "git_blob_sha1": "be0c0ea0ad2cdddd1c932757d05fd738eb6516c5",
+      "sha256": "b70e94c50df6b8466bab9ecd66e4f267aa7920e71f40f2c4ababe7e5aac09310",
+      "bytes": 102
+    },
+    {
+      "path": "config/experiment/gen4/base.yaml",
+      "git_blob_sha1": "17ee61093c1ff5890b10e3b6df777db126baa284",
+      "sha256": "883f0889d0f4d53bb8ed6d9cc06d2f68d8a518cffe4ed04deec921b40d1dc07b",
+      "bytes": 103
+    },
+    {
+      "path": "config/experiment/gen4/default.yaml",
+      "git_blob_sha1": "a17bec38bd14bd7e5ddb35d859b49060fb7e63a4",
+      "sha256": "caba3cdee0c965ba5040a21b3cf4e0b0b9d5560f044d16c0da5135e0b67b8ff5",
+      "bytes": 736
+    },
+    {
+      "path": "config/experiment/gen4/small.yaml",
+      "git_blob_sha1": "f4fcbe45cb9877f9cce139ed80ed1f04f871d337",
+      "sha256": "0c4ba63a5b4a8a46740a9c16fbe50c0d2c4cb816bcfb01c5a1f7e91c0fe77409",
+      "bytes": 151
+    },
+    {
+      "path": "config/experiment/gen4/tiny.yaml",
+      "git_blob_sha1": "be0c0ea0ad2cdddd1c932757d05fd738eb6516c5",
+      "sha256": "b70e94c50df6b8466bab9ecd66e4f267aa7920e71f40f2c4ababe7e5aac09310",
+      "bytes": 102
+    },
+    {
+      "path": "config/general.yaml",
+      "git_blob_sha1": "908bcab291879b407330ce61a2472fe4c81c2eec",
+      "sha256": "1efffbfa168046f8f8e419797155a3105e4d06b6a4d1b98f3cf0e6924a9bb5d2",
+      "bytes": 2336
+    },
+    {
+      "path": "config/model/base.yaml",
+      "git_blob_sha1": "2b595fd569014d25069864409fdcf54fd7c38701",
+      "sha256": "e11b9183b96b23f475b74fd8db3db8294f3415dc3a5e60a5cfd241633c578303",
+      "bytes": 9
+    },
+    {
+      "path": "config/model/maxvit_yolox/default.yaml",
+      "git_blob_sha1": "ce4454644931344aa4f9cadc200cecc3e92ef222",
+      "sha256": "09678b81115f736beb223b170959667caa0a16d9c4597f5fd596b2a665718ec0",
+      "bytes": 1399
+    },
+    {
+      "path": "config/model/rnndet.yaml",
+      "git_blob_sha1": "02e19ef90e6cff90fd7e549dbf61e61a0dc938bf",
+      "sha256": "62921ce2df25c9764323fbc1715f066037a90e7840b5061b108df54e9b184a2b",
+      "bytes": 152
+    },
+    {
+      "path": "config/modifier.py",
+      "git_blob_sha1": "2a5acb8c10b830b33ffb1b67d9ccc170e7228284",
+      "sha256": "b00f3bb49b96f55cc6727d3a8eb44edfb5d6500dc6827cde8bd0f9326fec2778",
+      "bytes": 2465
+    },
+    {
+      "path": "config/train.yaml",
+      "git_blob_sha1": "4337ca921ae25145dcb9eba27c287b0a0cd38068",
+      "sha256": "1a01b27de6458bc87dbd4195407a13d54f8d68a2f5be6e3c365d071a0554b8b8",
+      "bytes": 104
+    },
+    {
+      "path": "config/val.yaml",
+      "git_blob_sha1": "dae01484d27146b38174f09114bc54489b4edafb",
+      "sha256": "6da15e394821625569f8ff743b30237aab32e4cc0289ea453b0734acdd2eebfb",
+      "bytes": 239
+    },
+    {
+      "path": "data/genx_utils/collate.py",
+      "git_blob_sha1": "ef1f9cf0a55ca50de8f97a7706fe3d2d5ef28712",
+      "sha256": "8dca2fabb0671439cb9d8bc09b20179765db8e7db2c5204c39a8faed411d5c73",
+      "bytes": 1631
+    },
+    {
+      "path": "data/genx_utils/collate_from_pytorch.py",
+      "git_blob_sha1": "f3899ec0007fd80bc80286350d411f7eba64b347",
+      "sha256": "3da54e8bc2c8483dae6881978d0972b5d5160ada310ce8218b27ba0135dd9309",
+      "bytes": 6827
+    },
+    {
+      "path": "data/genx_utils/dataset_rnd.py",
+      "git_blob_sha1": "e6104a395511324c2cb3bc93d4f40fce632d4e43",
+      "sha256": "435c6fda1405df11a04fb6f5023c4b1ba784037d7766e7fa1f048555956cf26e",
+      "bytes": 6088
+    },
+    {
+      "path": "data/genx_utils/dataset_streaming.py",
+      "git_blob_sha1": "1a6b853ce1165b17d7555fa6f5e52b8e9262f975",
+      "sha256": "fe88cfd349e248b10fdace94c1e27ddcf1cd641faa2d072b9fe37e9cdf50ded6",
+      "bytes": 4570
+    },
+    {
+      "path": "data/genx_utils/labels.py",
+      "git_blob_sha1": "ac903d08265b59efe37bb5064670958a216ba312",
+      "sha256": "17b219cf237a26b16e0f4784bf0d8c13b527ebdf488245faa1ceeedcf64e6398",
+      "bytes": 17557
+    },
+    {
+      "path": "data/genx_utils/sequence_base.py",
+      "git_blob_sha1": "6993bd5a356b11021ea342505c182c0f934e1034",
+      "sha256": "12e845613f4d6604ae62d989cf4282f537163ca26b4cca94c7804be13b1af5ee",
+      "bytes": 4371
+    },
+    {
+      "path": "data/genx_utils/sequence_for_streaming.py",
+      "git_blob_sha1": "7845818766ef64a04e3f9383e202e35dd0d30f34",
+      "sha256": "517101d51858145052a6ad7639ddc9331190f3bb998503621710fa099aa1190e",
+      "bytes": 8597
+    },
+    {
+      "path": "data/genx_utils/sequence_rnd.py",
+      "git_blob_sha1": "caf502b6c0b9ca456b4f395f689e6a2539802e18",
+      "sha256": "cb0f29c58f938323cc82bc7353a59d83ec0ff96c22fed7240fb3d06eabf4256f",
+      "bytes": 3324
+    },
+    {
+      "path": "data/utils/augmentor.py",
+      "git_blob_sha1": "c7707a085e2948e06808c9bce3d86d17a2686cae",
+      "sha256": "15e55aa9bbe1c48751b4d8e840bfa9e3bf95975ebf1ac143c54ad9427367dab9",
+      "bytes": 21852
+    },
+    {
+      "path": "data/utils/representations.py",
+      "git_blob_sha1": "d8b52af926081d24c8511067b659ac1123de602f",
+      "sha256": "fdae1cd82c1f6b69a85d2ceac3d59ced9b625dbd28c45a4da1db9b638faaa759",
+      "bytes": 7632
+    },
+    {
+      "path": "data/utils/spatial.py",
+      "git_blob_sha1": "532fac41b978932a1340e2fdc4b0343d791704a6",
+      "sha256": "cbe96a22604d7c9b9d6c3fd8b2b2ba6c69c6995c8e4640ee74c31e586ebcf581",
+      "bytes": 636
+    },
+    {
+      "path": "data/utils/stream_concat_datapipe.py",
+      "git_blob_sha1": "ee65cb3089bf442646e1b3824777a1d446383e3e",
+      "sha256": "659861b20ab31ad2fdc77b752234c02369c73a78a5c77dbf786cb6a6ba9bc4ad",
+      "bytes": 4194
+    },
+    {
+      "path": "data/utils/stream_sharded_datapipe.py",
+      "git_blob_sha1": "6c278461d0d8f8d930e3c9add1d7dadad841c454",
+      "sha256": "4dad21a59e190f7ec139d84ba99ebfd08fbc7661420a169210c2e4086badc40b",
+      "bytes": 5069
+    },
+    {
+      "path": "data/utils/types.py",
+      "git_blob_sha1": "d0918530c774b54a09d8df686af5823f8985d734",
+      "sha256": "4fb8696c48b9272aa477e5200092949664307f146aac031da6881583819eda72",
+      "bytes": 1118
+    },
+    {
+      "path": "loggers/utils.py",
+      "git_blob_sha1": "18bb1d079f02ae03b86a6c8e73d7656c80d0c27c",
+      "sha256": "7655f1779c2fa3aacdf79cdcce40b43d5829370551941b6a6df4069a9e0d1024",
+      "bytes": 1707
+    },
+    {
+      "path": "loggers/wandb_logger.py",
+      "git_blob_sha1": "767b5e22a23c691b2ad7d419d905a413f248d14d",
+      "sha256": "830e9fc8311af5b2caf93216089791d92d633e568353a14149bf01955218ec61",
+      "bytes": 16348
+    },
+    {
+      "path": "models/detection/__init_.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/detection/recurrent_backbone/__init__.py",
+      "git_blob_sha1": "2537227e27c84eaabd023191bf54530b8dcc800d",
+      "sha256": "ef00e3131dacf6fe7cd2f82b9f9f8b7c32515687ff50db3b324102e6a9ac73fe",
+      "bytes": 297
+    },
+    {
+      "path": "models/detection/recurrent_backbone/base.py",
+      "git_blob_sha1": "29488536fa9376c6aea63c69fefc677583e0fd5b",
+      "sha256": "564c37c85cab127dab53d5eb57cad03ba38d41ef6f75a16963ef92ff5c964a75",
+      "bytes": 295
+    },
+    {
+      "path": "models/detection/recurrent_backbone/maxvit_rnn.py",
+      "git_blob_sha1": "d08c50c7aeea8f97b45ab4c95d501024f664597d",
+      "sha256": "a4019f40b09aa2bd22af23b74b968d32f7ddcd5d67e62be7876211741c5fea48",
+      "bytes": 8012
+    },
+    {
+      "path": "models/detection/yolox/models/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/detection/yolox/models/losses.py",
+      "git_blob_sha1": "90c84fce0415a238dfdae7dc034d8e7aec520d6f",
+      "sha256": "e64432ca197bd42d094192d925f7edd19d7344791f7ab77fcf537d081f02d5d3",
+      "bytes": 1729
+    },
+    {
+      "path": "models/detection/yolox/models/network_blocks.py",
+      "git_blob_sha1": "6e59f0608e785a47173a0b860d237df254f032cc",
+      "sha256": "135ef86cb1bb9f72c3c5ff6003b7fdb7cc08b009fbd20147eafda18baec3eb3a",
+      "bytes": 3959
+    },
+    {
+      "path": "models/detection/yolox/models/yolo_head.py",
+      "git_blob_sha1": "6f3e133e1cdd1ef056483ea69a693f49695b233b",
+      "sha256": "c0759b462f8f58f0b4d6b3d3bf358f49bf8135d5c3fac1e483e3d009ef8ee8a8",
+      "bytes": 22240
+    },
+    {
+      "path": "models/detection/yolox/utils/__init__.py",
+      "git_blob_sha1": "7cc78b408cedbcdba8c495cb5c425f834a1765dd",
+      "sha256": "d9a49450c76eaa7fd9b84fcb295fcfecb5445f449e9810743c4eb73a881f0f1c",
+      "bytes": 146
+    },
+    {
+      "path": "models/detection/yolox/utils/boxes.py",
+      "git_blob_sha1": "dbe10d957752f1eb3fe337aa3b966a087721b422",
+      "sha256": "65d8341d67ec35d65f4a73ba8480ce536a8bb38f4b4088f99db82bc812ec9bcb",
+      "bytes": 4471
+    },
+    {
+      "path": "models/detection/yolox/utils/compat.py",
+      "git_blob_sha1": "1324077e67215451aa8351f47f5112cd0e5e1018",
+      "sha256": "a8f0dec9e0566cf0a09a211bc08ce47bc7abd6dd75d239ee85d8c0c5fe3e07ce",
+      "bytes": 310
+    },
+    {
+      "path": "models/detection/yolox_extension/models/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/detection/yolox_extension/models/build.py",
+      "git_blob_sha1": "cb090ab00e10bba2c8dfe429d0e5350814c89f64",
+      "sha256": "574f34aa549b95b6353d865a199e54772571af1cc07d8287c5d5b197033ce6ec",
+      "bytes": 1142
+    },
+    {
+      "path": "models/detection/yolox_extension/models/detector.py",
+      "git_blob_sha1": "4608f32d2114a296da092aaba945c4787668822e",
+      "sha256": "95ed0d642add3456c799abbc2df035328bc8f43ac0bb316701cf7a9e60e04d31",
+      "bytes": 2962
+    },
+    {
+      "path": "models/detection/yolox_extension/models/yolo_pafpn.py",
+      "git_blob_sha1": "0c31a92f95848390cf3d5486a7904636089f77cb",
+      "sha256": "264f1475b2188b5a5390704938e61c318e88a354e4cc1809176fe5f403145fd9",
+      "bytes": 4412
+    },
+    {
+      "path": "models/layers/maxvit/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/layers/maxvit/layers/__init__.py",
+      "git_blob_sha1": "21c641b6c3a1b5c02e0f5213fe8de3437eb1eb96",
+      "sha256": "0a77d05faa00cef04086c068cf9bc1635d2fb2e2d4fc456af4990fca652645cb",
+      "bytes": 2649
+    },
+    {
+      "path": "models/layers/maxvit/layers/activations.py",
+      "git_blob_sha1": "e16b3bd3a1898365530c1ffc5154a0a4746a136e",
+      "sha256": "893fd64b078ad41d787c06a67c9385720a90e43a0123a16fb7e5f87d1b98b123",
+      "bytes": 4040
+    },
+    {
+      "path": "models/layers/maxvit/layers/activations_jit.py",
+      "git_blob_sha1": "b4a516530ad0abf41f720ac83d02791179bb7b67",
+      "sha256": "05023c3188d9849c74c3ac93529b25ff1fed83e5c575b603918cb91040506084",
+      "bytes": 2529
+    },
+    {
+      "path": "models/layers/maxvit/layers/activations_me.py",
+      "git_blob_sha1": "9a12bb7ebbfef02c508801742d38da6b48dd1bb6",
+      "sha256": "425ae1f8d597c42e8eb31235c29a5e05db1df141965d3f04087f79b456971844",
+      "bytes": 5886
+    },
+    {
+      "path": "models/layers/maxvit/layers/adaptive_avgmax_pool.py",
+      "git_blob_sha1": "ebc6ada8c5b28c7eac5785b0cc2933eb01a15d46",
+      "sha256": "23e959f8076f953620baec724c180359caaeaa115fd34b95ba37d5a997cbbff0",
+      "bytes": 3890
+    },
+    {
+      "path": "models/layers/maxvit/layers/attention_pool2d.py",
+      "git_blob_sha1": "a13a6881feb4c7d31f6caa5ccc0d95288e322a83",
+      "sha256": "9efd762d2f3523cc103f651addb15648d0ec448a05abe4eab7c7eec32448f676",
+      "bytes": 4927
+    },
+    {
+      "path": "models/layers/maxvit/layers/blur_pool.py",
+      "git_blob_sha1": "e73d886367c995ee44f0ed5f6eb5b5a287aa4935",
+      "sha256": "31fc17669ea6eceb634c9cd74b5221c6d9deda2b7886ac88d951dd8d680453f1",
+      "bytes": 1594
+    },
+    {
+      "path": "models/layers/maxvit/layers/bottleneck_attn.py",
+      "git_blob_sha1": "c3db464e5ab4f2d3478293034e90a0939dadb628",
+      "sha256": "1cbb996f27a9d4d7fd42af407a2f35902cd032ce94d5a4014112eb3a78e7907a",
+      "bytes": 6895
+    },
+    {
+      "path": "models/layers/maxvit/layers/cbam.py",
+      "git_blob_sha1": "576a8306d979c3d93215253eba3affd7efd87bfe",
+      "sha256": "6fa968dca14e73cf0c578213c36a52a24bafa4b90016907d94d7357b6d107462",
+      "bytes": 4426
+    },
+    {
+      "path": "models/layers/maxvit/layers/classifier.py",
+      "git_blob_sha1": "3ac3338782e4c6e4c29cb9dc6a3da5a9331340c7",
+      "sha256": "6a6ed0a83ebfda69992fa6d5e25dc5a0db3fe89bf11b4e14d607bf6605a8d579",
+      "bytes": 2320
+    },
+    {
+      "path": "models/layers/maxvit/layers/cond_conv2d.py",
+      "git_blob_sha1": "43654c5972167cab0224bfe720d78bae1227eb7d",
+      "sha256": "6d47cc625dcf4677dd2142c9a1794b8e1ef5513f194ac6fc95005afe7faaed5a",
+      "bytes": 5199
+    },
+    {
+      "path": "models/layers/maxvit/layers/config.py",
+      "git_blob_sha1": "f07b9d782ba0597c174dee81097c28280335fdba",
+      "sha256": "3676b6ecffc1d5ccb8a1bb3831ae7fb1de559577bfb021188eff6db7234005c1",
+      "bytes": 3069
+    },
+    {
+      "path": "models/layers/maxvit/layers/conv2d_same.py",
+      "git_blob_sha1": "75f0f98d4ec1e3f4a0dc004b977815afaa25e7fc",
+      "sha256": "d9fbf5ccd6992598052753f9aae33da6291057e3dfeb6d0744b5fcca04051c65",
+      "bytes": 1490
+    },
+    {
+      "path": "models/layers/maxvit/layers/conv_bn_act.py",
+      "git_blob_sha1": "9e7c64b85805b25c861d09116f9590dbebafce7e",
+      "sha256": "8c679a4389f2b16c72f90f5c958087f998a26532669816bd4a7fe9b5b538732f",
+      "bytes": 3188
+    },
+    {
+      "path": "models/layers/maxvit/layers/create_act.py",
+      "git_blob_sha1": "a3044a3d20b56c7739e810f91deb533c23e161e1",
+      "sha256": "adf4edcb0464b7d00e138a18f05f9b924c11b37caee70125879e7dcac8f44b57",
+      "bytes": 5245
+    },
+    {
+      "path": "models/layers/maxvit/layers/create_attn.py",
+      "git_blob_sha1": "cc7e91ea9af2e853fd659973c72ba5e86025a1b3",
+      "sha256": "77dfa3ea23dc14fa42da8eff0d6e102ca28fd4a599061667ebe0071fe8927e1e",
+      "bytes": 3514
+    },
+    {
+      "path": "models/layers/maxvit/layers/create_conv2d.py",
+      "git_blob_sha1": "ac9489ce492d0f768c1ae8892163fa986bac8fd8",
+      "sha256": "75aaf153392f3d853182eb89fd625dd4f7a993138ae227f92702730b9202f399",
+      "bytes": 1622
+    },
+    {
+      "path": "models/layers/maxvit/layers/create_norm.py",
+      "git_blob_sha1": "b9efae8c8c34d8ebdb5e80921768b898e10ccc7e",
+      "sha256": "ecbc93e230c194a0c4980b017757c5eb4c312b55c9e1c60f7185d0e1d8c3341d",
+      "bytes": 1814
+    },
+    {
+      "path": "models/layers/maxvit/layers/create_norm_act.py",
+      "git_blob_sha1": "78dd9a51d9fdc932e50ade613d3e8a925ae2f317",
+      "sha256": "7fd7dd2841ffde98e0902fba17ce795c1cbb91a1337a64029fa6c7babee7f778",
+      "bytes": 3748
+    },
+    {
+      "path": "models/layers/maxvit/layers/drop.py",
+      "git_blob_sha1": "1ab1c8f5ba12bd0db2f802c6b5a5dd0296dec7af",
+      "sha256": "0e0e514f16aae1ebeadef0b3fe787d7567050adca0c8a184cb512449890350b5",
+      "bytes": 6872
+    },
+    {
+      "path": "models/layers/maxvit/layers/eca.py",
+      "git_blob_sha1": "e29be6ac3c95bb61229cdcdd659ec89d541f1a53",
+      "sha256": "3225616e80d4a8b51f7ae6e9ca959f691dcb30b1f080b08db163b789e99c405b",
+      "bytes": 6386
+    },
+    {
+      "path": "models/layers/maxvit/layers/evo_norm.py",
+      "git_blob_sha1": "ea77620712c80a54d943ef0b920556cbafc1f9f6",
+      "sha256": "98e26efa93250645468e9dda28dd258639ee103de55cb11336a6c9207a524920",
+      "bytes": 13862
+    },
+    {
+      "path": "models/layers/maxvit/layers/fast_norm.py",
+      "git_blob_sha1": "fb35e47df6798175945d1e0bda4c7792345100c2",
+      "sha256": "e08ed2891eddccc6b42f21710cec6534ea3de7e7df721f613f4615637654dccf",
+      "bytes": 2426
+    },
+    {
+      "path": "models/layers/maxvit/layers/filter_response_norm.py",
+      "git_blob_sha1": "a66a1cd493e4cecec27419925a6a2045bb05f25f",
+      "sha256": "9832779dbbb99e270ffb969cb6f0e265ae0761ddfddd5abeff4e994dc6b9778c",
+      "bytes": 2540
+    },
+    {
+      "path": "models/layers/maxvit/layers/gather_excite.py",
+      "git_blob_sha1": "2d60dc961e2b5e135d38e290b8fa5820ef0fe18f",
+      "sha256": "e770c7b7a7324a33ea77d356defa19ba1c3c6fd9d4cefb06f4d565fc3fbd340a",
+      "bytes": 3824
+    },
+    {
+      "path": "models/layers/maxvit/layers/global_context.py",
+      "git_blob_sha1": "de7fb5c15f08a5c2fe42cb7c174fff92d6b0d3bf",
+      "sha256": "6995af8a3e09f93e48d6b7532bbdb90fa4747c3b89c983c3697be5dfa40c9a4c",
+      "bytes": 2445
+    },
+    {
+      "path": "models/layers/maxvit/layers/halo_attn.py",
+      "git_blob_sha1": "f2ac64f85e08a24646434fc0a995afa0fd9b9ee7",
+      "sha256": "ccc2647fd4bea1c0afadfbd639ed08f7b5074e91102243f7f350ce3773979be7",
+      "bytes": 10662
+    },
+    {
+      "path": "models/layers/maxvit/layers/helpers.py",
+      "git_blob_sha1": "2fa296bcdd110dabe6c442238224132b6d91c79a",
+      "sha256": "2b336f2434001df65cce34089e07b4d930ba54ee4745fb6fc0c8fd53bc5b9599",
+      "bytes": 1046
+    },
+    {
+      "path": "models/layers/maxvit/layers/inplace_abn.py",
+      "git_blob_sha1": "a80889339ebb992c11f84a286c3fd7a627776faa",
+      "sha256": "09325cc779ff0ece90f9476cf3723cec3b90cb68e0cd7f2e9a60552a4ae5c80d",
+      "bytes": 3374
+    },
+    {
+      "path": "models/layers/maxvit/layers/lambda_layer.py",
+      "git_blob_sha1": "e50b43c8c55a371fd7466dcb58bb329ec652b131",
+      "sha256": "592947d9bb94043c51779445a2ee4837b8931464b89d92fefa3f9786b74e722f",
+      "bytes": 5941
+    },
+    {
+      "path": "models/layers/maxvit/layers/linear.py",
+      "git_blob_sha1": "38fe3380b067ea0b275c45ffd689afdeb4598f3c",
+      "sha256": "6da4b65a9974bd810b9ef86743a2f0eb98d5a2d689cf98866eba0927d2662113",
+      "bytes": 743
+    },
+    {
+      "path": "models/layers/maxvit/layers/median_pool.py",
+      "git_blob_sha1": "40bd71a7a3840aaebefd2af0a99605b845054cd7",
+      "sha256": "6f4dafdfa546becfe0098f4d855c14efe9a095c5c91f3ac9573704a4452e1c12",
+      "bytes": 1737
+    },
+    {
+      "path": "models/layers/maxvit/layers/mixed_conv2d.py",
+      "git_blob_sha1": "fa0ce565c0a9d348d4e68165960fa77fcf7f70d7",
+      "sha256": "9914a6014b69807c9afd176752ae23f392b9412ec91537523d45ce5132a0a660",
+      "bytes": 1843
+    },
+    {
+      "path": "models/layers/maxvit/layers/ml_decoder.py",
+      "git_blob_sha1": "3f828c6d0ab059dc9ce60ad1b3bf7c064f7bf0f9",
+      "sha256": "694d39fdad94d7e7a2e3f4880e721649393aec36f92ee03f50e607c9b1ad10f7",
+      "bytes": 7008
+    },
+    {
+      "path": "models/layers/maxvit/layers/mlp.py",
+      "git_blob_sha1": "91e80a84c78b7c90314235fd10a50f459f36ce57",
+      "sha256": "da6ed06863182ad4d40f41a3b914228edeb412bb8813213b5176664246823486",
+      "bytes": 4376
+    },
+    {
+      "path": "models/layers/maxvit/layers/non_local_attn.py",
+      "git_blob_sha1": "670e8f2475374b1f31741f75f1dedf617e0e6546",
+      "sha256": "dbd66e9e64babeb3269213cdc25ec3b4fa056201a50e9bb0175edca02132ec75",
+      "bytes": 6218
+    },
+    {
+      "path": "models/layers/maxvit/layers/norm.py",
+      "git_blob_sha1": "42445a490aa6536a70c474935b6d285b25d29c56",
+      "sha256": "cf32b15d80c414ac7738757e73cf84b6c9e2f1d92cf23a8576d7d79f4962cade",
+      "bytes": 4517
+    },
+    {
+      "path": "models/layers/maxvit/layers/norm_act.py",
+      "git_blob_sha1": "ff075fbcf40d1b055704072493865f712bd5d65e",
+      "sha256": "ebac2a5ef2e4f36776b8a3e2357614ecc89c37197ac087e95c31f3992ccd32b8",
+      "bytes": 10397
+    },
+    {
+      "path": "models/layers/maxvit/layers/padding.py",
+      "git_blob_sha1": "34afc37c6c59c8782ad29c7a779f58177011f891",
+      "sha256": "0636edc499ae8be0f27aba19a2160c751023e66478a3aa56816d388a68b78432",
+      "bytes": 2167
+    },
+    {
+      "path": "models/layers/maxvit/layers/patch_embed.py",
+      "git_blob_sha1": "6a7facefaeb4c13fa1d94c3ffafb4c92bf3eb220",
+      "sha256": "1978c75f312f98300e9dd781b8edf3ec2e2990e37587365e1a2ecda2f16dd40e",
+      "bytes": 1490
+    },
+    {
+      "path": "models/layers/maxvit/layers/pool2d_same.py",
+      "git_blob_sha1": "4c2a1c44713e552be850865ada9623a1c3b1d836",
+      "sha256": "52c9ad5a76b993991f5533f6e53d7e38a24e82d71f0500aa4b2d0599a65b8d1c",
+      "bytes": 3045
+    },
+    {
+      "path": "models/layers/maxvit/layers/pos_embed.py",
+      "git_blob_sha1": "99a122a09bdfa6a0ac12b13de91a3db7173813c7",
+      "sha256": "4b2aa0701b77026b527f8257558c0959e651629395d23695dc13ec79a1e72ab5",
+      "bytes": 7140
+    },
+    {
+      "path": "models/layers/maxvit/layers/selective_kernel.py",
+      "git_blob_sha1": "3d71e3aa696b69bbfc00b39228c0e5fb7152c83c",
+      "sha256": "eba8ec14ce286be3241dec1ef731cfd27d18ec3f6a4c1d0113f907d95f5ac4f4",
+      "bytes": 5387
+    },
+    {
+      "path": "models/layers/maxvit/layers/separable_conv.py",
+      "git_blob_sha1": "c081e02bc45900a7220bc7ffbb709eedbb1cc4df",
+      "sha256": "b2d69564f3fe071b4edead0a6b7fd59c8d4cd5efb1b4d01450008ff35ae117f6",
+      "bytes": 2620
+    },
+    {
+      "path": "models/layers/maxvit/layers/space_to_depth.py",
+      "git_blob_sha1": "a7e8e0b2a486d51fe3e4ab0472d89b7f1b92e1dc",
+      "sha256": "3fef5ccc162f6db3d1ec98be7c1d1d54503fc800494283bd0b7200e2c2fdb6d2",
+      "bytes": 1750
+    },
+    {
+      "path": "models/layers/maxvit/layers/split_attn.py",
+      "git_blob_sha1": "ac54f8988ac6bdc9e852585692248875a016b7fb",
+      "sha256": "0a5da0c7494d568b17db382278b81ffc5b6a530bb0b46293cb14a85b2bde8de8",
+      "bytes": 3076
+    },
+    {
+      "path": "models/layers/maxvit/layers/split_batchnorm.py",
+      "git_blob_sha1": "830781b335161f8d6dd74c9458070bb1fa88a918",
+      "sha256": "e20846b6588ae73d199f3476f73241feb37d0493e21aecb53d296d995c85e56c",
+      "bytes": 3441
+    },
+    {
+      "path": "models/layers/maxvit/layers/squeeze_excite.py",
+      "git_blob_sha1": "2e41d956c964fbccc369864303cdb4a6e3560d9c",
+      "sha256": "6fef10480d6a96daf7f18691431f49aed0414daf4b2ff7cb8e0b1a8852cd8fe1",
+      "bytes": 3029
+    },
+    {
+      "path": "models/layers/maxvit/layers/std_conv.py",
+      "git_blob_sha1": "d896ba5c2f7f517d6ce0508d789a516e7bfb4cf1",
+      "sha256": "cd885c2826c4d3f46a9f8db680433d82bdcb7817b0bb40972aabe5b1af7e3364",
+      "bytes": 5887
+    },
+    {
+      "path": "models/layers/maxvit/layers/test_time_pool.py",
+      "git_blob_sha1": "5826d8c966d7bffa62f5f5fdd224f3f691276ce6",
+      "sha256": "67994fbd52c8e0862aac92c64218097f13dab2e83d9edb35cba9830ffaf39c14",
+      "bytes": 1996
+    },
+    {
+      "path": "models/layers/maxvit/layers/trace_utils.py",
+      "git_blob_sha1": "83970729e628b525d24162f5df37ee5bc253438f",
+      "sha256": "71b66e7ce6862a685318431ce764009eacc64537e7e2fbf3aac00e25a2ca250f",
+      "bytes": 335
+    },
+    {
+      "path": "models/layers/maxvit/layers/weight_init.py",
+      "git_blob_sha1": "943e4f4cec20eb03230748aa919010d017643303",
+      "sha256": "8a5c7462ae53c4671bf474e4c96d23a3e2681deed03630b2050ddb81a4a52a7b",
+      "bytes": 4765
+    },
+    {
+      "path": "models/layers/maxvit/maxvit.py",
+      "git_blob_sha1": "a118c76c5f3a2c5ba000aadc305b1d4d8853e9d0",
+      "sha256": "c37923ebaa8fe25a653dba4cd3512e61aeca40743572b5a311395379b8ad2cc6",
+      "bytes": 14829
+    },
+    {
+      "path": "models/layers/rnn.py",
+      "git_blob_sha1": "fbe3fd4c60ef6b7b61b8bd54f633c0d04a4a7d5e",
+      "sha256": "f44086e3b4375253c2287ac2e76d2e7342be50cc00af5b943725f8a887d2038e",
+      "bytes": 2624
+    },
+    {
+      "path": "modules/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "modules/data/genx.py",
+      "git_blob_sha1": "689c2d4e6c467e91d4c30d953c2ee5dca11a1f86",
+      "sha256": "d5443455be0b313b2d056ccbf240bf6b49e5acc141fdb56253b4f3cbba3475c3",
+      "bytes": 10408
+    },
+    {
+      "path": "modules/detection.py",
+      "git_blob_sha1": "b74ec61f775a1f36b6b5b709a5fac702a398aca3",
+      "sha256": "998cdf529fa5bba3b23d58ff5ae2ea6648fa0740719a3ad81ba4d849c93ad5a8",
+      "bytes": 19420
+    },
+    {
+      "path": "modules/utils/detection.py",
+      "git_blob_sha1": "d831da68b325455379c44907d35ff94d99497e4d",
+      "sha256": "7dfe9d1e5027a1f68be4a6bbb1612dd9416b1118df9610870e0241b244b2507d",
+      "bytes": 5918
+    },
+    {
+      "path": "modules/utils/fetch.py",
+      "git_blob_sha1": "f553b6215f120a01ba7b02ebe58557a54edbacc5",
+      "sha256": "ef25c08a2c30a0bda764aaa4671fd31e954e0158168de21443cf042040ab4437",
+      "bytes": 1205
+    },
+    {
+      "path": "requirements.txt",
+      "git_blob_sha1": "81524f1f92b89536ca92a3ecc09eea353f7bade2",
+      "sha256": "29be9eebd69ef335647410a07cb58b7df231063f74f0c5f04ed19c742dbe69c2",
+      "bytes": 239
+    },
+    {
+      "path": "scripts/genx/README.md",
+      "git_blob_sha1": "e59cf56e3183dba523e1bd6032992ac08834f1b9",
+      "sha256": "1747325bc44abc05e97eb2589ac61f349fc0ea8114dab145a3900875f297110d",
+      "bytes": 2447
+    },
+    {
+      "path": "scripts/genx/conf_preprocess/extraction/const_count.yaml",
+      "git_blob_sha1": "0b7713a7a246e1bbd70a17f8ea309fdfaded6dca",
+      "sha256": "59923da6f3e9b1cd217f1c66d04f5de84eece85d5f02faede735b0d9172ee0eb",
+      "bytes": 26
+    },
+    {
+      "path": "scripts/genx/conf_preprocess/extraction/const_duration.yaml",
+      "git_blob_sha1": "8ccd3785c8f3f63a59440c5eb0a4bab9ed005d48",
+      "sha256": "014e14e63bcaff5614a0459a4652475df0a62027b79afdaa6e91f84b2b58a871",
+      "bytes": 55
+    },
+    {
+      "path": "scripts/genx/conf_preprocess/filter_gen1.yaml",
+      "git_blob_sha1": "3610bd526fbd51a7bbd26014125e232a25b63bfc",
+      "sha256": "dfc8501f7d573137065f764f6402c900a9634966414b50a780e46639c5f380fd",
+      "bytes": 59
+    },
+    {
+      "path": "scripts/genx/conf_preprocess/filter_gen4.yaml",
+      "git_blob_sha1": "c4b7f7ca796ac17fca646da41a94c41fea163e95",
+      "sha256": "3d0d013127ce200cd4a1197de0ba8eb56bd7ffb6eed90af12e78744d5d670b98",
+      "bytes": 60
+    },
+    {
+      "path": "scripts/genx/conf_preprocess/representation/mixeddensity_stack.yaml",
+      "git_blob_sha1": "3c1bb07f313dc9a4bcdbeacfafb15b803ec219b5",
+      "sha256": "b8ed2af2033d4f5c6d116b98d94c2b802312d3cb4125506c060228f488fe262c",
+      "bytes": 54
+    },
+    {
+      "path": "scripts/genx/conf_preprocess/representation/stacked_hist.yaml",
+      "git_blob_sha1": "e2a7c4b911ec534a954c80913253470b232c7c97",
+      "sha256": "3e2379c8ba7223ce4ac53ffc4f22374cd0253c47c02db2698231f31ebe66390d",
+      "bytes": 53
+    },
+    {
+      "path": "scripts/genx/preprocess_dataset.py",
+      "git_blob_sha1": "b83ffbab457b00e65675d9aa74586c832e6780f2",
+      "sha256": "c6d9368f3c1efb8fa51080ac3de40dcb11c474bc575a5ed6e6ed4c5c89867b20",
+      "bytes": 32632
+    },
+    {
+      "path": "torch-req.txt",
+      "git_blob_sha1": "442a16134188af3905467a31f14996c661378de0",
+      "sha256": "56c79055c1ce1c59e804eb33aeace105122648e975243d0306a9137ddd65e3da",
+      "bytes": 50
+    },
+    {
+      "path": "train.py",
+      "git_blob_sha1": "4b34078310692a84ac0ec864f28d8da9a02fa1b9",
+      "sha256": "6d5999a447518137569a620c9e4538c5e2ac10ed8c00bfa305ecd949783a5564",
+      "bytes": 5556
+    },
+    {
+      "path": "utils/evaluation/prophesee/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "utils/evaluation/prophesee/evaluation.py",
+      "git_blob_sha1": "41c4b95b3b6cfd6a56fa4d5758e135779d338fb5",
+      "sha256": "7bf0702439265fa67a11d7bf4cbc7f223f7087274519a6ffdb60779fe2d4eb91",
+      "bytes": 1752
+    },
+    {
+      "path": "utils/evaluation/prophesee/evaluator.py",
+      "git_blob_sha1": "58776e169c9ccbc769230c45f5b6c67ebae2afd2",
+      "sha256": "beb07b3a33a19d7caba3ae092e881329664975a59796b66ae9ec3cb091b99ca2",
+      "bytes": 2462
+    },
+    {
+      "path": "utils/evaluation/prophesee/io/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "utils/evaluation/prophesee/io/box_filtering.py",
+      "git_blob_sha1": "fd887fc07a40402e2f9f644d2e578dc60d0bd3fc",
+      "sha256": "d4ce4e84338a80b3e020d035a60a24fd653d225e911bd03ea164f38b8072c012",
+      "bytes": 1232
+    },
+    {
+      "path": "utils/evaluation/prophesee/io/box_loading.py",
+      "git_blob_sha1": "149cf6e2fedafd036f7fc683aa243bb2649da264",
+      "sha256": "8f543717491d74568da755073cc19c1622c19d6052d42c7fb8639ef0cbf6daed",
+      "bytes": 4375
+    },
+    {
+      "path": "utils/evaluation/prophesee/io/dat_events_tools.py",
+      "git_blob_sha1": "b465e86f92e523d11af5d7e246ab30d88ec81b27",
+      "sha256": "bb14923af53bd5e1feb06c873abe7e13d2ec2fbea9e6c7d3e66f625c53f25079",
+      "bytes": 7350
+    },
+    {
+      "path": "utils/evaluation/prophesee/io/npy_events_tools.py",
+      "git_blob_sha1": "efd132377089e70fa95a282c69ef024a4aa4dfa1",
+      "sha256": "33a5d6f74d5ff3d652a01b8261716899d4b14c7d45d452a690ca80a5063ecfb1",
+      "bytes": 2057
+    },
+    {
+      "path": "utils/evaluation/prophesee/io/psee_loader.py",
+      "git_blob_sha1": "ca8643f7acc4bfbff1b10660db45d22ff076032c",
+      "sha256": "45c2d2afa7b9f73baf628f91399aa033ae3bf486e4ef1876adc8d03daa7faa92",
+      "bytes": 9300
+    },
+    {
+      "path": "utils/evaluation/prophesee/metrics/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "utils/evaluation/prophesee/metrics/coco_eval.py",
+      "git_blob_sha1": "626d35985cc5f9ee0d3ec0b27da5172ed70cf85e",
+      "sha256": "655a8eb32d55312851d9c2cbb3246e3fe5145e4c296d8cdf883030fe8fabcb69",
+      "bytes": 6690
+    },
+    {
+      "path": "utils/evaluation/prophesee/visualize/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "utils/evaluation/prophesee/visualize/vis_utils.py",
+      "git_blob_sha1": "2e51fc7808e5d3b78e88f0f1c04ec3d181e90f42",
+      "sha256": "c709eec351c083d6dffae6d058ec2f9f67da9f820c0aca21df6c9ca7ff461818",
+      "bytes": 4016
+    },
+    {
+      "path": "utils/helpers.py",
+      "git_blob_sha1": "2bed894ef576bca2bd6c8954fba4462e90c4ab57",
+      "sha256": "441e904e8ff8842b10e98a589430ffc978cf9f13f82e215fc4fe1039dc605e4a",
+      "bytes": 461
+    },
+    {
+      "path": "utils/padding.py",
+      "git_blob_sha1": "d2f7706b2de8cffe0be4e5128a884e9b19ea2b51",
+      "sha256": "200538833453cc8b02c04b2495f9cffdef416d7326149792214c4859d3f00209",
+      "bytes": 2476
+    },
+    {
+      "path": "utils/preprocessing.py",
+      "git_blob_sha1": "01550e1f4a5a58409fbb6d13fbb194755b78442c",
+      "sha256": "d2aa62bdeb659cbe5c148fd5a3e7a2d2826ce8628c50aa6a15630390769636db",
+      "bytes": 527
+    },
+    {
+      "path": "utils/timers.py",
+      "git_blob_sha1": "fe3eca1ca30a0a0c24ce3ab80d0da2d80513d728",
+      "sha256": "156f398c8329bf565fd5a795ad442dc68ee728ade5df435dbca31c008003a52a",
+      "bytes": 2708
+    },
+    {
+      "path": "validation.py",
+      "git_blob_sha1": "99dc0e3b87a091445aff09ac0eab8c3eeae6f68b",
+      "sha256": "0929d213ffde2d88c91dfae28bd4a9cc5e751043e10a6e773a7ad402bda3647c",
+      "bytes": 2625
+    }
+  ],
+  "checkpoint": {
+    "path": "weights/rvt-t-1mpx.ckpt",
+    "url": "https://download.ifi.uzh.ch/rpg/RVT/checkpoints/1mpx/rvt-t.ckpt",
+    "sha256": "4298fb5290e3bf6bb0914f37dacb402ed8b759236ad5d211c25056fae7b45ab7",
+    "md5": "5a3c7893280d23ab5d22d17dffeb818b",
+    "bytes": 70982996,
+    "published_md5_prefix": "5a3c78"
+  }
+}

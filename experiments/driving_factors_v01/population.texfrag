@@ -1,0 +1,28 @@
+\begin{table}[!htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{Annotation-defined subgroup populations pooled over the same four exposed recordings. GT and D columns count identity/query instances; tracks sum distinct identities within recordings, not independent driving trials. D is the original fixed dense-reference coverage for each carrier, independent of the new subgroup threshold analyses. Track memberships can overlap across strata as an object changes size or motion. Early/established exclude identities present at the first native timestamp. Small area is at most 1\% of the native image. Empty cells denote a genuinely empty population, not filtered failures.}\label{tab:driving_population}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.29\linewidth}*{5}{>{\raggedleft\arraybackslash}X}@{}}
+\toprule
+Stratum & GT & Tracks & $D_{S0}$ & $D_{S1}$ & $D_{RVT}$ \\
+\midrule
+All & 22841 & 320 & 4119 & 4888 & 11045 \\
+Small & 16912 & 313 & 592 & 1222 & 5911 \\
+Larger & 5929 & 159 & 3527 & 3666 & 5134 \\
+Early annotation & 862 & 298 & 14 & 13 & 57 \\
+Established & 18718 & 266 & 3640 & 4316 & 8577 \\
+Left-censored & 3261 & 17 & 465 & 559 & 2411 \\
+Low image motion & 2128 & 169 & 62 & 93 & 743 \\
+Middle image motion & 8878 & 258 & 703 & 1077 & 3501 \\
+High image motion & 11048 & 282 & 3330 & 3683 & 6735 \\
+Motion unknown & 787 & 307 & 24 & 35 & 66 \\
+Car & 21342 & 273 & 4108 & 4883 & 10778 \\
+Pedestrian & 1499 & 47 & 11 & 5 & 267 \\
+Small, early & 817 & 285 & 1 & 5 & 48 \\
+Small, established & 13294 & 261 & 458 & 989 & 3902 \\
+Larger, early & 45 & 19 & 13 & 8 & 9 \\
+Larger, established & 5424 & 144 & 3182 & 3327 & 4675 \\
+\bottomrule
+\end{tabularx}
+\end{table}

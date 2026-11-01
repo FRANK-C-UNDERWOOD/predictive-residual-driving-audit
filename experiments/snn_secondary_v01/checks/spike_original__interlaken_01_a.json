@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "model": "spike_original",
+  "sequence": "interlaken_01_a",
+  "interaction_pp": -13.175483348400483,
+  "matched": true,
+  "checked_hashes": 2249,
+  "total_final_point_query_rows": 161928,
+  "independent_primary_group_query_rows": 40482,
+  "actual_primary_raw_replays": 8996,
+  "other_sampled_raw_replays": 204,
+  "exact_source_identity_query_rows": 2772,
+  "independently_checked_loss_runs": 1393,
+  "inputs": {
+    "experiments/snn_secondary_v01/carriers/spike_original__interlaken_01_a.json": "75cffb5070c92e32b5a6575e5c03d9f559b5e4b489ac6548eea9db1eb3d47ce5",
+    "experiments/snn_secondary_v01/points/spike_original__interlaken_01_a.json": "a942f1be217f8168a91f07dcdd4cd74f9f92d3920cd4dad3696f73bc7df37d0a",
+    "experiments/snn_secondary_v01/aggregates/spike_original__interlaken_01_a.json": "4030318023d0a768e973b953a0472643071d19b283295fdee675430015e9943d"
+  },
+  "verifier_sha256": "7fc30f22ca061649662d2478225b4053b6526d3ab19aa1c837d4c925b4e06529",
+  "annotation_matcher_source_sha256": "4048275edf8335534ba386470854ed8be0fce776c1539586f9efcfd2d3d18e87"
+}

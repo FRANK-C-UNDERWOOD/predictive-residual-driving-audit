@@ -1,0 +1,30 @@
+{
+  "purpose": "Development-only complete real sequences; not a GEN1 reproduction or formal test set",
+  "selection_rule": "Small complete sequences in the official DSEC-Detection training split, selected by public file size before model evaluation",
+  "split_source": "https://raw.githubusercontent.com/uzh-rpg/dsec-det/master/config/train_val_test_split.yaml",
+  "assets": [
+    {
+      "id": "dsec_train_detection_labels",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train_object_detection_coarse/train_object_detections.zip",
+      "destination": "datasets/downloads/dsec_train_object_detections.zip"
+    },
+    {
+      "id": "thun_00_a_events",
+      "extract_subdir": "train/thun_00_a/events/left",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/thun_00_a/thun_00_a_events_left.zip",
+      "destination": "datasets/downloads/thun_00_a_events_left.zip"
+    },
+    {
+      "id": "zurich_city_00_a_events",
+      "extract_subdir": "train/zurich_city_00_a/events/left",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_00_a/zurich_city_00_a_events_left.zip",
+      "destination": "datasets/downloads/zurich_city_00_a_events_left.zip"
+    },
+    {
+      "id": "zurich_city_01_a_events",
+      "extract_subdir": "train/zurich_city_01_a/events/left",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_01_a/zurich_city_01_a_events_left.zip",
+      "destination": "datasets/downloads/zurich_city_01_a_events_left.zip"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "Engineering acceptance settings fixed before executing this check",
+  "source_commit": "90fc523215f6121d9dd9c6fc63ae9225361af8cb",
+  "input": {"size": 256, "steps": 3, "channels": 3, "bin_us": 20000},
+  "numeric": {"precision": "float32", "tf32": false, "atol": 0.00001, "rtol": 0.00001},
+  "spike_mismatch_allowed": 0,
+  "postprocess": {"confidence": 0.3, "nms": 0.5},
+  "masks": {"retention": 0.35, "seed": 0},
+  "cases": "Three regularly spaced thun_00_a annotation windows plus an explicitly synthetic zero-input reset case",
+  "claims_excluded": ["GEN1 benchmark reproduction", "DSEC detection accuracy", "H1/H2/H3", "runtime or energy savings"]
+}

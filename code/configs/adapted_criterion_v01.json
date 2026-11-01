@@ -1,0 +1,23 @@
+{
+  "version":"adapted-criterion-v01","date":"2026-10-30",
+  "scope":"Frozen original versus internally selected full-convolution carrier; previously exposed development sequences, no independent confirmation",
+  "sequences":["thun_00_a","zurich_city_01_a","interlaken_00_c","zurich_city_02_a","zurich_city_04_a"],
+  "calibration_sequence":"thun_00_a",
+  "carriers":["original","full_conv"],
+  "predictors":["zero","persistence","ema","ema_lag3","ema_roll","ema_global"],
+  "normalizers":["absolute","current","symmetric"],
+  "references":["current_activity","ema_activity","event_rate","random"],
+  "alpha":0.8,"lag_queries":3,"ranking_seed":0,
+  "capacities":[0.2,0.35,0.6],"primary_capacity":0.2,
+  "warmup_complete_windows":10,
+  "input":{"size":256,"steps":3,"channels":3,"bin_us":20000},
+  "confidence_floor":0.3,"target_calibration_fppi":1.0,
+  "iou":0.5,"nms":0.5,"small_area_fraction":0.01,
+  "class_map":{"0":1,"2":0},"gap_factor":1.5,
+  "regimes":["carrier_dense_threshold","policy_thun_calibrated"],
+  "reference":"Own dense matches at each carrier's previously frozen Thun dense threshold, plus explicitly diagnostic intersection of the two dense identity cohorts; never drop full-GT/FP reporting",
+  "checkpoint":"Use diverse_adaptation_v01/full_conv_training.json selected116 delta atop pinned original checkpoint; no retraining or reselection",
+  "calibration":"Each condition uses Thun only; float32 nextafter, actual final-threshold NMS/FP guard checked BEFORE reading its evaluation outcomes. Calibration FPPI matching does not imply evaluation matching.",
+  "continuity":"Reuse sampled loss-run endpoint with dense misses, GT absence, grid gaps and boundaries censored; no absolute 200ms deadline",
+  "limits":["Two checkpoints of one architecture, one adaptation-order seed", "All sequence groups already development-exposed", "Same per-scale output-position capacity, not measured total compute", "Offline candidate admission with complete convolution; no hardware saving", "No risk/importance module or formal H1/H2/H3 verdict"]
+}

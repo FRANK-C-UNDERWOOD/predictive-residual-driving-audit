@@ -1,0 +1,169 @@
+{
+  "config": {
+    "version": "driving-factors-v01",
+    "role": "Retrospective annotation-defined subgroup analysis of already exposed recordings, not new confirmation or a causal driving-risk study.",
+    "parent": "experiments/fp_mechanism_v01",
+    "sequences": [
+      "zurich_city_07_a",
+      "zurich_city_08_a",
+      "zurich_city_09_a",
+      "zurich_city_10_a"
+    ],
+    "models": [
+      "spike_original",
+      "spike_adapted",
+      "rvt_stream"
+    ],
+    "width": 640,
+    "height": 480,
+    "class_map": {
+      "0": 1,
+      "2": 0
+    },
+    "small_area_fraction": 0.01,
+    "early_annotated_appearances": 3,
+    "early_rule": "First three eligible annotated observations of an identity in the complete native image grid, including observations before the evaluation cohort. This is annotation onset, not physical visibility or reliable detection. Identities present at the first native grid timestamp are left-censored and never classified as early or established.",
+    "motion_low_max_diagonal_per_second": 0.01,
+    "motion_high_min_diagonal_per_second": 0.05,
+    "motion_rule": "Euclidean displacement of clipped GT box center divided by elapsed native seconds and the 800-pixel image diagonal. Only an identity present in the immediately preceding native query with interval <=1.5 median grid intervals is valid. Low <=0.01, high >0.05, middle otherwise, unknown if not valid. This is annotated-object image-plane motion, not optical flow, camera/ego motion, depth, speed or collision risk.",
+    "gap_factor": 1.5,
+    "groups": [
+      "all",
+      "small",
+      "large",
+      "early",
+      "established",
+      "left_censored",
+      "motion_low",
+      "motion_middle",
+      "motion_high",
+      "motion_unknown",
+      "car",
+      "pedestrian",
+      "small_early",
+      "small_established",
+      "large_early",
+      "large_established"
+    ],
+    "methods": [
+      "dense",
+      "ema/current",
+      "ema/absolute",
+      "ema_lag3/current",
+      "current_activity",
+      "ema_activity",
+      "persistence/absolute",
+      "ema_roll/absolute",
+      "unsigned_residual"
+    ],
+    "fp_targets": [
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "primary_fp_target": 1.0,
+    "regimes": [
+      "thun_calibrated",
+      "retrospective_sequence_budget"
+    ],
+    "contrasts": [
+      [
+        "ema/absolute",
+        "current_activity"
+      ],
+      [
+        "ema_lag3/current",
+        "ema/current"
+      ],
+      [
+        "ema/absolute",
+        "ema_roll/absolute"
+      ]
+    ],
+    "threshold_rule": "Reuse every final actual-replay threshold/attempt from the parent unchanged. No within-subgroup recalibration, no change of NMS or matching. FP matching applies to the complete sequence, not to object subgroups. FP cannot be assigned to a GT age/size/motion stratum.",
+    "endpoints": "Report subgroup GT, TP, dense-reference instances, kept, lost, gained, distinct GT/dense tracks, recall, conditional preservation and trajectory-equal preservation. Empty denominators undefined. Keep four recordings separate; descriptive paired medians/ranges/sign counts only. Both threshold regimes and all declared FP targets and methods retained.",
+    "continuity": "At the primary FP target, all nine methods in both regimes: sampled loss runs relative to fixed dense reference; split at GT absence, dense miss or native grid gaps. Report observed spans, longest queries, recovery and censoring. Never infer a 200ms safety deadline or interpolate unobserved detections.",
+    "source_partition": "Join already verified absolute-EMA/activity source-survival traces at common confidence and retrospective1FP to annotation-defined strata; effective original coverage C, alternative recovery A and selected-source loss L remain distinct, kept=C+A-L.",
+    "limits": [
+      "Prior overall outcomes already known; only subgroup rules fixed before new subgroup outcome joins",
+      "No background/image optical flow or independent ego-motion labels",
+      "Identity/box annotations may be imperfect and motion includes annotation jitter",
+      "Small area is not distance; annotation onset is not physical appearance",
+      "Conditional results remain limited by dense detector coverage",
+      "No new gate, training, compute or safety claim"
+    ]
+  },
+  "frozen_utc": "2026-10-31T01:52:53.087182+00:00",
+  "sources": {
+    "code/configs/driving_factors_v01.json": "9528b1b179f6c342c29a946218c161b7ae019efe21bef165efa2e341748478ff",
+    "code/riskaware/driving_factors.py": "be9bf049acba1e93dc18f93ba71a149eb3eb0ccb51fc22d341e214ddbad2c765",
+    "code/scripts/run_driving_factors_v01.py": "4cbf593848feb1c50006065474cd1ccb897f4e8d28303c1734d5b48c91f727e6",
+    "code/tests/test_driving_factors.py": "49ec7509324943540a56fb688fc08cc37d1245b77f59f505c1cb95235f2d10be",
+    "code/riskaware/evidence_runs.py": "f57965820a3b3b3594f4939364cd745333f2e081618046fb94764aa27e38543f"
+  },
+  "inputs": {
+    "experiments/fp_mechanism_v01/artifact_manifest.json": "9e754606875f9278d14fa9279d0f88d18884f5fa85e0939fef3ddbe0d9e4bdc4",
+    "experiments/fp_mechanism_v01/operating_points.json": "8be0e93e3c9ede2883969683186c215147e0087c67dc06f73744dd1ddafdeaa5",
+    "experiments/fp_mechanism_v01/paired_fp_contrasts.json": "2dd0900ea492f80eedccd45771615581af734284096517c7f882b97243bcccc7",
+    "datasets/dsec_pilot/train/zurich_city_07_a/image_timestamps.txt": "95cc716c6d15c0d289da7a4fbc3ee8e34aa5c3ef34d26412dd8ca802a7b934b1",
+    "datasets/dsec_pilot/train/zurich_city_07_a/object_detections/left/tracks.npy": "b07c77b2d2fdd9d5db40f28b08f59c6159277bace1bd848d11b81eb8275f1e75",
+    "experiments/confirmation_v01/spike_original__zurich_city_07_a.json": "75e9d03ef7e4903ce08dd1a7993dffd8d807316dca39142fdac2c8a478169546",
+    "experiments/fp_mechanism_v01/points/spike_original__zurich_city_07_a.json": "24867395a596e3df5c7f5e54009f94ee1ebab0e6885de523a30317e957f9dcc2",
+    "experiments/fp_mechanism_v01/points/spike_original/zurich_city_07_a.jsonl": "6ec832a0036dcab1d492c6b03c6932f80a520c7007470d0be5131fdb54a1b945",
+    "experiments/fp_mechanism_v01/source_survival/spike_original__zurich_city_07_a.jsonl": "c5411ec385098b554ce834b73dc2f1ad5ac4f660d186ee9a0ff2aab60bf352b7",
+    "experiments/confirmation_v01/spike_adapted__zurich_city_07_a.json": "9dac30256a45209b3e7b9c181820b38b0ed52bfab2e1c961ae7b0cdb7ce860f8",
+    "experiments/fp_mechanism_v01/points/spike_adapted__zurich_city_07_a.json": "ee60d4d2f625ff82d723b9d893687f7ade42fd673213f7f7c4a25e72b37f9dde",
+    "experiments/fp_mechanism_v01/points/spike_adapted/zurich_city_07_a.jsonl": "f9486747b4555f2f43386540bd8daf6cf0daaac257ea19aee4cf21529ef95fdb",
+    "experiments/fp_mechanism_v01/source_survival/spike_adapted__zurich_city_07_a.jsonl": "17a2331c82480aa40dd7c563a16b56add37c524654d82fc4898cc3f4ba3af97c",
+    "experiments/confirmation_v01/rvt_stream__zurich_city_07_a.json": "4264ac60a381c115187df07892ffabf9d824687c031bf9503e187088d91b82cd",
+    "experiments/fp_mechanism_v01/points/rvt_stream__zurich_city_07_a.json": "24bad02a725ba12c96008553ad8eca2505aa03f0f1d167d5ea92268933313e29",
+    "experiments/fp_mechanism_v01/points/rvt_stream/zurich_city_07_a.jsonl": "91c5a88cc04b648d6872c7b4c44839a0fd8475b58fb3329ae8080d8fc34dd7db",
+    "experiments/fp_mechanism_v01/source_survival/rvt_stream__zurich_city_07_a.jsonl": "cb4fab6d8d1a8126e91178aa59305291ecde822de766764c393f06f6e5d61ad5",
+    "datasets/dsec_pilot/train/zurich_city_08_a/image_timestamps.txt": "3e06c0725dd54ba9097fee204598eddb65fd74d0bcd73e9c5617b411d7cddc55",
+    "datasets/dsec_pilot/train/zurich_city_08_a/object_detections/left/tracks.npy": "dc3cbfd663561e8c1bcea7ffb9541d51f9c76e26ddbb01b1cd83883d669ead4e",
+    "experiments/confirmation_v01/spike_original__zurich_city_08_a.json": "ba71c455fa628d84d5316dd5e9b5deb63a93193a2105f288f59a84597135c46a",
+    "experiments/fp_mechanism_v01/points/spike_original__zurich_city_08_a.json": "8440ca44423907f222496a48f6e425372704cc9bd3b47e1487e8320bbecd30fb",
+    "experiments/fp_mechanism_v01/points/spike_original/zurich_city_08_a.jsonl": "1282c978259c75c8ebaa311cd77252d1b6769f99c6fca3f73db1753d9a786517",
+    "experiments/fp_mechanism_v01/source_survival/spike_original__zurich_city_08_a.jsonl": "7ed023279eedabf8d5aa801ea81f3715b82b8796b00ef88e684657c6615b5018",
+    "experiments/confirmation_v01/spike_adapted__zurich_city_08_a.json": "e354d74ef9d60646f627e37ea9cd27dd359f1d5ad8c4dbaa5b537db3cb2d1c0e",
+    "experiments/fp_mechanism_v01/points/spike_adapted__zurich_city_08_a.json": "4a2dc53f51f69fad764bf483db37a1e07fbc9630b743a73cae9fae1044c31cc2",
+    "experiments/fp_mechanism_v01/points/spike_adapted/zurich_city_08_a.jsonl": "ae66966b2be6080cda0593c4f66f7a3d8e350981e6168c7dab9922a80eab5fe6",
+    "experiments/fp_mechanism_v01/source_survival/spike_adapted__zurich_city_08_a.jsonl": "27a8e50f9c7a7556cf2d5c816a150b72a8b3a732b55162c648d887421c733f3d",
+    "experiments/confirmation_v01/rvt_stream__zurich_city_08_a.json": "91edbb78e71bb954fcd521749de5764e946bfa2eea2af8812cde498f630a9049",
+    "experiments/fp_mechanism_v01/points/rvt_stream__zurich_city_08_a.json": "ceaaa72a5d30def51012bc68378510fe7e39ecd14c18e78cbbaa4f4854ccee48",
+    "experiments/fp_mechanism_v01/points/rvt_stream/zurich_city_08_a.jsonl": "1c23168e956417822130de225c11c39ded0abb9c258e5504236667bd98ae6528",
+    "experiments/fp_mechanism_v01/source_survival/rvt_stream__zurich_city_08_a.jsonl": "a6205bdc34541f704c291cd30a0da05db75c3d1109253bf07fb5d0812897ceac",
+    "datasets/dsec_pilot/train/zurich_city_09_a/image_timestamps.txt": "1496d86ecf925de4ea2311c16267261bc590e2bff12072ca5dc009e80a27b695",
+    "datasets/dsec_pilot/train/zurich_city_09_a/object_detections/left/tracks.npy": "5e8515370fa4be66ed796cce19ebf8ea4000eada46520bf8828312a4db07d2f9",
+    "experiments/confirmation_v01/spike_original__zurich_city_09_a.json": "b36ef39692bb62cad34c221e3d5c7844c933d4cfa64630fc1d6b0a7432e463ad",
+    "experiments/fp_mechanism_v01/points/spike_original__zurich_city_09_a.json": "ab64f0d708d0d4c8603407e3c23c22c532ba76d89c6898b1516db6d5dd94ba5c",
+    "experiments/fp_mechanism_v01/points/spike_original/zurich_city_09_a.jsonl": "8ac175c52e16b274f97cd67471f86b45c2aed448a9d55ae8ee1a06601af8f4c3",
+    "experiments/fp_mechanism_v01/source_survival/spike_original__zurich_city_09_a.jsonl": "9d3400f294906f203c041cee7f4a57e6e7d954f6b0809ccc6441cbc62ea5018c",
+    "experiments/confirmation_v01/spike_adapted__zurich_city_09_a.json": "f2a1d7a940310b5f2b6c0d2f246dc083e6e99a012bede25f5e4e0f89b33a6ed8",
+    "experiments/fp_mechanism_v01/points/spike_adapted__zurich_city_09_a.json": "c054e0a55251779dd9a9e317a35f8c8f72e39172c94bec97fae54494f3353b9c",
+    "experiments/fp_mechanism_v01/points/spike_adapted/zurich_city_09_a.jsonl": "ceba1b659044d2bdcacb85a5a90abbd8c6806913a16a5a1cce8610d171725676",
+    "experiments/fp_mechanism_v01/source_survival/spike_adapted__zurich_city_09_a.jsonl": "4a57336e301290f603bfe33fc4ff774ef20d650ad60e2343b08b69107d39459c",
+    "experiments/confirmation_v01/rvt_stream__zurich_city_09_a.json": "ccaf3dcaa0b68ef68f41ad6b4433c04ba14ee6f0d77cf6cca2f4f36765f42a2e",
+    "experiments/fp_mechanism_v01/points/rvt_stream__zurich_city_09_a.json": "b5a24719c14d39228128e35c9ae87267693c6d506aa18b6ab8b126847e185019",
+    "experiments/fp_mechanism_v01/points/rvt_stream/zurich_city_09_a.jsonl": "3b98a2c5ddb3be1916e0fcd13c81263f4319c389e31f36016194e505c7625fe8",
+    "experiments/fp_mechanism_v01/source_survival/rvt_stream__zurich_city_09_a.jsonl": "e50e5d8c201f26de68872f11c7cc3a4bf256e3e0ad75768890a2d63c1a1d262f",
+    "datasets/dsec_pilot/train/zurich_city_10_a/image_timestamps.txt": "1532cd429f77d2cc6caab7e05e16e60b3fa5cdbbada10b023b47e53fa3647968",
+    "datasets/dsec_pilot/train/zurich_city_10_a/object_detections/left/tracks.npy": "0812aa33847523b05fb4d9bc13a707067bc5e80d1897c713337433533190f66f",
+    "experiments/confirmation_v01/spike_original__zurich_city_10_a.json": "e2237dfe799ede8d97faf45c11e97a9d158ae48f6a0d9255d89fb19c1007eb63",
+    "experiments/fp_mechanism_v01/points/spike_original__zurich_city_10_a.json": "7570080ed28f6fce47a8c67d22a6958af710960099386a630458e3da205918b5",
+    "experiments/fp_mechanism_v01/points/spike_original/zurich_city_10_a.jsonl": "5eb0cb9d6f078eecd2be5b0f1cee0a8870c724f9a50ec1aa902089500134bb94",
+    "experiments/fp_mechanism_v01/source_survival/spike_original__zurich_city_10_a.jsonl": "bac2df4135ec0d7ce7dd6bfc1b4e8c6efbc699fb68dba12ceb5fce78320ea4a9",
+    "experiments/confirmation_v01/spike_adapted__zurich_city_10_a.json": "76e30c8b7a983ad13ecdd7a39c7e4d60d9e0a9595022508c1866efa4e1067c04",
+    "experiments/fp_mechanism_v01/points/spike_adapted__zurich_city_10_a.json": "a625ed59727b4c25484548f5ba73fa79e00efea2c77c7b9a7e2a9fe5f96d44b9",
+    "experiments/fp_mechanism_v01/points/spike_adapted/zurich_city_10_a.jsonl": "a227c14cfd8be6d3424c63763a3a0927a71d035a6cc6d17fb35267a2fd67269b",
+    "experiments/fp_mechanism_v01/source_survival/spike_adapted__zurich_city_10_a.jsonl": "3aaa9fc171200c7b8ac51f4880e7e929e1088cea7d132762138ca33d414dd161",
+    "experiments/confirmation_v01/rvt_stream__zurich_city_10_a.json": "a41a92acbdb1b8f6e8bba5f89132e9c38e64ac2ab2a2e41089a6015cc5fb305a",
+    "experiments/fp_mechanism_v01/points/rvt_stream__zurich_city_10_a.json": "a6f40793ccf0d075bcb3cdbd547009a60cf673606cc3fc2488e275cf0848ae76",
+    "experiments/fp_mechanism_v01/points/rvt_stream/zurich_city_10_a.jsonl": "797181f128246a19c012dc63ae3b9af1315c277ecda93ae3f0b5ea89144cce3e",
+    "experiments/fp_mechanism_v01/source_survival/rvt_stream__zurich_city_10_a.jsonl": "8c43d5111eafde2d6563078a61917b92f9bacac4903691f73c94141e6ae61f1a"
+  },
+  "prior_overall_outcomes_known": true,
+  "before_new_subgroup_outcome_joins": true,
+  "role": "Local label-rule freeze only; not untouched confirmation or external preregistration"
+}

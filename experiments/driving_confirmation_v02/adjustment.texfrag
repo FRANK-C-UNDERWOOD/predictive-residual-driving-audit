@@ -1,0 +1,24 @@
+\begin{table}[!htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{Size/class/annotation-stage common support in the new cohort. Weights (percent) were fixed from development annotations before any new prediction; outside denotes zero-development-common-support cells, which remain tabulated and are not imputed. GT counts pool identity/query instances; cell $I$ is a pooled conditional contrast, not the primary equal-recording mean. Defined gives recording counts with both motion populations. Any absent positive-weight cell makes that recording standardization undefined; weights are never silently renormalized. Early means first three annotations, not physical onset.}\label{tab:new_adjustment}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.34\linewidth}*{5}{>{\raggedleft\arraybackslash}X}@{}}
+\toprule
+Cell & Weight(\%) & GT$_L$ & GT$_H$ & Pooled $I$ & Defined/7 \\
+\midrule
+small, car, early & 1.74 & 61 & 301 & -2.97 & 7/7 \\
+small, car, est. & 44.84 & 3031 & 7860 & -8.09 & 7/7 \\
+small, car, left & 10.13 & 206 & 148 & -30.50 & 4/7 \\
+small, ped., early & 0.31 & 126 & 378 & -2.38 & 4/7 \\
+small, ped., est. & 4.60 & 3522 & 8113 & -0.88 & 5/7 \\
+small, ped., left & 0.38 & 10 & 142 & -0.70 & 1/7 \\
+large, car, early & outside & 0 & 25 & -- & 0/7 \\
+large, car, est. & 35.59 & 238 & 5019 & -42.25 & 6/7 \\
+large, car, left & 2.42 & 279 & 332 & -43.47 & 3/7 \\
+large, ped., early & outside & 0 & 15 & -- & 0/7 \\
+large, ped., est. & outside & 57 & 1207 & -2.00 & 1/7 \\
+large, ped., left & outside & 0 & 5 & -- & 0/7 \\
+\bottomrule
+\end{tabularx}
+\end{table}

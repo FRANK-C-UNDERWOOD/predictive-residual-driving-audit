@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "model": "spike_original",
+  "sequence": "zurich_city_15_a",
+  "interaction_pp": -20.76949191823905,
+  "matched": true,
+  "checked_hashes": 1225,
+  "total_final_point_query_rows": 88200,
+  "independent_primary_group_query_rows": 22050,
+  "actual_primary_raw_replays": 4900,
+  "other_sampled_raw_replays": 204,
+  "exact_source_identity_query_rows": 7068,
+  "independently_checked_loss_runs": 3248,
+  "inputs": {
+    "experiments/snn_secondary_v01/carriers/spike_original__zurich_city_15_a.json": "a5923d258992fdd0a0018d6323de4c52f387837d2e079ac7cd7fc1b4c736e7bb",
+    "experiments/snn_secondary_v01/points/spike_original__zurich_city_15_a.json": "81fff11b8518b8482aa7321eb1f58d03ba6be98f3dd5e8406f0140fb36d62077",
+    "experiments/snn_secondary_v01/aggregates/spike_original__zurich_city_15_a.json": "1a3c2dd8561c59213ba1e9b701612db69cf21d290dfc96fd6d8c30fe1f360c9d"
+  },
+  "verifier_sha256": "7fc30f22ca061649662d2478225b4053b6526d3ab19aa1c837d4c925b4e06529",
+  "annotation_matcher_source_sha256": "4048275edf8335534ba386470854ed8be0fce776c1539586f9efcfd2d3d18e87"
+}

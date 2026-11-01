@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv*/
+datasets/
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.npz
+*.npy
+.env*
+results/
+*.zip
+_runtime/

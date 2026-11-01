@@ -1,0 +1,5 @@
+{
+  "path": "datasets/dsec_confirmation/test/thun_02_a/events/left/events.h5",
+  "sha256": "25bc971c0a7d9bc2fbcea5e64b92f11f83863e9779c4ead3e2d1be14eb15643d",
+  "reason": "Disk capacity now sufficient; retain exact raw public member for reproducibility and later stateful-reuse experiments. No scientific worker/endpoint changed."
+}

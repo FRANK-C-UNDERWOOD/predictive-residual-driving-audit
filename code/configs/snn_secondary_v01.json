@@ -1,0 +1,68 @@
+{
+  "version": "snn-secondary-v01",
+  "role": "Previously specified SNN secondary size interaction; RVT new-recording outcomes already known, no new primary hypothesis",
+  "design": "code/configs/driving_confirmation_v02.json",
+  "selection": "One first _a segment from every previously unused recording group in the official detection test list: exclude interlaken00, already used in development; keep all remaining seven groups, without output-dependent replacement.",
+  "sequences": [
+    "thun_01_a",
+    "thun_02_a",
+    "interlaken_01_a",
+    "zurich_city_12_a",
+    "zurich_city_13_a",
+    "zurich_city_14_a",
+    "zurich_city_15_a"
+  ],
+  "source_groups": [
+    "thun_01",
+    "thun_02",
+    "interlaken_01",
+    "zurich_city_12",
+    "zurich_city_13",
+    "zurich_city_14",
+    "zurich_city_15"
+  ],
+  "official_split": "test",
+  "official_split_url": "https://raw.githubusercontent.com/uzh-rpg/dsec-det/master/config/train_val_test_split.yaml",
+  "official_download_script_url": "https://raw.githubusercontent.com/uzh-rpg/dsec-det/master/scripts/download_dsec_extra.sh",
+  "label_url": "https://download.ifi.uzh.ch/rpg/DSEC/test_object_detection_coarse/test_object_detections.zip",
+  "new_sequence_events_archive": "https://download.ifi.uzh.ch/rpg/DSEC/test_object_detection_coarse/test_events.zip",
+  "new_sequence_images_archive": "https://download.ifi.uzh.ch/rpg/DSEC/test_object_detection_coarse/test_images.zip",
+  "models": [
+    "spike_original",
+    "spike_adapted"
+  ],
+  "methods": [
+    "dense",
+    "ema/current",
+    "ema/absolute",
+    "ema_lag3/current",
+    "current_activity",
+    "ema_activity",
+    "persistence/absolute",
+    "ema_roll/absolute",
+    "unsigned_residual"
+  ],
+  "capacity": 0.2,
+  "fp_targets": [
+    0.25,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "primary_fp_target": 1.0,
+  "warmup": 10,
+  "alpha": 0.8,
+  "lag_queries": 3,
+  "epsilon": 1e-08,
+  "iou": 0.5,
+  "nms": 0.5,
+  "confidence_floor": 0.01,
+  "calibration": "Use existing frozen Thun-only secondary thresholds unchanged, and separately evaluate retrospective actual whole-sequence FP points using the predeclared replay algorithm. No subgroup threshold tuning.",
+  "factors_config": "code/configs/driving_factors_v01.json",
+  "primary_prediction": "I_motion=(R_EMA-R_activity)_low-(R_EMA-R_activity)_high <0 for RVT; report all recording effects and mean/median, with assumptions/uncertainty, whether favorable or not.",
+  "sampling": "Fixed census of these seven unused official-test recording groups. Availability failures and incomplete support remain in the status/report; no outcome-dependent additions, deletions or early success stopping. Every available complete clip and eligible native query is used.",
+  "interpretation": "Labels are public in the detection extension. Results are local evaluation of named test recordings, not an official challenge submission or proof of geographic/sensor generalization. Official group IDs are working clustering units; shared cities/sessions remain limitations.",
+  "secondary_estimand": "J_size=(R_EMA-R_activity)_small-(R_EMA-R_activity)_large",
+  "expected_direction": "negative",
+  "scope": "Seven same source groups, same complete grids/inputs and frozen weights; two checkpoints of one architecture, not fourteen independent groups"
+}

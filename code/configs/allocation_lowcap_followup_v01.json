@@ -1,0 +1,10 @@
+{
+  "version":"allocation-lowcap-followup-v01",
+  "scope":"Exploratory follow-up declared after the 35% probes did not sample any remaining EMA dense-loss query. Not an original prespecified primary test",
+  "parent":"experiments/allocation_validity_v01",
+  "retention_ratio":0.2,
+  "sampling":"Reuse all120 GT-free query windows from the parent plan, including calibration; do not choose miss windows. All six policies, three scales, three strata, four pairs per cell",
+  "seed":6174,
+  "confidence":"Unchanged common dense-calibrated threshold; no new calibration or utility weights",
+  "purpose":"Probe local allocation behavior in the lower-capacity regime with more observed losses, preserving unsuccessful exchanges and all controls"
+}

@@ -1,0 +1,10 @@
+{
+  "role": "Manuscript audit of existing verified outcomes; no new experiment or independent validation",
+  "inputs": {
+    "experiments\\fp_mechanism_v01\\artifact_manifest.json": "9e754606875f9278d14fa9279d0f88d18884f5fa85e0939fef3ddbe0d9e4bdc4",
+    "experiments\\fp_mechanism_v01\\operating_points.json": "8be0e93e3c9ede2883969683186c215147e0087c67dc06f73744dd1ddafdeaa5",
+    "experiments\\fp_mechanism_v01\\paired_fp_contrasts.json": "2dd0900ea492f80eedccd45771615581af734284096517c7f882b97243bcccc7",
+    "code\\configs\\fp_mechanism_v01.json": "5a43a263ef7d8aecc51a94d5394ea52cb7a07404ea871da1fb168af4e4bfd518"
+  },
+  "script_sha256": "8f88d349344b54585ce97bea713da644b4c7125298885fd5f04f6f979f70f239"
+}

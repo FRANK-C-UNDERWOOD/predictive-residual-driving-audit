@@ -1,0 +1,22 @@
+{
+  "version": "size-onset-diagnostic-v01",
+  "scope": "Exploratory endpoint sensitivity, declared before joint-adaptation outcomes; does not replace the original endpoint",
+  "evaluation_sequences": ["zurich_city_01_a", "interlaken_00_c"],
+  "minimum_input_side_pixels": [0, 8, 16],
+  "motivation": "256 letterbox scale is 0.4. The finest detector stride is 8 input pixels. Diagnose first annotation versus one/two-stride minimum box sides without changing the deadline.",
+  "onset_rule": "First supported GT timestamp in each label-contiguous episode with both clipped box sides, times 0.4, at least the declared minimum. At most one onset per episode and threshold. First eligible query must be after the common warm-up and permit a complete 0.5 s visible/input horizon. An episode beginning below the size threshold can cross it later; size is not physical visibility or collision risk.",
+  "variants": ["original", "readout_seed0", "readout_seed1", "readout_seed2", "joint_seed0", "joint_seed1", "joint_seed2"],
+  "operating_point": "Each model's own previously frozen thun FPPI-calibrated threshold. No size-dependent retuning. Evaluation FPPI remains unmatched.",
+  "paired_population_diagnostic": "Also retain the intersection of GT-visible episodes eligible at size 0 and each nonzero threshold. Compare original-onset and size-onset outcomes on those same episodes to expose population-change effects; still not a model benefit.",
+  "deadline_seconds": 0.2,
+  "horizon_seconds": 0.5,
+  "reliable_run_length": 3,
+  "max_annotation_gap_seconds": 0.075,
+  "small_area_fraction": 0.01,
+  "limitations": [
+    "Post-pilot diagnostic with previously explored data, not preregistration or H1/H2/H3 evidence.",
+    "Do not select a favorable threshold as a replacement primary endpoint.",
+    "All frame matching occurs over all supported objects before event/subset selection.",
+    "Counts are sparse, methods have different evaluation FPPI, and size eligibility is not safety risk."
+  ]
+}

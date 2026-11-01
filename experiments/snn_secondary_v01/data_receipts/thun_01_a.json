@@ -1,0 +1,33 @@
+{
+  "sequence": "thun_01_a",
+  "event": {
+    "path": "datasets/dsec_confirmation/test/thun_01_a/events/left/events.h5",
+    "bytes": 268989356,
+    "sha256": "ee2f8808cdc714db42a22e97ef1fd9a56e02a7a24d723621915cf9a1a609e4da",
+    "zip_member": "events.h5",
+    "zip_crc32": 1650075480,
+    "zip_crc_verified": true
+  },
+  "metadata": [
+    {
+      "path": "datasets/dsec_confirmation/test/thun_01_a/image_timestamps.txt",
+      "bytes": 2364,
+      "sha256": "e377904015b697b3cd639e1bffdbbc2b95c58cec5cd871e27fafcc6cc576c8f0"
+    },
+    {
+      "path": "datasets/dsec_confirmation/test/thun_01_a/object_detections/left/tracks.npy",
+      "bytes": 25369,
+      "sha256": "d3dda35ad396e015702abd87a059fd2294a310f26a31cfe703095c0cfdef09db"
+    }
+  ],
+  "requested_url": "https://download.ifi.uzh.ch/rpg/DSEC/test/thun_01_a/thun_01_a_events_left.zip",
+  "etag": "\"ff59a12-5ce8bf9a053fe\"",
+  "last_modified": "Sun, 17 Oct 2021 12:57:47 GMT",
+  "archive_bytes": 267754002,
+  "HTTP_range_requests": 14,
+  "downloaded_bytes": 265756370,
+  "checksum_scope": "Local extracted member SHA256 and publisher ZIP CRC; not an independently published SHA256",
+  "storage": "Direct range extraction of selected public member; no duplicate multi-GB ZIP retained",
+  "secondary_reacquisition": true,
+  "original_receipt_sha256": "1e843834d769de34d1c67f1dafea0fdfa095afb2e70eaad38fc52531a6ed1841"
+}

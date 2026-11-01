@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{New-recording RVT low-image-motion source paths at the primary retrospective point. Differences are residual minus activity in integer identity/query counts. D is the fixed original dense-reference evidence denominator. Every row obeys $\Delta kept=\Delta C+\Delta A-\Delta L$, where C is effective original-source coverage, A alternative recovery and L unrecovered effective-source loss. This identity is accounting; the predeclared secondary prediction concerns the signs and compensation pattern, not whether the identity holds. Zero-D rows cannot support a retention-rate claim.}\label{tab:new_source}
+\begin{tabularx}{\linewidth}{@{}l*{5}{>{\raggedleft\arraybackslash}X}@{}}
+\toprule
+Record & D & $\Delta C$ & $\Delta A$ & $\Delta L$ & $\Delta kept$ \\
+\midrule
+Thun01 & 7 & -4 & +2 & +0 & -2 \\
+Thun02 & 1771 & -492 & +144 & +0 & -348 \\
+Inter01 & 246 & -91 & +63 & +0 & -28 \\
+Z12 & 2 & -2 & +1 & +0 & -1 \\
+Z13 & 179 & -127 & +67 & +0 & -60 \\
+Z14 & 25 & -5 & +5 & +0 & +0 \\
+Z15 & 347 & -114 & +8 & +0 & -106 \\
+\bottomrule
+\end{tabularx}
+\end{table}

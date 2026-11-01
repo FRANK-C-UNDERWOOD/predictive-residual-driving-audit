@@ -1,0 +1,26 @@
+\begin{table}[!htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{SNN secondary baseline observability and conditional evidence preservation. D/GT uses the original fixed Thun dense-reference threshold, not the retrospective dense 1 FP point. Q A/B is the fraction (percent) of that fixed reference preserved by absolute EMA/activity at their main whole-recording points. Empty reference denominators are undefined, never zero; high Q cannot repair baseline misses. Counts are identity/query instances rather than independent targets.}\label{tab:snn_secondary_coverage}
+\begin{tabularx}{\linewidth}{@{}ll*{4}{>{\raggedleft\arraybackslash}X}@{}}
+\toprule
+Carrier & Record & D/GT small & D/GT large & $Q_S$ A/B (\%) & $Q_L$ A/B (\%) \\
+\midrule
+S0 & Thun01 & 25/538 & 72/152 & 60.00/8.00 & 72.22/41.67 \\
+S0 & Thun02 & 1856/36410 & 3877/5973 & 65.25/58.08 & 83.96/74.31 \\
+S0 & Inter01 & 154/3285 & 539/793 & 81.17/38.96 & 92.76/68.09 \\
+S0 & Z12 & 12/1332 & 397/942 & 58.33/0.00 & 77.08/18.14 \\
+S0 & Z13 & 137/839 & 65/74 & 79.56/54.01 & 90.77/93.85 \\
+S0 & Z14 & 45/1782 & 56/77 & 82.22/48.89 & 94.64/62.50 \\
+S0 & Z15 & 345/6140 & 1422/1799 & 64.06/43.48 & 94.80/66.46 \\
+S1 & Thun01 & 54/538 & 62/152 & 53.70/7.41 & 67.74/56.45 \\
+S1 & Thun02 & 1985/36410 & 3391/5973 & 71.23/58.14 & 85.73/79.48 \\
+S1 & Inter01 & 256/3285 & 551/793 & 77.34/41.41 & 89.47/72.96 \\
+S1 & Z12 & 70/1332 & 469/942 & 37.14/1.43 & 75.91/27.93 \\
+S1 & Z13 & 185/839 & 64/74 & 71.35/51.89 & 78.12/87.50 \\
+S1 & Z14 & 55/1782 & 55/77 & 58.18/54.55 & 98.18/65.45 \\
+S1 & Z15 & 509/6140 & 1339/1799 & 69.74/39.49 & 91.26/65.42 \\
+\bottomrule
+\end{tabularx}
+\end{table}

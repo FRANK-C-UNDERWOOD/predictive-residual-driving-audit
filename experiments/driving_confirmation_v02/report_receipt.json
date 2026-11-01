@@ -1,0 +1,21 @@
+{
+  "files": {
+    "experiments/driving_confirmation_v02/primary_results.json": "f758b06054e4ac54668f7224c993ce6c53deb88eff24e172dd7885822db45b25",
+    "experiments/driving_confirmation_v02/conditions.json": "57004e11b8f618a5ef555c344192e86b5e5d7a1c213efdc9b1c8eafb852d609d",
+    "experiments/driving_confirmation_v02/cross_cells.json": "68d74ad5fbd0038c07b4bb079039a4cbc76475a57fe710515ae1ffb009e6d49b",
+    "experiments/driving_confirmation_v02/continuity_summary.json": "761474e3b3b50c40c016beca929d604b60282858d26a784a290add24fcf7638e",
+    "experiments/driving_confirmation_v02/source_partitions.json": "31c9079dccdea4f67e157420710228e1e3ea4cebee3f3c5db7454afc5d18e212",
+    "experiments/driving_confirmation_v02/verification.json": "ad1f9a2a0ff5458faa9ea7829d00082217035b31bf90aa6af97091275b5abdbe",
+    "experiments/driving_confirmation_v02/budget_sensitivity.json": "7706ebe9e2e42ed3ac6b444933cf43f3825db1137bcd1b5aaa016234212fc1f8",
+    "experiments/driving_confirmation_v02/operating_points.csv": "b2142804e3aa4b66c3f910dc8a9071e93d7de7147916a4bf6226a7cf8ab80b61",
+    "experiments/driving_confirmation_v02/REPORT.md": "766722729660243ca1eb5991b4d6643c2353f3d4707e594c50dc75331ea6c440",
+    "experiments/driving_confirmation_v02/primary.texfrag": "f230e3ad86bf901cc5743e3dc493f5fb8fa8659cdd1c3f90514a0009733db1bd",
+    "experiments/driving_confirmation_v02/budget.texfrag": "b153b186dbe0e4c17ade895e7b6c0d1767f811f322b88259477c7cb736b81e9c",
+    "experiments/driving_confirmation_v02/adjustment.texfrag": "25dbcef41b3700875442ecbbcc781ea68c4e9d9dd49d2ef98dc9524ea85ff341",
+    "experiments/driving_confirmation_v02/source.texfrag": "88aab68e18c0a40ef1c4b93aa2cc1376d4b4921e62756b5d84d591d3fbc77f5c",
+    "experiments/driving_confirmation_v02/new_recording_validation.png": "dedf4affdc5f42c6760e3e2eba41589a3b3baebfae1be7215e7fcdca35fc3230",
+    "experiments/driving_confirmation_v02/new_recording_validation.svg": "dbc14dfac604edc3d5612ed520d40cef494b44bf4cf06517982251d3ab842127"
+  },
+  "source_sha256": "9f887e9ac505098fc9282b5e36c4d80fa7c3cfc7fc2a8829d0cf472b65d776e1",
+  "scope": "All planned primary-stage outcomes, including contrary and undefined; secondarySNNnotexecuted"
+}

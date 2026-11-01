@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": 1107,
+  "causal_mask_queries": 19641,
+  "point_query_rows": 1389852,
+  "floor_detections_independently_matched": 64946809,
+  "prefix_exceptions_replayed": 0,
+  "sampled_raw_nms_checks": 3321,
+  "scope": "All masks, floor identity matching, reported endpoint identities and aggregate FP budgets; raw NMS shared with parent and sampled/exception replays. Software counts are not independent driving samples."
+}

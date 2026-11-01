@@ -1,0 +1,54 @@
+{
+  "_comment": "Legacy development example, not the final frozen experiment configuration. Values and decision rules require alignment with manuscript v0.2 and docs/08 before real evaluation.",
+  "data": {
+    "real": "DSEC-Detection (official train/val/test splits; sequences never split across sets)",
+    "sim": "CARLA 0.9.16 + built-in DVS, 5 scenario families + matched safe controls",
+    "macro_step_s": 0.05,
+    "eval_horizon_s": 2
+  },
+  "budget": {
+    "keep_ratios": [
+      1,
+      0.6,
+      0.35,
+      0.2
+    ],
+    "matched_by": "selected region count per macro-step"
+  },
+  "gates": {
+    "hybrid": {
+      "w_e": 0.6,
+      "w_r": 0.4
+    },
+    "max_suppressed_steps": 4,
+    "robust_norm_quantile": 0.99
+  },
+  "reliability_rule": {
+    "run_length": 3,
+    "iou": 0.5,
+    "score_thr": 0.3
+  },
+  "statistics": {
+    "n_seeds": 3,
+    "bootstrap": 1000,
+    "cluster": "sequence",
+    "tost_margin": 0.02,
+    "alpha": 0.05
+  },
+  "cost": {
+    "report": [
+      "activity",
+      "compute",
+      "estimated_energy(if model)",
+      "measured_energy(if device)"
+    ],
+    "include_modules": [
+      "frontend",
+      "predictor",
+      "risk",
+      "gate",
+      "detector",
+      "data-movement"
+    ]
+  }
+}

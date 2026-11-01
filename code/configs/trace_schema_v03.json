@@ -1,0 +1,88 @@
+{
+  "protocol_version": "protocol-v0.3",
+  "status": "Field specification; real detector instrumentation remains pending.",
+  "inference_required": [
+    "sequence_id",
+    "method",
+    "seed",
+    "data_manifest_hash",
+    "checkpoint_hash",
+    "config_hash",
+    "budget_id",
+    "calibration_id",
+    "window_start",
+    "window_end",
+    "decision_time",
+    "completion_time",
+    "region_ids",
+    "residual",
+    "importance_components",
+    "selection_score",
+    "selected_mask",
+    "state_age_before",
+    "state_age_after",
+    "stale_eligible",
+    "stale_overflow",
+    "fresh_detections",
+    "propagated_detections",
+    "full_cost_receipt"
+  ],
+  "detection_required": [
+    "box",
+    "class",
+    "score",
+    "output_source",
+    "last_fresh_timestamp",
+    "region_id"
+  ],
+  "offline_join_required": [
+    "event_id",
+    "ground_truth_object_id",
+    "ground_truth_box",
+    "ground_truth_class",
+    "annotation_timestamp",
+    "onset",
+    "eligible",
+    "exclusion_reason",
+    "critical_subset_reasons",
+    "geometric_conflict_label",
+    "one_to_one_assignment",
+    "endpoint",
+    "reliable_run_completion",
+    "timely"
+  ],
+  "forbidden_inference_inputs": [
+    "ground_truth_box",
+    "ground_truth_class",
+    "ground_truth_object_id",
+    "geometric_conflict_label",
+    "future_trajectory",
+    "simulator_actor_state"
+  ],
+  "cost_receipt_modules": [
+    "bin",
+    "front",
+    "pred",
+    "risk",
+    "alloc",
+    "cond",
+    "maint",
+    "io",
+    "post"
+  ],
+  "cost_receipt_basis": [
+    "measured",
+    "modeled",
+    "not-required",
+    "unmeasured"
+  ],
+  "diagnosis_required": [
+    "observed_closed_gate",
+    "observed_importance_score",
+    "paired_dense_outcome",
+    "replay_intervention",
+    "replay_outcome",
+    "evidence_status"
+  ],
+  "causal_attribution_rule": "A closed gate or low score alone is descriptive evidence. A causal label requires a separately recorded controlled replay; diagnostic replay is excluded from deployed output and cost."
+}

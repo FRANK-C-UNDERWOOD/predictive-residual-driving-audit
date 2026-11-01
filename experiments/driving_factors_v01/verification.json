@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checked_input_hashes": 96,
+  "annotation_instances": 22841,
+  "primary_point_query_rows": 341388,
+  "independently_rebuilt_primary_group_conditions": 3456,
+  "source_identity_query_rows": 80208,
+  "independently_checked_loss_runs": 29608,
+  "all_group_conditions": 13824,
+  "all_contrasts": 4608,
+  "protected_initial_numeric_receipts": 32,
+  "verifier_sha256": "ba5f34b631acedaf7c3f4354443b984d5c1e78388a2b766bf3019273f3a25b48",
+  "scope": "Independent annotation factors and all nine methods/both regimes at1FP; all point arithmetic, source partitions and continuity. No new detector inference or independent external data."
+}

@@ -1,0 +1,21 @@
+{
+  "config_sha256": "69c0d48a94ff7f3cf74defce34108104acd8197d4e9d56d5119371ec15a1a1d0",
+  "sources": {
+    "code/scripts/confirmation_evaluate.py": "20b4f1f4d34def7706db5cbd6b8c60b6cacff762892a720178f5c5163dc6c74f",
+    "code/scripts/confirmation_common.py": "c62a9742b6e036ff9a53deef9d12370122e069f3374368f05c70d0af796cdf2d",
+    "code/scripts/cache_confirmation_spike.py": "ec0a57534024cbd9138264c249f4d36d49f233d07f51e80e67928ccc64e903db",
+    "code/scripts/cache_confirmation_rvt.py": "1be55f0d3971f1e3d15f56cb2cd40127d86d98e94c5b6efcd737fcce8d5fbd11",
+    "code/configs/confirmation_v01.json": "69c0d48a94ff7f3cf74defce34108104acd8197d4e9d56d5119371ec15a1a1d0",
+    "code/configs/rvt_reference_v01.json": "7009841f7f17c78fa03b0f9fd6a6ac58d893ab43e2db9068494a5188693d99d1",
+    "code/configs/diverse_adaptation_v01.json": "b008a5e0325b45eec816b0f3c2e66000693e4f80e1b2f45489d5d49dfa45a82f",
+    "code/scripts/run_rvt_reference.py": "dc950757dd28eb5391254e2dba7ff9505d375a89883cca0fa8801439c7b25bf5",
+    "code/scripts/run_diverse_adaptation.py": "9747d94232235fb12c866956b3f59f3bbbd5d933ba6e34c535a01de9ab1d09b9",
+    "code/riskaware/criterion_audit.py": "7a4c32cf83128990ddac9e59e0db40dabbd8b55abe2de2b9fb98b5e2acda180f",
+    "code/riskaware/metrics.py": "7462d98679345826294b7bfbc021c2cd8607028d41bda11ba33808fd215c6ecd",
+    "code/riskaware/calibration_audit.py": "dc92b4b857156a73516088204440b49729d8d22a7078215230343f33429806e0",
+    "code/riskaware/evidence_runs.py": "f57965820a3b3b3594f4939364cd745333f2e081618046fb94764aa27e38543f"
+  },
+  "thresholds_sha256": "80048d474c7050d98bbe9390ce4f660ae5a5bfc29e1b932f7a22923431465d28",
+  "cohort_thun_sha256": "b7539d113e619e439370cb5667f9d7cd51cb45c387e588c002cea020649cab00",
+  "frozen_before_new_recording_inference": true
+}

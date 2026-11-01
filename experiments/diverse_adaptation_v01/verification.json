@@ -1,0 +1,405 @@
+{
+  "passed": true,
+  "checks": 99,
+  "prediction_queries_replayed": 6969,
+  "validation_prediction_queries_replayed": 10563,
+  "details": [
+    {
+      "name": "recording roles disjoint",
+      "passed": true
+    },
+    {
+      "name": "source code/scripts/run_diverse_adaptation.py",
+      "passed": true
+    },
+    {
+      "name": "source code/configs/diverse_adaptation_v01.json",
+      "passed": true
+    },
+    {
+      "name": "source code/riskaware/trainable_backbone.py",
+      "passed": true
+    },
+    {
+      "name": "source code/scripts/run_backbone_adaptation.py",
+      "passed": true
+    },
+    {
+      "name": "data receipt unchanged",
+      "passed": true
+    },
+    {
+      "name": "publisher data datasets/dsec_pilot/train/zurich_city_03_a/events/left/events.h5",
+      "passed": true
+    },
+    {
+      "name": "publisher data datasets/dsec_pilot/train/zurich_city_03_a/image_timestamps.txt",
+      "passed": true
+    },
+    {
+      "name": "publisher data datasets/dsec_pilot/train/zurich_city_03_a/object_detections/left/tracks.npy",
+      "passed": true
+    },
+    {
+      "name": "publisher data datasets/dsec_pilot/train/zurich_city_05_a/events/left/events.h5",
+      "passed": true
+    },
+    {
+      "name": "publisher data datasets/dsec_pilot/train/zurich_city_05_a/image_timestamps.txt",
+      "passed": true
+    },
+    {
+      "name": "publisher data datasets/dsec_pilot/train/zurich_city_05_a/object_detections/left/tracks.npy",
+      "passed": true
+    },
+    {
+      "name": "publisher data datasets/dsec_pilot/train/zurich_city_06_a/events/left/events.h5",
+      "passed": true
+    },
+    {
+      "name": "publisher data datasets/dsec_pilot/train/zurich_city_06_a/image_timestamps.txt",
+      "passed": true
+    },
+    {
+      "name": "publisher data datasets/dsec_pilot/train/zurich_city_06_a/object_detections/left/tracks.npy",
+      "passed": true
+    },
+    {
+      "name": "inherited source code/riskaware/trainable_backbone.py",
+      "passed": true
+    },
+    {
+      "name": "inherited source code/riskaware/dsec_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "inherited source code/riskaware/readout_adaptation.py",
+      "passed": true
+    },
+    {
+      "name": "inherited source code/riskaware/torch_spikefpn.py",
+      "passed": true
+    },
+    {
+      "name": "inherited source code/riskaware/criterion_audit.py",
+      "passed": true
+    },
+    {
+      "name": "inherited source code/riskaware/calibration_audit.py",
+      "passed": true
+    },
+    {
+      "name": "inherited source code/riskaware/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "inherited source vendor/spikefpn_snapshot/utils/criterion.py",
+      "passed": true
+    },
+    {
+      "name": "inherited source vendor/spikefpn_snapshot/utils/create_labels.py",
+      "passed": true
+    },
+    {
+      "name": "inherited source vendor/spikefpn_snapshot/utils/tools.py",
+      "passed": true
+    },
+    {
+      "name": "input experiments/diverse_adaptation_v01/zurich_city_00_a_inputs.npy",
+      "passed": true
+    },
+    {
+      "name": "input experiments/diverse_adaptation_v01/zurich_city_03_a_inputs.npy",
+      "passed": true
+    },
+    {
+      "name": "input experiments/diverse_adaptation_v01/zurich_city_05_a_inputs.npy",
+      "passed": true
+    },
+    {
+      "name": "input experiments/diverse_adaptation_v01/zurich_city_06_a_inputs.npy",
+      "passed": true
+    },
+    {
+      "name": "input experiments/diverse_adaptation_v01/zurich_city_00_a_targets.npy",
+      "passed": true
+    },
+    {
+      "name": "input experiments/diverse_adaptation_v01/zurich_city_03_a_targets.npy",
+      "passed": true
+    },
+    {
+      "name": "input experiments/diverse_adaptation_v01/zurich_city_05_a_targets.npy",
+      "passed": true
+    },
+    {
+      "name": "input experiments/diverse_adaptation_v01/zurich_city_00_a_times.npy",
+      "passed": true
+    },
+    {
+      "name": "input experiments/diverse_adaptation_v01/zurich_city_03_a_times.npy",
+      "passed": true
+    },
+    {
+      "name": "input experiments/diverse_adaptation_v01/zurich_city_05_a_times.npy",
+      "passed": true
+    },
+    {
+      "name": "input experiments/diverse_adaptation_v01/zurich_city_06_a_times.npy",
+      "passed": true
+    },
+    {
+      "name": "input experiments/diverse_adaptation_v01/schedule.npy",
+      "passed": true
+    },
+    {
+      "name": "new-group forward identity",
+      "passed": true
+    },
+    {
+      "name": "same fixed sample schedule readout",
+      "passed": true
+    },
+    {
+      "name": "frozen states readout",
+      "passed": true
+    },
+    {
+      "name": "validation-only checkpoint selection readout",
+      "passed": true
+    },
+    {
+      "name": "checkpoint hash readout",
+      "passed": true
+    },
+    {
+      "name": "same fixed sample schedule full_conv",
+      "passed": true
+    },
+    {
+      "name": "frozen states full_conv",
+      "passed": true
+    },
+    {
+      "name": "validation-only checkpoint selection full_conv",
+      "passed": true
+    },
+    {
+      "name": "checkpoint hash full_conv",
+      "passed": true
+    },
+    {
+      "name": "validation coverage original/0",
+      "passed": true
+    },
+    {
+      "name": "internal selection metrics original/0",
+      "passed": true
+    },
+    {
+      "name": "validation coverage readout/116",
+      "passed": true
+    },
+    {
+      "name": "internal selection metrics readout/116",
+      "passed": true
+    },
+    {
+      "name": "validation coverage readout/232",
+      "passed": true
+    },
+    {
+      "name": "internal selection metrics readout/232",
+      "passed": true
+    },
+    {
+      "name": "validation coverage readout/348",
+      "passed": true
+    },
+    {
+      "name": "internal selection metrics readout/348",
+      "passed": true
+    },
+    {
+      "name": "validation coverage full_conv/116",
+      "passed": true
+    },
+    {
+      "name": "internal selection metrics full_conv/116",
+      "passed": true
+    },
+    {
+      "name": "validation coverage full_conv/232",
+      "passed": true
+    },
+    {
+      "name": "internal selection metrics full_conv/232",
+      "passed": true
+    },
+    {
+      "name": "validation coverage full_conv/348",
+      "passed": true
+    },
+    {
+      "name": "internal selection metrics full_conv/348",
+      "passed": true
+    },
+    {
+      "name": "evaluation coverage thun_00_a/original",
+      "passed": true
+    },
+    {
+      "name": "baseline raw unchanged thun_00_a",
+      "passed": true
+    },
+    {
+      "name": "independent matching thun_00_a/original",
+      "passed": true
+    },
+    {
+      "name": "actual calibration guard original",
+      "passed": true
+    },
+    {
+      "name": "evaluation coverage thun_00_a/readout",
+      "passed": true
+    },
+    {
+      "name": "independent matching thun_00_a/readout",
+      "passed": true
+    },
+    {
+      "name": "actual calibration guard readout",
+      "passed": true
+    },
+    {
+      "name": "evaluation coverage thun_00_a/full_conv",
+      "passed": true
+    },
+    {
+      "name": "independent matching thun_00_a/full_conv",
+      "passed": true
+    },
+    {
+      "name": "actual calibration guard full_conv",
+      "passed": true
+    },
+    {
+      "name": "evaluation coverage zurich_city_01_a/original",
+      "passed": true
+    },
+    {
+      "name": "baseline raw unchanged zurich_city_01_a",
+      "passed": true
+    },
+    {
+      "name": "independent matching zurich_city_01_a/original",
+      "passed": true
+    },
+    {
+      "name": "evaluation coverage zurich_city_01_a/readout",
+      "passed": true
+    },
+    {
+      "name": "independent matching zurich_city_01_a/readout",
+      "passed": true
+    },
+    {
+      "name": "evaluation coverage zurich_city_01_a/full_conv",
+      "passed": true
+    },
+    {
+      "name": "independent matching zurich_city_01_a/full_conv",
+      "passed": true
+    },
+    {
+      "name": "evaluation coverage interlaken_00_c/original",
+      "passed": true
+    },
+    {
+      "name": "baseline raw unchanged interlaken_00_c",
+      "passed": true
+    },
+    {
+      "name": "independent matching interlaken_00_c/original",
+      "passed": true
+    },
+    {
+      "name": "evaluation coverage interlaken_00_c/readout",
+      "passed": true
+    },
+    {
+      "name": "independent matching interlaken_00_c/readout",
+      "passed": true
+    },
+    {
+      "name": "evaluation coverage interlaken_00_c/full_conv",
+      "passed": true
+    },
+    {
+      "name": "independent matching interlaken_00_c/full_conv",
+      "passed": true
+    },
+    {
+      "name": "evaluation coverage zurich_city_02_a/original",
+      "passed": true
+    },
+    {
+      "name": "baseline raw unchanged zurich_city_02_a",
+      "passed": true
+    },
+    {
+      "name": "independent matching zurich_city_02_a/original",
+      "passed": true
+    },
+    {
+      "name": "evaluation coverage zurich_city_02_a/readout",
+      "passed": true
+    },
+    {
+      "name": "independent matching zurich_city_02_a/readout",
+      "passed": true
+    },
+    {
+      "name": "evaluation coverage zurich_city_02_a/full_conv",
+      "passed": true
+    },
+    {
+      "name": "independent matching zurich_city_02_a/full_conv",
+      "passed": true
+    },
+    {
+      "name": "evaluation coverage zurich_city_04_a/original",
+      "passed": true
+    },
+    {
+      "name": "baseline raw unchanged zurich_city_04_a",
+      "passed": true
+    },
+    {
+      "name": "independent matching zurich_city_04_a/original",
+      "passed": true
+    },
+    {
+      "name": "evaluation coverage zurich_city_04_a/readout",
+      "passed": true
+    },
+    {
+      "name": "independent matching zurich_city_04_a/readout",
+      "passed": true
+    },
+    {
+      "name": "evaluation coverage zurich_city_04_a/full_conv",
+      "passed": true
+    },
+    {
+      "name": "independent matching zurich_city_04_a/full_conv",
+      "passed": true
+    },
+    {
+      "name": "selected full graphs exact",
+      "passed": true
+    }
+  ],
+  "scope": "Software/data-role and prediction reconstruction checks, not new independent population evidence"
+}

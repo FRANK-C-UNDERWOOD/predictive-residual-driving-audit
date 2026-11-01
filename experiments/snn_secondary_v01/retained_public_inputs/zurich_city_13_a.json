@@ -1,0 +1,5 @@
+{
+  "path": "datasets/dsec_confirmation/test/zurich_city_13_a/events/left/events.h5",
+  "sha256": "36ecec878f9666853b0e9fa3650e9b90f58a947b520bbfacfe4e08771661e99a",
+  "reason": "Retain exact raw member; same scientific workers with documented float32 validation adapter."
+}

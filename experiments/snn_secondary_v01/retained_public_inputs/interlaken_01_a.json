@@ -1,0 +1,5 @@
+{
+  "path": "datasets/dsec_confirmation/test/interlaken_01_a/events/left/events.h5",
+  "sha256": "3567542bd73f08f4df88f9b384f9b25995b26e1b22bd682c217c0e6e831e4ba8",
+  "reason": "Retain exact raw member; same scientific workers with documented float32 validation adapter."
+}

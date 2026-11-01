@@ -1,0 +1,1538 @@
+{
+  "transfer": [
+    {
+      "model": "spike_original",
+      "sequence": "zurich_city_07_a",
+      "regime": "thun_calibrated",
+      "target": 1.0,
+      "method_a": "ema/absolute",
+      "method_b": "current_activity",
+      "fp_a": 2280,
+      "fp_b": 1504,
+      "fppi_a": 1.5734989648033126,
+      "fppi_b": 1.0379572118702554,
+      "threshold_a": 0.7547963261604309,
+      "threshold_b": 0.544524073600769,
+      "allowed_fp": 1449,
+      "count_tolerance": 14,
+      "actual_fp_close": false,
+      "both_near_target": false,
+      "target_matched": false,
+      "tp_a": 491,
+      "tp_b": 281,
+      "gt": 5793,
+      "recall_a": 0.08475746590712929,
+      "recall_b": 0.04850681857414121,
+      "delta_recall_pp": 3.6250647332988084,
+      "q_a": 0.9897540983606558,
+      "q_b": 0.5512295081967213,
+      "delta_q_pp": 43.85245901639344
+    },
+    {
+      "model": "spike_original",
+      "sequence": "zurich_city_08_a",
+      "regime": "thun_calibrated",
+      "target": 1.0,
+      "method_a": "ema/absolute",
+      "method_b": "current_activity",
+      "fp_a": 1241,
+      "fp_b": 884,
+      "fppi_a": 1.6054333764553688,
+      "fppi_b": 1.1435963777490297,
+      "threshold_a": 0.7547963261604309,
+      "threshold_b": 0.544524073600769,
+      "allowed_fp": 773,
+      "count_tolerance": 7,
+      "actual_fp_close": false,
+      "both_near_target": false,
+      "target_matched": false,
+      "tp_a": 969,
+      "tp_b": 492,
+      "gt": 4392,
+      "recall_a": 0.22062841530054644,
+      "recall_b": 0.11202185792349727,
+      "delta_recall_pp": 10.860655737704917,
+      "q_a": 0.985655737704918,
+      "q_b": 0.48565573770491804,
+      "delta_q_pp": 49.99999999999999
+    },
+    {
+      "model": "spike_original",
+      "sequence": "zurich_city_09_a",
+      "regime": "thun_calibrated",
+      "target": 1.0,
+      "method_a": "ema/absolute",
+      "method_b": "current_activity",
+      "fp_a": 3672,
+      "fp_b": 1674,
+      "fppi_a": 2.0411339633129515,
+      "fppi_b": 0.9305169538632574,
+      "threshold_a": 0.7547963261604309,
+      "threshold_b": 0.544524073600769,
+      "allowed_fp": 1799,
+      "count_tolerance": 17,
+      "actual_fp_close": false,
+      "both_near_target": false,
+      "target_matched": false,
+      "tp_a": 1260,
+      "tp_b": 248,
+      "gt": 7190,
+      "recall_a": 0.17524339360222532,
+      "recall_b": 0.034492350486787206,
+      "delta_recall_pp": 14.075104311543813,
+      "q_a": 0.9817024661893397,
+      "q_b": 0.18536197295147175,
+      "delta_q_pp": 79.6340493237868
+    },
+    {
+      "model": "spike_original",
+      "sequence": "zurich_city_10_a",
+      "regime": "thun_calibrated",
+      "target": 1.0,
+      "method_a": "ema/absolute",
+      "method_b": "current_activity",
+      "fp_a": 5539,
+      "fp_b": 2623,
+      "fppi_a": 2.407214254671882,
+      "fppi_b": 1.1399391568883095,
+      "threshold_a": 0.7547963261604309,
+      "threshold_b": 0.544524073600769,
+      "allowed_fp": 2301,
+      "count_tolerance": 23,
+      "actual_fp_close": false,
+      "both_near_target": false,
+      "target_matched": false,
+      "tp_a": 1397,
+      "tp_b": 779,
+      "gt": 5466,
+      "recall_a": 0.2555799487742408,
+      "recall_b": 0.1425173801683132,
+      "delta_recall_pp": 11.30625686059276,
+      "q_a": 0.9892703862660944,
+      "q_b": 0.5321888412017167,
+      "delta_q_pp": 45.70815450643777
+    },
+    {
+      "model": "spike_adapted",
+      "sequence": "zurich_city_07_a",
+      "regime": "thun_calibrated",
+      "target": 1.0,
+      "method_a": "ema/absolute",
+      "method_b": "current_activity",
+      "fp_a": 3357,
+      "fp_b": 1818,
+      "fppi_a": 2.3167701863354035,
+      "fppi_b": 1.2546583850931676,
+      "threshold_a": 0.7891432642936707,
+      "threshold_b": 0.6233498454093933,
+      "allowed_fp": 1449,
+      "count_tolerance": 14,
+      "actual_fp_close": false,
+      "both_near_target": false,
+      "target_matched": false,
+      "tp_a": 557,
+      "tp_b": 345,
+      "gt": 5793,
+      "recall_a": 0.09615052649749697,
+      "recall_b": 0.05955463490419472,
+      "delta_recall_pp": 3.6595891593302254,
+      "q_a": 0.9534482758620689,
+      "q_b": 0.5689655172413793,
+      "delta_q_pp": 38.44827586206896
+    },
+    {
+      "model": "spike_adapted",
+      "sequence": "zurich_city_08_a",
+      "regime": "thun_calibrated",
+      "target": 1.0,
+      "method_a": "ema/absolute",
+      "method_b": "current_activity",
+      "fp_a": 1424,
+      "fp_b": 1012,
+      "fppi_a": 1.8421733505821474,
+      "fppi_b": 1.3091849935316946,
+      "threshold_a": 0.7891432642936707,
+      "threshold_b": 0.6233498454093933,
+      "allowed_fp": 773,
+      "count_tolerance": 7,
+      "actual_fp_close": false,
+      "both_near_target": false,
+      "target_matched": false,
+      "tp_a": 1124,
+      "tp_b": 553,
+      "gt": 4392,
+      "recall_a": 0.25591985428051,
+      "recall_b": 0.12591074681238615,
+      "delta_recall_pp": 13.000910746812385,
+      "q_a": 0.9653078924544666,
+      "q_b": 0.4527320034692108,
+      "delta_q_pp": 51.25758889852558
+    },
+    {
+      "model": "spike_adapted",
+      "sequence": "zurich_city_09_a",
+      "regime": "thun_calibrated",
+      "target": 1.0,
+      "method_a": "ema/absolute",
+      "method_b": "current_activity",
+      "fp_a": 3827,
+      "fp_b": 1729,
+      "fppi_a": 2.1272929405225125,
+      "fppi_b": 0.9610894941634242,
+      "threshold_a": 0.7891432642936707,
+      "threshold_b": 0.6233498454093933,
+      "allowed_fp": 1799,
+      "count_tolerance": 17,
+      "actual_fp_close": false,
+      "both_near_target": false,
+      "target_matched": false,
+      "tp_a": 1576,
+      "tp_b": 458,
+      "gt": 7190,
+      "recall_a": 0.2191933240611961,
+      "recall_b": 0.06369958275382476,
+      "delta_recall_pp": 15.549374130737133,
+      "q_a": 0.947139303482587,
+      "q_b": 0.2506218905472637,
+      "delta_q_pp": 69.65174129353233
+    },
+    {
+      "model": "spike_adapted",
+      "sequence": "zurich_city_10_a",
+      "regime": "thun_calibrated",
+      "target": 1.0,
+      "method_a": "ema/absolute",
+      "method_b": "current_activity",
+      "fp_a": 4368,
+      "fp_b": 2283,
+      "fppi_a": 1.8983050847457628,
+      "fppi_b": 0.9921773142112125,
+      "threshold_a": 0.7891432642936707,
+      "threshold_b": 0.6233498454093933,
+      "allowed_fp": 2301,
+      "count_tolerance": 23,
+      "actual_fp_close": false,
+      "both_near_target": false,
+      "target_matched": false,
+      "tp_a": 1489,
+      "tp_b": 903,
+      "gt": 5466,
+      "recall_a": 0.27241126966703255,
+      "recall_b": 0.16520307354555433,
+      "delta_recall_pp": 10.720819612147823,
+      "q_a": 0.9508726567550096,
+      "q_b": 0.5604395604395604,
+      "delta_q_pp": 39.04330963154492
+    },
+    {
+      "model": "rvt_stream",
+      "sequence": "zurich_city_07_a",
+      "regime": "thun_calibrated",
+      "target": 1.0,
+      "method_a": "ema/absolute",
+      "method_b": "current_activity",
+      "fp_a": 2577,
+      "fp_b": 2377,
+      "fppi_a": 1.7784679089026916,
+      "fppi_b": 1.6404416839199447,
+      "threshold_a": 0.09220783412456512,
+      "threshold_b": 0.09529023617506027,
+      "allowed_fp": 1449,
+      "count_tolerance": 14,
+      "actual_fp_close": false,
+      "both_near_target": false,
+      "target_matched": false,
+      "tp_a": 3079,
+      "tp_b": 3293,
+      "gt": 5793,
+      "recall_a": 0.5315035387536682,
+      "recall_b": 0.5684446746072847,
+      "delta_recall_pp": -3.694113585361647,
+      "q_a": 0.9315372424722662,
+      "q_b": 0.9974643423137877,
+      "delta_q_pp": -6.592709984152146
+    },
+    {
+      "model": "rvt_stream",
+      "sequence": "zurich_city_08_a",
+      "regime": "thun_calibrated",
+      "target": 1.0,
+      "method_a": "ema/absolute",
+      "method_b": "current_activity",
+      "fp_a": 659,
+      "fp_b": 725,
+      "fppi_a": 0.8525226390685641,
+      "fppi_b": 0.9379042690815006,
+      "threshold_a": 0.09220783412456512,
+      "threshold_b": 0.09529023617506027,
+      "allowed_fp": 773,
+      "count_tolerance": 7,
+      "actual_fp_close": false,
+      "both_near_target": false,
+      "target_matched": false,
+      "tp_a": 2003,
+      "tp_b": 2053,
+      "gt": 4392,
+      "recall_a": 0.45605646630236796,
+      "recall_b": 0.4674408014571949,
+      "delta_recall_pp": -1.1384335154826952,
+      "q_a": 0.9594391587381071,
+      "q_b": 0.9879819729594391,
+      "delta_q_pp": -2.854281422133198
+    },
+    {
+      "model": "rvt_stream",
+      "sequence": "zurich_city_09_a",
+      "regime": "thun_calibrated",
+      "target": 1.0,
+      "method_a": "ema/absolute",
+      "method_b": "current_activity",
+      "fp_a": 1705,
+      "fp_b": 1864,
+      "fppi_a": 0.9477487493051695,
+      "fppi_b": 1.0361311839911063,
+      "threshold_a": 0.09220783412456512,
+      "threshold_b": 0.09529023617506027,
+      "allowed_fp": 1799,
+      "count_tolerance": 17,
+      "actual_fp_close": false,
+      "both_near_target": false,
+      "target_matched": false,
+      "tp_a": 2776,
+      "tp_b": 2873,
+      "gt": 7190,
+      "recall_a": 0.38609179415855355,
+      "recall_b": 0.3995827538247566,
+      "delta_recall_pp": -1.3490959666203062,
+      "q_a": 0.9612599565532223,
+      "q_b": 0.9916727009413469,
+      "delta_q_pp": -3.041274438812458
+    },
+    {
+      "model": "rvt_stream",
+      "sequence": "zurich_city_10_a",
+      "regime": "thun_calibrated",
+      "target": 1.0,
+      "method_a": "ema/absolute",
+      "method_b": "current_activity",
+      "fp_a": 1562,
+      "fp_b": 1660,
+      "fppi_a": 0.6788352890047805,
+      "fppi_b": 0.721425467188179,
+      "threshold_a": 0.09220783412456512,
+      "threshold_b": 0.09529023617506027,
+      "allowed_fp": 2301,
+      "count_tolerance": 23,
+      "actual_fp_close": false,
+      "both_near_target": false,
+      "target_matched": false,
+      "tp_a": 3032,
+      "tp_b": 3215,
+      "gt": 5466,
+      "recall_a": 0.5547017929015734,
+      "recall_b": 0.5881814855470179,
+      "delta_recall_pp": -3.347969264544448,
+      "q_a": 0.9383583519642287,
+      "q_b": 0.9923347173427021,
+      "delta_q_pp": -5.3976365378473385
+    }
+  ],
+  "budget": [
+    {
+      "model": "spike_original",
+      "target": 0.25,
+      "activity": {
+        "total": 4,
+        "matched": 4,
+        "positive": 3,
+        "negative": 1,
+        "ties": 0,
+        "median_delta_recall_pp": 2.958015171782244,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": -0.3970308993612982,
+            "matched": true,
+            "fp_a": 362,
+            "fp_b": 362
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 3.6657559198542797,
+            "matched": true,
+            "fp_a": 193,
+            "fp_b": 193
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 5.312934631432545,
+            "matched": true,
+            "fp_a": 449,
+            "fp_b": 449
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 2.250274423710208,
+            "matched": true,
+            "fp_a": 575,
+            "fp_b": 575
+          }
+        ]
+      },
+      "lag": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 0.9655940648499715,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 0.017262213015708378,
+            "matched": true,
+            "fp_a": 362,
+            "fp_b": 362
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 0.7969034608378861,
+            "matched": true,
+            "fp_a": 193,
+            "fp_b": 193
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 1.3073713490959662,
+            "matched": true,
+            "fp_a": 449,
+            "fp_b": 449
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 1.1342846688620567,
+            "matched": true,
+            "fp_a": 575,
+            "fp_b": 575
+          }
+        ]
+      }
+    },
+    {
+      "model": "spike_original",
+      "target": 0.5,
+      "activity": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 5.054494850431581,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 0.8803728638011398,
+            "matched": true,
+            "fp_a": 724,
+            "fp_b": 724
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 6.0109289617486334,
+            "matched": true,
+            "fp_a": 386,
+            "fp_b": 386
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 7.955493741307371,
+            "matched": true,
+            "fp_a": 899,
+            "fp_b": 899
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 4.098060739114528,
+            "matched": true,
+            "fp_a": 1150,
+            "fp_b": 1150
+          }
+        ]
+      },
+      "lag": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 0.9588834304063487,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 0.12083549110996003,
+            "matched": true,
+            "fp_a": 724,
+            "fp_b": 724
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 0.728597449908927,
+            "matched": true,
+            "fp_a": 386,
+            "fp_b": 386
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 1.5159944367176645,
+            "matched": true,
+            "fp_a": 899,
+            "fp_b": 899
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 1.1891694109037703,
+            "matched": true,
+            "fp_a": 1150,
+            "fp_b": 1150
+          }
+        ]
+      }
+    },
+    {
+      "model": "spike_original",
+      "target": 1.0,
+      "activity": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 8.320449415062614,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 2.572069739340583,
+            "matched": true,
+            "fp_a": 1449,
+            "fp_b": 1449
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 8.993624772313298,
+            "matched": true,
+            "fp_a": 773,
+            "fp_b": 773
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 10.681502086230877,
+            "matched": true,
+            "fp_a": 1799,
+            "fp_b": 1799
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 7.647274057811929,
+            "matched": true,
+            "fp_a": 2301,
+            "fp_b": 2300
+          }
+        ]
+      },
+      "lag": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 0.9584835415754416,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 0.12083549110996072,
+            "matched": true,
+            "fp_a": 1449,
+            "fp_b": 1449
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 0.9107468123861567,
+            "matched": true,
+            "fp_a": 773,
+            "fp_b": 773
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 1.4464534075104298,
+            "matched": true,
+            "fp_a": 1799,
+            "fp_b": 1799
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 1.0062202707647265,
+            "matched": true,
+            "fp_a": 2301,
+            "fp_b": 2301
+          }
+        ]
+      }
+    },
+    {
+      "model": "spike_original",
+      "target": 2.0,
+      "activity": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 11.054614317219812,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 3.883997928534439,
+            "matched": true,
+            "fp_a": 2898,
+            "fp_b": 2898
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 11.498178506375227,
+            "matched": true,
+            "fp_a": 1546,
+            "fp_b": 1546
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 13.99165507649513,
+            "matched": true,
+            "fp_a": 3598,
+            "fp_b": 3598
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 10.611050128064397,
+            "matched": true,
+            "fp_a": 4602,
+            "fp_b": 4602
+          }
+        ]
+      },
+      "lag": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 0.7787710016615392,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 0.1380977041256684,
+            "matched": true,
+            "fp_a": 2898,
+            "fp_b": 2898
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 0.47814207650273277,
+            "matched": true,
+            "fp_a": 1546,
+            "fp_b": 1546
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 1.2100139082058425,
+            "matched": true,
+            "fp_a": 3598,
+            "fp_b": 3598
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 1.0793999268203458,
+            "matched": true,
+            "fp_a": 4602,
+            "fp_b": 4602
+          }
+        ]
+      }
+    },
+    {
+      "model": "spike_adapted",
+      "target": 0.25,
+      "activity": {
+        "total": 4,
+        "matched": 4,
+        "positive": 3,
+        "negative": 1,
+        "ties": 0,
+        "median_delta_recall_pp": 2.6380541209543735,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": -0.12083549110996072,
+            "matched": true,
+            "fp_a": 362,
+            "fp_b": 362
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 3.574681238615665,
+            "matched": true,
+            "fp_a": 193,
+            "fp_b": 193
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 4.895688456189153,
+            "matched": true,
+            "fp_a": 449,
+            "fp_b": 449
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 1.7014270032930823,
+            "matched": true,
+            "fp_a": 575,
+            "fp_b": 575
+          }
+        ]
+      },
+      "lag": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 0.7619176097139566,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 0.4142931123770066,
+            "matched": true,
+            "fp_a": 362,
+            "fp_b": 362
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 0.5919854280510006,
+            "matched": true,
+            "fp_a": 193,
+            "fp_b": 193
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 0.9318497913769125,
+            "matched": true,
+            "fp_a": 449,
+            "fp_b": 449
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 1.4452982070984277,
+            "matched": true,
+            "fp_a": 575,
+            "fp_b": 575
+          }
+        ]
+      }
+    },
+    {
+      "model": "spike_adapted",
+      "target": 0.5,
+      "activity": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 4.6194532919848275,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 0.32798204729846403,
+            "matched": true,
+            "fp_a": 724,
+            "fp_b": 724
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 5.214025500910746,
+            "matched": true,
+            "fp_a": 386,
+            "fp_b": 386
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 7.134909596662031,
+            "matched": true,
+            "fp_a": 899,
+            "fp_b": 899
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 4.02488108305891,
+            "matched": true,
+            "fp_a": 1150,
+            "fp_b": 1150
+          }
+        ]
+      },
+      "lag": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 0.8776673228097109,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 0.5351286034869673,
+            "matched": true,
+            "fp_a": 724,
+            "fp_b": 724
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 0.8652094717668479,
+            "matched": true,
+            "fp_a": 386,
+            "fp_b": 386
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 0.890125173852574,
+            "matched": true,
+            "fp_a": 899,
+            "fp_b": 899
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 1.5001829491401386,
+            "matched": true,
+            "fp_a": 1150,
+            "fp_b": 1150
+          }
+        ]
+      }
+    },
+    {
+      "model": "spike_adapted",
+      "target": 1.0,
+      "activity": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 8.595910336926336,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 1.881581218712238,
+            "matched": true,
+            "fp_a": 1449,
+            "fp_b": 1449
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 9.562841530054644,
+            "matched": true,
+            "fp_a": 773,
+            "fp_b": 773
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 10.598052851182196,
+            "matched": true,
+            "fp_a": 1799,
+            "fp_b": 1796
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 7.628979143798026,
+            "matched": true,
+            "fp_a": 2301,
+            "fp_b": 2298
+          }
+        ]
+      },
+      "lag": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 1.1628932108195198,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 0.552390816502675,
+            "matched": true,
+            "fp_a": 1449,
+            "fp_b": 1449
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 1.3661202185792338,
+            "matched": true,
+            "fp_a": 773,
+            "fp_b": 773
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 0.9596662030598058,
+            "matched": true,
+            "fp_a": 1799,
+            "fp_b": 1799
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 1.6282473472374686,
+            "matched": true,
+            "fp_a": 2301,
+            "fp_b": 2301
+          }
+        ]
+      }
+    },
+    {
+      "model": "spike_adapted",
+      "target": 2.0,
+      "activity": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 11.970034830317172,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 3.3488693250474717,
+            "matched": true,
+            "fp_a": 2898,
+            "fp_b": 2894
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 13.27413479052823,
+            "matched": true,
+            "fp_a": 1546,
+            "fp_b": 1546
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 15.006954102920723,
+            "matched": true,
+            "fp_a": 3598,
+            "fp_b": 3598
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 10.665934870106112,
+            "matched": true,
+            "fp_a": 4602,
+            "fp_b": 4602
+          }
+        ]
+      },
+      "lag": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 1.0667707882076645,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 0.46607975142413244,
+            "matched": true,
+            "fp_a": 2898,
+            "fp_b": 2898
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 1.22950819672131,
+            "matched": true,
+            "fp_a": 1546,
+            "fp_b": 1546
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 0.9040333796940192,
+            "matched": true,
+            "fp_a": 3598,
+            "fp_b": 3598
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 1.3904134650567141,
+            "matched": true,
+            "fp_a": 4602,
+            "fp_b": 4602
+          }
+        ]
+      }
+    },
+    {
+      "model": "rvt_stream",
+      "target": 0.25,
+      "activity": {
+        "total": 4,
+        "matched": 4,
+        "positive": 1,
+        "negative": 3,
+        "ties": 0,
+        "median_delta_recall_pp": -1.0958755274100562,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": -3.5905403072673927,
+            "matched": true,
+            "fp_a": 362,
+            "fp_b": 362
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 3.4836065573770503,
+            "matched": true,
+            "fp_a": 193,
+            "fp_b": 193
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": -0.06954102920723182,
+            "matched": true,
+            "fp_a": 449,
+            "fp_b": 449
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": -2.1222100256128806,
+            "matched": true,
+            "fp_a": 575,
+            "fp_b": 575
+          }
+        ]
+      },
+      "lag": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 2.8480082537054696,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 4.022095632660106,
+            "matched": true,
+            "fp_a": 362,
+            "fp_b": 362
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 2.7322404371584676,
+            "matched": true,
+            "fp_a": 193,
+            "fp_b": 193
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 1.390820584144642,
+            "matched": true,
+            "fp_a": 449,
+            "fp_b": 449
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 2.9637760702524716,
+            "matched": true,
+            "fp_a": 575,
+            "fp_b": 575
+          }
+        ]
+      }
+    },
+    {
+      "model": "rvt_stream",
+      "target": 0.5,
+      "activity": {
+        "total": 4,
+        "matched": 4,
+        "positive": 1,
+        "negative": 3,
+        "ties": 0,
+        "median_delta_recall_pp": -1.5536224184197005,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": -3.7804246504401897,
+            "matched": true,
+            "fp_a": 724,
+            "fp_b": 724
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 0.2959927140255003,
+            "matched": true,
+            "fp_a": 386,
+            "fp_b": 386
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": -0.12517385257301838,
+            "matched": true,
+            "fp_a": 899,
+            "fp_b": 899
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": -2.982070984266383,
+            "matched": true,
+            "fp_a": 1150,
+            "fp_b": 1150
+          }
+        ]
+      },
+      "lag": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 3.0348313168939045,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 4.263766614880026,
+            "matched": true,
+            "fp_a": 724,
+            "fp_b": 724
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 3.0510018214936263,
+            "matched": true,
+            "fp_a": 386,
+            "fp_b": 386
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 1.5577190542420016,
+            "matched": true,
+            "fp_a": 899,
+            "fp_b": 899
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 3.0186608122941827,
+            "matched": true,
+            "fp_a": 1150,
+            "fp_b": 1150
+          }
+        ]
+      }
+    },
+    {
+      "model": "rvt_stream",
+      "target": 1.0,
+      "activity": {
+        "total": 4,
+        "matched": 4,
+        "positive": 0,
+        "negative": 4,
+        "ties": 0,
+        "median_delta_recall_pp": -2.2983577324891757,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": -4.039357845675817,
+            "matched": true,
+            "fp_a": 1449,
+            "fp_b": 1449
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": -0.5919854280510006,
+            "matched": true,
+            "fp_a": 773,
+            "fp_b": 773
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": -1.0292072322670376,
+            "matched": true,
+            "fp_a": 1799,
+            "fp_b": 1799
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": -3.567508232711314,
+            "matched": true,
+            "fp_a": 2301,
+            "fp_b": 2301
+          }
+        ]
+      },
+      "lag": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 3.294434147307046,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 4.954255135508373,
+            "matched": true,
+            "fp_a": 1449,
+            "fp_b": 1449
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 3.551912568306009,
+            "matched": true,
+            "fp_a": 773,
+            "fp_b": 773
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 1.68289290681502,
+            "matched": true,
+            "fp_a": 1799,
+            "fp_b": 1799
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 3.036955726308083,
+            "matched": true,
+            "fp_a": 2301,
+            "fp_b": 2301
+          }
+        ]
+      }
+    },
+    {
+      "model": "rvt_stream",
+      "target": 2.0,
+      "activity": {
+        "total": 4,
+        "matched": 4,
+        "positive": 0,
+        "negative": 4,
+        "ties": 0,
+        "median_delta_recall_pp": -2.6858418882124035,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": -3.953046780597269,
+            "matched": true,
+            "fp_a": 2898,
+            "fp_b": 2898
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": -1.3205828779599305,
+            "matched": true,
+            "fp_a": 1546,
+            "fp_b": 1546
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": -1.418636995827538,
+            "matched": true,
+            "fp_a": 3598,
+            "fp_b": 3598
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": -3.9699963410172012,
+            "matched": true,
+            "fp_a": 4602,
+            "fp_b": 4602
+          }
+        ]
+      },
+      "lag": {
+        "total": 4,
+        "matched": 4,
+        "positive": 4,
+        "negative": 0,
+        "ties": 0,
+        "median_delta_recall_pp": 3.684338253965397,
+        "per_recording": [
+          {
+            "sequence": "zurich_city_07_a",
+            "delta_recall_pp": 5.489383738995341,
+            "matched": true,
+            "fp_a": 2898,
+            "fp_b": 2898
+          },
+          {
+            "sequence": "zurich_city_08_a",
+            "delta_recall_pp": 4.075591985428051,
+            "matched": true,
+            "fp_a": 1546,
+            "fp_b": 1546
+          },
+          {
+            "sequence": "zurich_city_09_a",
+            "delta_recall_pp": 2.07232267037552,
+            "matched": true,
+            "fp_a": 3598,
+            "fp_b": 3598
+          },
+          {
+            "sequence": "zurich_city_10_a",
+            "delta_recall_pp": 3.2930845225027428,
+            "matched": true,
+            "fp_a": 4602,
+            "fp_b": 4602
+          }
+        ]
+      }
+    }
+  ],
+  "allmethods": [
+    {
+      "method": "dense",
+      "carriers": {
+        "spike_original": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.17230962351576137,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        },
+        "spike_adapted": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.1965837494394917,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        },
+        "rvt_stream": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.5063711597471605,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        }
+      }
+    },
+    {
+      "method": "ema/current",
+      "carriers": {
+        "spike_original": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.1491543291507381,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        },
+        "spike_adapted": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.1680464037534422,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        },
+        "rvt_stream": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.38088609711423727,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        }
+      }
+    },
+    {
+      "method": "ema/absolute",
+      "carriers": {
+        "spike_original": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.1716327384978631,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        },
+        "spike_adapted": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.19526810663464483,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        },
+        "rvt_stream": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.48371963430520537,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        }
+      }
+    },
+    {
+      "method": "ema_lag3/current",
+      "carriers": {
+        "spike_original": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.16094033025022103,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        },
+        "spike_adapted": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.17967533586163742,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        },
+        "rvt_stream": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.4179726521267895,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        }
+      }
+    },
+    {
+      "method": "current_activity",
+      "carriers": {
+        "spike_original": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.08026433824881923,
+          "min_fppi": 0.9995654063450674,
+          "max_fppi": 1.0
+        },
+        "spike_adapted": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.09446363472846064,
+          "min_fppi": 0.9983324068927182,
+          "max_fppi": 1.0
+        },
+        "rvt_stream": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.5068763506738394,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        }
+      }
+    },
+    {
+      "method": "ema_activity",
+      "carriers": {
+        "spike_original": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.04371189696628397,
+          "min_fppi": 0.9995654063450674,
+          "max_fppi": 1.0
+        },
+        "spike_adapted": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.055875213065703,
+          "min_fppi": 0.9965493443754313,
+          "max_fppi": 1.0
+        },
+        "rvt_stream": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.47148244678191786,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        }
+      }
+    },
+    {
+      "method": "persistence/absolute",
+      "carriers": {
+        "spike_original": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.1566013943673033,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        },
+        "spike_adapted": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.17547548203713415,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        },
+        "rvt_stream": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.35226416850969394,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        }
+      }
+    },
+    {
+      "method": "ema_roll/absolute",
+      "carriers": {
+        "spike_original": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.0067814320845112665,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        },
+        "spike_adapted": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.00477955812903381,
+          "min_fppi": 0.9995654063450674,
+          "max_fppi": 1.0
+        },
+        "rvt_stream": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.4993790791411153,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        }
+      }
+    },
+    {
+      "method": "unsigned_residual",
+      "carriers": {
+        "spike_original": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.1716327384978631,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        },
+        "spike_adapted": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.19526810663464483,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        },
+        "rvt_stream": {
+          "recordings": 4,
+          "near_target": 4,
+          "median_recall": 0.4917518104099634,
+          "min_fppi": 1.0,
+          "max_fppi": 1.0
+        }
+      }
+    }
+  ]
+}

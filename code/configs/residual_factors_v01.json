@@ -1,0 +1,23 @@
+{
+  "version": "residual-factors-v01", "date": "2026-10-30",
+  "sequences": ["thun_00_a", "zurich_city_01_a", "interlaken_00_c", "zurich_city_02_a", "zurich_city_04_a"],
+  "calibration_sequence": "thun_00_a", "carriers": ["original", "full_conv"],
+  "capacities": [0.2, 0.35, 0.6], "primary_capacity": 0.2,
+  "regimes": ["output_locked", "common_original_theta", "common_adapted_theta"],
+  "primary_output": "full_conv", "primary_regime": "output_locked",
+  "rankings": ["nO/dO", "nO/dA", "nA/dO", "nA/dA", "absolute/O", "absolute/A", "activity/O", "activity/A"],
+  "alpha": 0.8, "epsilon": 1e-8, "warmup_complete_queries": 10,
+  "iou": 0.5, "nms": 0.5, "class_map": {"0": 1, "2": 0},
+  "small_area_fraction": 0.01, "gap_factor": 1.5,
+  "score": "At each homologous site, N_c=sum_ch abs(H_c-P_c_previous), M_c=sum_ch abs(H_c), score N_n/(M_m+epsilon). Cross numerator source n and magnitude source m. Reconstruct directly from C-contiguous float32 descriptors and causal EMA; never invert a rounded mean to recover N. Update EMA at all sites only after scoring.",
+  "precondition": "All five recordings must pass same-source pointwise score identity and all-capacity exact mask identity to parent EMA/current, plus absolute/activity reference identity, before any new candidate replay",
+  "comparison": "2 numerator sources x2 denominator sources, plus absolute/activity references, crossed with each fixed detector candidate stream. All 3 capacity and 3 previously frozen threshold regimes; no new threshold search",
+  "decomposition": "Within one fixed output/regime/capacity, four cells share own-dense and full-GT denominators. Order y00,y01,y10,y11 is N_O/M_O,N_O/M_A,N_A/M_O,N_A/M_A. Numerator average=((y10-y00)+(y11-y01))/2; magnitude-denominator average=((y01-y00)+(y11-y10))/2. Report interaction and order-specific effects; descriptive arithmetic only.",
+  "paired_patterns": "Count all16 own-dense identity hit signatures in cell order00/01/10/11; among OO-hit/AA-miss cases, report recovery by numerator reversion (01), denominator reversion (10), both individually, or neither individually. Retain diagonal gains, full-GT TP and FP; these are offline counterfactual diagnostics, not deployable oracle decisions.",
+  "interpretation_forks": [
+    "Magnitude-denominator domination that persists at both common numeric thresholds supports a local denominator-sensitive explanation",
+    "Numerator domination or large interaction rejects a denominator-only explanation",
+    "Opposite signs across recordings reject universal adaptation damage; retain Zurich02 and every other group"
+  ],
+  "limits": ["Already exposed development recordings; same architecture, two checkpoints, one adaptation-order seed", "Interlaken has only2dense-detectable trajectories", "Hybrid factors can be out of distribution and are software interventions, not independent biological or environmental causes", "Numerator changes both current representation and prediction; not predictor quality alone", "No new inference, training, calibration, importance algorithm, physical skip, energy or safety evidence", "Position capacity and numeric threshold equality do not imply total compute or evaluation-FP matching"]
+}

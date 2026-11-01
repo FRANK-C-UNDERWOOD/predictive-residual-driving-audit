@@ -1,0 +1,31 @@
+{
+  "sequence": "zurich_city_12_a",
+  "event": {
+    "path": "datasets/dsec_confirmation/test/zurich_city_12_a/events/left/events.h5",
+    "bytes": 1434185927,
+    "sha256": "679f074f9921ba7fe3a3435d7316dd6c3402f3d7da7438125ef6f7ebfd6f0057",
+    "zip_member": "events.h5",
+    "zip_crc32": 3084115421,
+    "zip_crc_verified": true
+  },
+  "metadata": [
+    {
+      "path": "datasets/dsec_confirmation/test/zurich_city_12_a/image_timestamps.txt",
+      "bytes": 9180,
+      "sha256": "da0ffd3b8a3220c79302cd7ca73a8a7e8e86dff605429d5fadbf6cdd1da95e17"
+    },
+    {
+      "path": "datasets/dsec_confirmation/test/zurich_city_12_a/object_detections/left/tracks.npy",
+      "bytes": 91204,
+      "sha256": "a12920c871a3f45e273a3f2ce177d47b7c4c6bcac07198548265eb352fc8d407"
+    }
+  ],
+  "requested_url": "https://download.ifi.uzh.ch/rpg/DSEC/test/zurich_city_12_a/zurich_city_12_a_events_left.zip",
+  "etag": "\"54f56849-5ce8c35a56e81\"",
+  "last_modified": "Sun, 17 Oct 2021 13:14:34 GMT",
+  "archive_bytes": 1425369161,
+  "HTTP_range_requests": 48,
+  "downloaded_bytes": 1423348316,
+  "checksum_scope": "Local extracted member SHA256 and publisher ZIP CRC; not an independently published SHA256",
+  "storage": "Direct range extraction of selected public member; no duplicate multi-GB ZIP retained"
+}

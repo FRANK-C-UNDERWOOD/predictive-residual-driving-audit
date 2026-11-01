@@ -1,0 +1,8 @@
+{
+  "path": "datasets/dsec_confirmation/test/thun_02_a/events/left/events.h5",
+  "sha256": "25bc971c0a7d9bc2fbcea5e64b92f11f83863e9779c4ead3e2d1be14eb15643d",
+  "source_url": "https://download.ifi.uzh.ch/rpg/DSEC/test_object_detection_coarse/test_events.zip",
+  "reason": "Project disk budget; new public input only, after complete primary caches and actual points. Reacquire exact member for SNN secondary or raw-forward reproduction.",
+  "raw_cache_receipt": "carriers/rvt_stream__thun_02_a.json",
+  "point_receipt": "points/rvt_stream__thun_02_a.json"
+}

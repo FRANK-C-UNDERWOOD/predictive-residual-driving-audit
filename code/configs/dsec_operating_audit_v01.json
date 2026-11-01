@@ -1,0 +1,23 @@
+{
+  "version": "dsec-operating-audit-v01",
+  "scope": "New development analysis of existing frozen predictions; all five sequences already exposed",
+  "parent": "experiments/predictor_mechanism_v01",
+  "calibration_sequence": "thun_00_a",
+  "evaluation_sequences": ["zurich_city_01_a", "interlaken_00_c", "zurich_city_02_a", "zurich_city_04_a"],
+  "variants": ["ema/current", "ema/absolute", "ema/symmetric", "persistence/current", "ema_lag3/current", "current_activity", "event_rate", "random"],
+  "capacities": [0.2, 0.35, 0.6],
+  "primary_capacity": 0.2,
+  "target_calibration_fppi": 1.0,
+  "confidence_floor": 0.3,
+  "fixed_dense_reference_confidence": 0.7621667385101318,
+  "iou": 0.5,
+  "nms": 0.5,
+  "class_map": {"0": 1, "2": 0},
+  "small_area_fraction": 0.01,
+  "calibration_rule": "Use calibration FP scores only, float32 nextafter exclusion; rerun actual NMS and matching and pass budget guard on every calibration condition BEFORE opening evaluation labels",
+  "reference_rule": "Always use dense matches at the old common confidence as the evidence denominator, even after a selector-specific threshold changes; additionally report full-GT TP and FP. Threshold changes are not gate-only effects.",
+  "temporal_rule": "Run of dense-hit and selected-miss GT track identities on adjacent evaluated image-grid queries. Break on missing GT, dense miss, grid gap or gap >1.5 times the full image-grid median. Single-loss observed span is zero. A dense miss or missing annotation is not observed recovery.",
+  "gap_factor": 1.5,
+  "regimes": ["original_common_threshold", "thun_calibrated_threshold"],
+  "limitations": ["Calibration FPPI matching is not evaluation FPPI matching", "Previously inspected sequences, no untouched-test claim", "Weak transferred dense detector; full-population coverage remains mandatory", "Offline candidate admission, no physical skip or energy claims", "Loss-run spans are sampled observations, not continuous blindness, physical risk or absolute timely-detection guarantees", "No new training or importance algorithm"]
+}

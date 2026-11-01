@@ -1,0 +1,62 @@
+{
+  "fixed_utc": "2026-10-31T06:09:41.411907+00:00",
+  "planned_groups": 7,
+  "estimand": "J_size=(R_EMA-R_activity)_small-(R_EMA-R_activity)_large",
+  "expected_direction": "negative",
+  "role": "Previously specified secondary prediction; RVT seven-group outcomes known before this stage. No new primary trial or external preregistration.",
+  "endpoint": "Complete-GT recall, whole-recording actual1FP/query,20% capacity; small<=1%native area; no subgroup thresholds",
+  "statistics": "Each checkpoint: seven equal recording weights, all per-record effects and nominal two-sided95%t interval. Secondary descriptive intervals not adjusted for two checkpoint tests; no family-level significance verdict.",
+  "dependence": "Two checkpoints of the same architecture and the same seven recordings; no14-group sample or causal architecture claim. Three already encountered cities.",
+  "missing": "Retain missing GT strata as undefined; full planned estimand not established if any group undefined/unmatched. Never zero-impute or silently subset.",
+  "matching": "Use original integer tolerance max(1,floor(allowedFP/100)); report exact actual FP counts, floor limits and failed matching. Whole-recording matching is not subgroup FP matching.",
+  "all_conditions": "All9methods x4FPtargets x2thresholdregimes x2checkpoints x7groups =1008 actual points; original Thun thresholds unchanged. All16marginal+24motion-crosscell groups, source traces, baseline coverage and loss runs retained.",
+  "planning": {
+    "spike_original": {
+      "development": [
+        {
+          "sequence": "zurich_city_07_a",
+          "interaction_pp": -15.401556513918697
+        },
+        {
+          "sequence": "zurich_city_08_a",
+          "interaction_pp": -29.1328320802005
+        },
+        {
+          "sequence": "zurich_city_09_a",
+          "interaction_pp": -25.812086644241862
+        },
+        {
+          "sequence": "zurich_city_10_a",
+          "interaction_pp": -23.761597639236097
+        }
+      ],
+      "sd_pp": 5.8516334522822495,
+      "nominal_n7_halfwidth_pp": 5.411858319058879
+    },
+    "spike_adapted": {
+      "development": [
+        {
+          "sequence": "zurich_city_07_a",
+          "interaction_pp": -8.610042984711042
+        },
+        {
+          "sequence": "zurich_city_08_a",
+          "interaction_pp": -24.451127819548866
+        },
+        {
+          "sequence": "zurich_city_09_a",
+          "interaction_pp": -23.670761630835727
+        },
+        {
+          "sequence": "zurich_city_10_a",
+          "interaction_pp": -16.655852941934487
+        }
+      ],
+      "sd_pp": 7.377242588244423,
+      "nominal_n7_halfwidth_pp": 6.82281144204866
+    }
+  },
+  "precision_scope": "Development-only SD from four exposed groups; fixed seven-source census, no guaranteed power or outcome-dependent extension.",
+  "stateful_reuse": "Separate subsequent experiment, not supplied by this stage",
+  "storage": "Reacquire one exact public event member at a time; SHA/CRC/ETag must match sealed primary. Release only exact reacquired file after both checkpoints complete; do not alter parent outputs/old data."
+}

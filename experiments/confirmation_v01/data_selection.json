@@ -1,0 +1,92 @@
+{
+  "config": {
+    "version": "confirmation-v01",
+    "date": "2026-10-30",
+    "calibration_sequence": "thun_00_a",
+    "confirmation_sequences": [
+      "zurich_city_07_a",
+      "zurich_city_08_a",
+      "zurich_city_09_a",
+      "zurich_city_10_a"
+    ],
+    "sequence_selection": "First _a clip in the next four distinct Zurich recording groups after previously used groups00-06. Names fixed before new event downloads/inference. Keep complete clips and all eligible queries, including poor or opposite results. Local official annotation package already present; no known project inference/method selection on these four groups. Not an official test set or external preregistration.",
+    "models": [
+      "spike_original",
+      "spike_adapted",
+      "rvt_stream"
+    ],
+    "spike_checkpoint_sha256": "ddd76884f0889c36deea8442e426a8573612b91de41108a93dfb78cb2b362c8d",
+    "adapted_checkpoint": "Selected116 delta in experiments/diverse_adaptation_v01/full_conv_training.json; no retraining/reselection",
+    "rvt_checkpoint": "vendor/rvt_snapshot/weights/rvt-t-1mpx.ckpt",
+    "rvt_checkpoint_sha256": "4298fb5290e3bf6bb0914f37dacb402ed8b759236ad5d211c25056fae7b45ab7",
+    "query_cohort": "Full image timestamp grid with complete180ms raw-event support, first10complete queries warm-up excluded identically for all models",
+    "spike_input": "Unchanged9x20ms signed bins,3internal steps,256letterbox; neurons reset each query; causal EMA across queries; descriptors actual3-step mean pre-smooth inputs",
+    "rvt_input": "Native640x480 StackedHistogram10bins/polarity, cutoff255, fastmodeFalse; bottom pad to512x640. First query50ms, then each interval(previous_query,current_query], approximately50ms. Explicit recurrent states persist across the entire clip including warm-up, reset only at sequence start. Head/FPN runs every query, all states always update. This is a new stream-transfer protocol, not the older3x60ms reset reference or an official1Mpx benchmark reproduction.",
+    "rvt_seam": "Three actual FPN feature maps entering yolox_head.stems; signed ANN features retained at native8/16/32 grids. One anchor-free candidate/site. Preserve3class argmax before retaining pedestrian/car, suppress two-wheeler sites; do not remap after deleting class.",
+    "predictors": [
+      "zero",
+      "persistence",
+      "ema",
+      "ema_lag3",
+      "ema_roll",
+      "ema_global"
+    ],
+    "normalizers": [
+      "absolute",
+      "current",
+      "symmetric"
+    ],
+    "references": [
+      "current_activity",
+      "ema_activity",
+      "event_rate",
+      "random"
+    ],
+    "alpha": 0.8,
+    "lag_queries": 3,
+    "ranking_seed": 0,
+    "epsilon": 1e-08,
+    "capacities": [
+      0.2,
+      0.35,
+      0.6
+    ],
+    "primary_capacity": 0.2,
+    "warmup": 10,
+    "roll": "floor(height/3),floor(width/3) per scale; rectangular RVT grids audited separately",
+    "confidence_floor": 0.01,
+    "target_calibration_fppi": 1.0,
+    "iou": 0.5,
+    "nms": 0.5,
+    "small_area_fraction": 0.01,
+    "class_map": {
+      "0": 1,
+      "2": 0
+    },
+    "gap_factor": 1.5,
+    "regimes": [
+      "dense_thun_threshold",
+      "policy_thun_threshold"
+    ],
+    "calibration": "Thun only, dense threshold and each of67condition thresholds at <=1FP/query with float32 nextafter; actual final-threshold NMS guard required before any held-out output is evaluated. Spike dense thresholds must reproduce previous frozen values. New RVT stream requires its own Thun calibration. No held-out threshold selection.",
+    "primary_contrasts": [
+      "EMA absolute minus EMA current preservation at20% under common dense threshold, per model and recording",
+      "EMA lag3 minus EMA current preservation with paired within-model MAE ordering",
+      "Absolute residual versus current and historical activity controls; all22rankings retained"
+    ],
+    "endpoints": "Own-dense matched GT identity/query preservation, full GT TP/recall, FPPI, small-object subset, distinct GT/dense tracks, trajectory-equal preservation and sampled loss runs; failures/censoring retained. No absolute200ms deadline.",
+    "guardrails": "A preservation increase with more evaluation FP is a trade-off, not equal-FP superiority. Joint descriptive improvement requires kept>=reference, fullGT TP>=reference, FP<=reference and longest sampled loss run<=reference, with at least one strict improvement; no safety or practical-significance claim. Calibration matching is not test FP matching.",
+    "analysis": "Each new recording reported separately; sequencewise directions/counts and median/range for four groups. No frame-independent p-values, universal claim or formal H1/H2/H3 verdict. Counterexamples refute universal versions. Same-network two checkpoints are not two independent architectures. Cross-architecture results are within-model allocation audits, not ANN-vs-SNN detector superiority.",
+    "preflight": "Before new-group inference: Spike Thun raw outputs and all22scores reproduce protected prior caches; all-open branch replays exact. RVT full-open head replay and explicit-state continuation after intervening unrelated queries exact. Failing health/equivalence is reported, not hidden by deleting difficult groups or switching architectures.",
+    "secondary": "No new risk/importance module or numerator-denominator hybrids selected from confirmation results. Any later tuning uses development data and requires a new untouched confirmation cohort.",
+    "limits": [
+      "Four public DSEC training recording groups, same city/data provider; no geographic or official-test independence guarantee",
+      "Model pretraining and input/state protocols differ; same position ratio is not same compute",
+      "All complete detector work executes; candidate admission only",
+      "Model seeds and hardware energy not newly replicated",
+      "Weak dense coverage remains visible and limits conclusions"
+    ]
+  },
+  "config_sha256": "69c0d48a94ff7f3cf74defce34108104acd8197d4e9d56d5119371ec15a1a1d0",
+  "roles_fixed_before_event_downloads": true
+}

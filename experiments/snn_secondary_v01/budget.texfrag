@@ -1,0 +1,20 @@
+\begin{table}[!htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{All four predeclared retrospective FP targets in the SNN secondary cohort, with capacity fixed at 20\%. Mean J equally weights recordings with defined size strata; defined and FP-matched counts are separately retained. Signs are negative/positive/tied. Only 1 FP/query is the main secondary contrast; other points are descriptive sensitivity analyses. Nominal intervals are secondary and not multiplicity controlled across checkpoints or targets.}\label{tab:snn_secondary_budgets}
+\begin{tabularx}{\linewidth}{@{}ll*{4}{>{\raggedleft\arraybackslash}X}@{}}
+\toprule
+Carrier & FP/query & FP matched & Defined & Mean J (pp) & Signs \\
+\midrule
+S0 & 0.25 & 7/7 & 7/7 & -4.60 & 6/1/0 \\
+S0 & 0.5 & 7/7 & 7/7 & -7.33 & 6/1/0 \\
+S0 & 1 & 7/7 & 7/7 & -12.48 & 6/1/0 \\
+S0 & 2 & 7/7 & 7/7 & -17.81 & 6/1/0 \\
+S1 & 0.25 & 7/7 & 7/7 & +3.07 & 3/4/0 \\
+S1 & 0.5 & 7/7 & 7/7 & -3.22 & 3/4/0 \\
+S1 & 1 & 7/7 & 7/7 & -7.84 & 5/2/0 \\
+S1 & 2 & 7/7 & 7/7 & -13.01 & 6/1/0 \\
+\bottomrule
+\end{tabularx}
+\end{table}

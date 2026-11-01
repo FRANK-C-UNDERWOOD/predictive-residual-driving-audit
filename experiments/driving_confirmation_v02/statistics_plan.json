@@ -1,0 +1,217 @@
+{
+  "fixed_utc": "2026-10-31T03:06:08.053261+00:00",
+  "planned_recording_groups": 7,
+  "selection": "Fixed census of seven eligible unused official-test groups, no outcome-dependent extension or replacement",
+  "development_interactions": [
+    {
+      "sequence": "zurich_city_07_a",
+      "interaction_pp": -13.576864913107068
+    },
+    {
+      "sequence": "zurich_city_08_a",
+      "interaction_pp": -6.064818408903049
+    },
+    {
+      "sequence": "zurich_city_09_a",
+      "interaction_pp": -4.30646438260697
+    },
+    {
+      "sequence": "zurich_city_10_a",
+      "interaction_pp": -13.813186570298175
+    }
+  ],
+  "development_recording_sd_pp": 4.965999407664848,
+  "working_precision_halfwidth_pp": 5.0,
+  "projected_n7_t_halfwidth_pp": 4.592783438328762,
+  "projected_halfwidth_with_1point5_sd_inflation_pp": 6.889175157493142,
+  "precision_scope": "Approximation from only four exposed development groups; not a guaranteed power calculation. CensusN7 is feasible available-source scope; inflation shows substantial uncertainty.",
+  "primary": {
+    "carrier": "rvt_stream",
+    "target": 1.0,
+    "capacity": 0.2,
+    "estimand": "Equal-recording mean of low-minus-high residual/activity recall contrasts",
+    "expected_direction": "negative",
+    "interval": "Two-sided95% Student-t across recording-group effects when all seven are defined. Assumes independent/exchangeable group effects; report shared-city/session limitations.",
+    "verdict": "Supported only if all seven defined and upper95%t limit<0; contrary if lower limit>0; otherwise inconclusive. No practical or safety equivalence claim.",
+    "missing": "Retain all planned groups; undefined groups make complete-primary verdict inconclusive. Describe defined subset separately, never impute zero."
+  },
+  "sensitivity": "All effects by recording; equal-city means and leave-one-city-out descriptive analyses. Cities are three shared locations, not seven independent environments. No frame-independent p-values.",
+  "common_support_weights": {
+    "small|car|left_censored": 0.10130544316360028,
+    "small|pedestrian|established": 0.04595770669516757,
+    "small|pedestrian|left_censored": 0.0038170852736850143,
+    "small|car|established": 0.44835483624704175,
+    "small|car|early": 0.017405908848003665,
+    "large|car|left_censored": 0.02420032063516299,
+    "small|pedestrian|early": 0.0030536682189480115,
+    "large|car|established": 0.3559050309183907
+  },
+  "development_cell_counts": {
+    "small|car|left_censored": {
+      "low": 507,
+      "high": 820
+    },
+    "small|pedestrian|established": {
+      "low": 178,
+      "high": 424
+    },
+    "small|pedestrian|left_censored": {
+      "low": 6,
+      "high": 44
+    },
+    "small|car|established": {
+      "low": 1361,
+      "high": 4512
+    },
+    "small|car|early": {
+      "low": 30,
+      "high": 198
+    },
+    "large|car|left_censored": {
+      "low": 17,
+      "high": 300
+    },
+    "small|pedestrian|early": {
+      "low": 7,
+      "high": 33
+    },
+    "large|car|established": {
+      "low": 22,
+      "high": 4640
+    },
+    "large|pedestrian|established": {
+      "low": 0,
+      "high": 53
+    },
+    "large|car|early": {
+      "low": 0,
+      "high": 21
+    },
+    "large|pedestrian|early": {
+      "low": 0,
+      "high": 3
+    }
+  },
+  "development_common_support_instances": 13099,
+  "adjustment_scope": "Weights fixed only from development annotated low/high populations. Zero-development-support cells are outside this explicitly restricted estimand and still tabulated. Missing positive-weight new cells =>undefined, never silently dropped or renormalized.",
+  "adjusted_analysis": "Report raw cross-cells and per-recording standardized interactions. Also pooled standardized point estimate and5000 recording-cluster bootstrap draws, seed20261031. Publish undefined-draw count; no adjusted CI unless all draws have support. No causal claim from observational adjustment.",
+  "secondary": "Spike size interaction and RVT low-motion source deficits; descriptive full outputs. Four FP targets/two regimes remain reported without selecting a favorable target.",
+  "subgroup_FP": "Whole-recording FP matching only; no subgroup threshold fitting or claim of subgroup FP matching",
+  "data_metadata_sha256": {
+    "datasets/dsec_confirmation/test/thun_01_a/image_timestamps.txt": "e377904015b697b3cd639e1bffdbbc2b95c58cec5cd871e27fafcc6cc576c8f0",
+    "datasets/dsec_confirmation/test/thun_01_a/object_detections/left/tracks.npy": "d3dda35ad396e015702abd87a059fd2294a310f26a31cfe703095c0cfdef09db",
+    "datasets/dsec_confirmation/test/thun_02_a/image_timestamps.txt": "f5fc6c2a1250df47b63d540dbd6677b01880dba47aaec24bfb7843d4b0344347",
+    "datasets/dsec_confirmation/test/thun_02_a/object_detections/left/tracks.npy": "af9f8fd2ca81630bfd1f0051ef584564f8f27aed672a60459203d44a20e225ad",
+    "datasets/dsec_confirmation/test/interlaken_01_a/image_timestamps.txt": "b8b9bb6192c9f246ecc6e7c1add4537e6cf458a6cfe0175e82e899650be5deb6",
+    "datasets/dsec_confirmation/test/interlaken_01_a/object_detections/left/tracks.npy": "08931c53cc49f5d6067b36b3d1b727137a924cb9aa2c69154d0db8ddbc487bae",
+    "datasets/dsec_confirmation/test/zurich_city_12_a/image_timestamps.txt": "da0ffd3b8a3220c79302cd7ca73a8a7e8e86dff605429d5fadbf6cdd1da95e17",
+    "datasets/dsec_confirmation/test/zurich_city_12_a/object_detections/left/tracks.npy": "a12920c871a3f45e273a3f2ce177d47b7c4c6bcac07198548265eb352fc8d407",
+    "datasets/dsec_confirmation/test/zurich_city_13_a/image_timestamps.txt": "3177793bdc0688983a544f69c12c24c8f2a19d63dc553cddf193b3eff3b80c78",
+    "datasets/dsec_confirmation/test/zurich_city_13_a/object_detections/left/tracks.npy": "31dfcf551b4b9c46848e9b49fecd7ce87aa341e9540d6e84d5cbeefa79c92ea2",
+    "datasets/dsec_confirmation/test/zurich_city_14_a/image_timestamps.txt": "acecc777b67a6ebef28c5af6d6991ca6e7e14ac4b53c552c3040c25af6af0226",
+    "datasets/dsec_confirmation/test/zurich_city_14_a/object_detections/left/tracks.npy": "ca67332e2c86c15642f14de86e581df3e8ce448b899d416f3442af3b6e70b2d3",
+    "datasets/dsec_confirmation/test/zurich_city_15_a/image_timestamps.txt": "6d4b14cb23a6bad2a3d636b2741a66a2b60c581923f2b8c890b5cddadc7335d0",
+    "datasets/dsec_confirmation/test/zurich_city_15_a/object_detections/left/tracks.npy": "7219d8c432805e1aa48a52979463069c762a634cf5e79a3e4603db418d89c683"
+  },
+  "development_sources_sha256": {
+    "experiments/driving_factors_v01/factors/zurich_city_07_a.jsonl": "6a73957608bc5ecbefdb50e5ce9af6ae7947cf8aaea7e38848fa4c0838c5c67f",
+    "experiments/driving_factors_v01/factors/zurich_city_08_a.jsonl": "4e265acb1969a1a8ddb86b9c851a6305180d37fd2fbd0b3e4fe61c26eb4006cb",
+    "experiments/driving_factors_v01/factors/zurich_city_09_a.jsonl": "3ba1e2be4d2385addce2d8605ca987ee59330dd43cb474a66003604bebd5aba9",
+    "experiments/driving_factors_v01/factors/zurich_city_10_a.jsonl": "f5c433433feb0321c2c51673376f276d4dd6ba4d1bf18d4160bedd0ed5da34ee"
+  },
+  "source_sha256": "40e74981fb938e4bb6648ce97ec3d29f149c43753af563465bbfe6986e295a56",
+  "annotation_only_census": [
+    {
+      "sequence": "thun_01_a",
+      "native_queries": 197,
+      "eligible_native_gt": 704,
+      "native_annotation_motion_counts": {
+        "motion_unknown": 18,
+        "motion_high": 382,
+        "motion_middle": 273,
+        "motion_low": 31
+      },
+      "median_grid_gap_us": 50001.0,
+      "role": "Annotation-only census; actual full180ms support and warmup cohort fixed after raw event input verification"
+    },
+    {
+      "sequence": "thun_02_a",
+      "native_queries": 3901,
+      "eligible_native_gt": 42532,
+      "native_annotation_motion_counts": {
+        "motion_unknown": 1563,
+        "motion_high": 15545,
+        "motion_middle": 19696,
+        "motion_low": 5728
+      },
+      "median_grid_gap_us": 50001.0,
+      "role": "Annotation-only census; actual full180ms support and warmup cohort fixed after raw event input verification"
+    },
+    {
+      "sequence": "interlaken_01_a",
+      "native_queries": 2263,
+      "eligible_native_gt": 4078,
+      "native_annotation_motion_counts": {
+        "motion_unknown": 98,
+        "motion_low": 366,
+        "motion_high": 1829,
+        "motion_middle": 1785
+      },
+      "median_grid_gap_us": 50001.0,
+      "role": "Annotation-only census; actual full180ms support and warmup cohort fixed after raw event input verification"
+    },
+    {
+      "sequence": "zurich_city_12_a",
+      "native_queries": 765,
+      "eligible_native_gt": 2312,
+      "native_annotation_motion_counts": {
+        "motion_unknown": 76,
+        "motion_high": 1574,
+        "motion_middle": 619,
+        "motion_low": 43
+      },
+      "median_grid_gap_us": 50001.0,
+      "role": "Annotation-only census; actual full180ms support and warmup cohort fixed after raw event input verification"
+    },
+    {
+      "sequence": "zurich_city_13_a",
+      "native_queries": 379,
+      "eligible_native_gt": 976,
+      "native_annotation_motion_counts": {
+        "motion_unknown": 44,
+        "motion_middle": 514,
+        "motion_high": 215,
+        "motion_low": 203
+      },
+      "median_grid_gap_us": 50001.0,
+      "role": "Annotation-only census; actual full180ms support and warmup cohort fixed after raw event input verification"
+    },
+    {
+      "sequence": "zurich_city_14_a",
+      "native_queries": 439,
+      "eligible_native_gt": 1896,
+      "native_annotation_motion_counts": {
+        "motion_unknown": 79,
+        "motion_middle": 901,
+        "motion_low": 169,
+        "motion_high": 747
+      },
+      "median_grid_gap_us": 50001.0,
+      "role": "Annotation-only census; actual full180ms support and warmup cohort fixed after raw event input verification"
+    },
+    {
+      "sequence": "zurich_city_15_a",
+      "native_queries": 1239,
+      "eligible_native_gt": 7953,
+      "native_annotation_motion_counts": {
+        "motion_unknown": 193,
+        "motion_middle": 3321,
+        "motion_low": 1005,
+        "motion_high": 3434
+      },
+      "median_grid_gap_us": 50001.0,
+      "role": "Annotation-only census; actual full180ms support and warmup cohort fixed after raw event input verification"
+    }
+  ],
+  "new_detector_outputs_read": false
+}

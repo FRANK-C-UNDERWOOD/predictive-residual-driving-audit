@@ -1,0 +1,48 @@
+{
+  "version": "readout-adaptation-v01",
+  "scope": "Bounded development baseline diagnosis: adapt only pointwise readouts, not SNN representation or allocation policy",
+  "train_sequences": ["zurich_city_00_a"],
+  "calibration_sequences": ["thun_00_a"],
+  "evaluation_sequences": ["zurich_city_01_a", "interlaken_00_c"],
+  "exposure": {
+    "zurich_city_01_a": "Previously explored development sequence; paired before/after comparison, not pristine test",
+    "interlaken_00_c": "New evaluation sequence selected by smallest public compressed size among c/d/e, before model inference; no confirmatory generalization claim"
+  },
+  "checkpoint_sha256": "ddd76884f0889c36deea8442e426a8573612b91de41108a93dfb78cb2b362c8d",
+  "source_commit": "90fc523215f6121d9dd9c6fc63ae9225361af8cb",
+  "input": {"size": 256, "steps": 3, "channels": 3, "bin_us": 20000},
+  "warmup_complete_windows": 10,
+  "trainable_modules": ["head_det_3", "head_det_2", "head_det_1"],
+  "seeds": [0, 1, 2],
+  "seed_scope": "Three minibatch-order seeds from the same pretrained SNN and head initialization; not independent full-detector training seeds",
+  "epochs": 12,
+  "batch_size": 16,
+  "learning_rate": 0.0003,
+  "optimizer": "AdamW",
+  "weight_decay": 0.0001,
+  "gradient_clip_norm": 10.0,
+  "loss": "Upstream gt_creator multi_anchor + calculate_loss_new + Criterion; scale_loss=positive; no validation checkpoint selection",
+  "training_labels": "Common car/pedestrian classes, clipped native boxes; upstream-style rounded 256 letterbox coordinates. Upstream ignores resized width or height <1; report count, never remove these from evaluation truth.",
+  "final_checkpoint_rule": "Always epoch 12 for each seed; preserve epoch 1/4/12 checkpoints, evaluate only final",
+  "confidence_fixed": 0.3,
+  "calibration_floor": 0.01,
+  "calibration_target_fppi": 1.0,
+  "nms_threshold": 0.5,
+  "iou_threshold": 0.5,
+  "small_area_fraction": 0.01,
+  "class_map_dsec_to_detector": {"0": 1, "2": 0},
+  "reliable_run_length": 3,
+  "deadline_seconds": 0.2,
+  "horizon_seconds": 0.5,
+  "max_annotation_gap_seconds": 0.075,
+  "assets": [
+    {"id": "interlaken_00_c_events", "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/interlaken_00_c/interlaken_00_c_events_left.zip", "destination": "datasets/downloads/interlaken_00_c_events_left.zip", "extract_subdir": "train/interlaken_00_c/events/left"}
+  ],
+  "limitations": [
+    "One training sequence and two evaluation journeys cannot establish broad generalization.",
+    "Head-only adaptation is a diagnostic; failure does not rule out full-model adaptation.",
+    "No deadline changes, no evaluation-based checkpoint selection, no H1/H2/H3 verdict.",
+    "Calibration FPPI does not imply identical achieved evaluation FPPI.",
+    "Feature caching is an offline experiment aid, not a runtime or efficiency claim."
+  ]
+}

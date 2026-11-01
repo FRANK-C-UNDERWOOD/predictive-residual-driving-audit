@@ -1,0 +1,18 @@
+{
+  "version":"rvt-reference-v01",
+  "checkpoint":"vendor/rvt_snapshot/weights/rvt-t-1mpx.ckpt",
+  "checkpoint_sha256":"4298fb5290e3bf6bb0914f37dacb402ed8b759236ad5d211c25056fae7b45ab7",
+  "method":"rvt_native",
+  "sequences":["thun_00_a","zurich_city_01_a","interlaken_00_c"],
+  "input_hw":[512,640],
+  "native_hw":[480,640],
+  "history_us":180000,
+  "steps":3,
+  "step_us":60000,
+  "representation":"Official StackedHistogram, 10 bins per polarity per step; native pixels; fastmode=False to prevent uint8 overflow; cutoff 255; zero bottom padding to512x640; no RGB",
+  "state":"Reset all LSTM states at each query, retain only within the same 180ms window; detect only final step",
+  "classes":"Official 1Mpx: 0 pedestrian, 1 two-wheeler, 2 car. Argmax over all three before retaining common classes; map 2 to car=0, 0 to pedestrian=1",
+  "comparison":"Different pretraining data, architecture and encoding; raw history and native evaluation population shared. Diagnostic reference, not a controlled ANN-vs-SNN superiority experiment.",
+  "training_deviation":"Official checkpoint uses 50ms steps and longer recurrent stream; here three60ms steps are a deliberately bounded-history transfer condition, not official benchmark reproduction",
+  "precision":"float32; TF32 disabled; no torch.compile"
+}

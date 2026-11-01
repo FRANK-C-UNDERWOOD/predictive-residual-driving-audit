@@ -1,0 +1,27 @@
+{
+  "version": "driving-confirmation-v02-design",
+  "status": "Prospective design recorded after driving-factors-v01; data manifest and sample-size plan not frozen, not executable confirmation and not externally preregistered.",
+  "motivation_artifacts": ["experiments/driving_factors_v01/verification.json", "experiments/driving_factors_v01/group_summaries.json", "experiments/driving_factors_v01/source_partitions.json"],
+  "primary_question": "Within a frozen RVT interface, is absolute-EMA minus activity recall more negative for low than high annotated-object image motion on genuinely new recordings, and does that association persist after controlling annotation size/class/stage?",
+  "primary_contrast": ["ema/absolute", "current_activity"],
+  "primary_effect": "For each new recording: (R_EMA-R_activity)_low - (R_EMA-R_activity)_high at the retrospective whole-recording1FP point; prediction is negative. Estimate and interval reported whether positive, negative or undefined. This is an observational subgroup interaction, not the causal effect of ego motion.",
+  "secondary_predictions": [
+    "For each Spike checkpoint, residual-minus-activity complete-GT recall difference is smaller in small than larger targets. Baseline detection coverage and conditional preservation are reported alongside this interaction.",
+    "For RVT low-motion fixed-reference instances, original effective-source coverage is lower under EMA, and alternative recovery does not fully compensate the deficit. C/A/L terms must be independently replayed; the identity kept=C+A-L is not itself a hypothesis."
+  ],
+  "fixed_interfaces": "Same pinned S0/S1/RVT checkpoints, class maps, input/state conventions, alpha0.8, primary20% per-scale capacity, upstream NMS and one-to-one IoU0.5 matching. No gate trained or selected on new records.",
+  "factors": "Use driving_factors_v01 annotation rules unchanged. Additional cross-cells size(small/larger) x class(car/pedestrian) x stage(early/established/left-censored) are specified before new outputs for confounding assessment; no causal claim from observational adjustment.",
+  "adjustment": "Report low/high interaction in every cross-cell with both GT populations present. Any standardized interaction requires weights fixed using development annotation populations before new inference, and common support. Missing cells remain undefined with their missing GT support listed; no outcome-driven cell deletion or zero imputation. If support is insufficient, the adjusted prediction is inconclusive.",
+  "operating_points": "Retain0.25/0.5/1/2FP/query, primary1. Existing Thun-only threshold transfer stays separate from retrospective evaluation-curve matching. No subgroup threshold fitting. Publish actual whole-recording FP counts and unmatched points. All nine archived conditions retained.",
+  "capacity_extension": "If a capacity boundary is claimed, predeclare20/35/60% x all four FP points before new outputs. The current20%-point study alone cannot establish a universal capacity threshold.",
+  "data_gate": [
+    "Choose accessible records with sensor/annotation interfaces aligned and no prior use in this project's hypothesis or method selection. Freeze exact complete-sequence identities, timestamps, annotation hashes and source roles before any new model outputs.",
+    "Keep cities/datasets and recording-group dependencies explicit. Other Zurich groups provide new-recording evidence, not independent-dataset or geographic generalization. Additional segments of an already used recording group are not independent recording sources.",
+    "Use a supported in-domain detector baseline or keep weak coverage as an explicit limitation. Do not discard complete difficult recordings after observing baseline/selector outcomes.",
+    "GEN1 training snippets cannot stand in for official validation. No downloading alternative private data or bypassing registration. Establish lawful available held-out data before launch."
+  ],
+  "statistics_gate": "Before launch, fix recording-level sampling and a precision/sample-size plan using development variability and expected subgroup GT/dense coverage; account for sessions sharing a recording source. Primary uncertainty is clustered at independent recording/session level, never frame level. No universal population claim or equivalence verdict if independent units/support are insufficient. No practical margin is chosen after new outcomes.",
+  "required_before_launch": ["Exact eligible independent-data manifest", "Frozen source-group sampling/precision plan", "Development-only adjustment weights and support rule", "Model/input/annotation alignment receipts", "Executed-source hashes and timestamped run freeze"],
+  "current_data_status": "Existing local event-backed four-recording audit is exposed. Interlaken/Thun group00 already used in development/calibration. Other local annotation folders do not establish a new independent dataset. GEN1 official validation access remains incomplete. No independent-confirmation result is claimed.",
+  "decision": "If independent results disagree, retain disagreement and narrow the manuscript. If conditional adjustment removes the motion association, do not claim an independent motion mechanism. Add a corrective gate only after a specific reproducible error is identified and a separate new-policy evaluation is possible."
+}

@@ -1,0 +1,85 @@
+{
+  "thresholds": {
+    "original": 0.7621667385101318,
+    "readout": 0.7974629402160645,
+    "full_conv": 0.7947952747344971
+  },
+  "actual": {
+    "original": {
+      "fixed": {
+        "frames": 225,
+        "gt": 866,
+        "tp": 219,
+        "fp": 7599,
+        "small_gt": 720,
+        "small_tp": 82,
+        "recall": 0.2528868360277136,
+        "small_recall": 0.11388888888888889,
+        "fppi": 33.77333333333333
+      },
+      "calibrated": {
+        "frames": 225,
+        "gt": 866,
+        "tp": 184,
+        "fp": 225,
+        "small_gt": 720,
+        "small_tp": 52,
+        "recall": 0.21247113163972287,
+        "small_recall": 0.07222222222222222,
+        "fppi": 1.0
+      },
+      "threshold": 0.7621667385101318
+    },
+    "readout": {
+      "fixed": {
+        "frames": 225,
+        "gt": 866,
+        "tp": 241,
+        "fp": 8490,
+        "small_gt": 720,
+        "small_tp": 104,
+        "recall": 0.27829099307159355,
+        "small_recall": 0.14444444444444443,
+        "fppi": 37.733333333333334
+      },
+      "calibrated": {
+        "frames": 225,
+        "gt": 866,
+        "tp": 190,
+        "fp": 225,
+        "small_gt": 720,
+        "small_tp": 61,
+        "recall": 0.21939953810623555,
+        "small_recall": 0.08472222222222223,
+        "fppi": 1.0
+      },
+      "threshold": 0.7974629402160645
+    },
+    "full_conv": {
+      "fixed": {
+        "frames": 225,
+        "gt": 866,
+        "tp": 250,
+        "fp": 9012,
+        "small_gt": 720,
+        "small_tp": 112,
+        "recall": 0.28868360277136257,
+        "small_recall": 0.15555555555555556,
+        "fppi": 40.053333333333335
+      },
+      "calibrated": {
+        "frames": 225,
+        "gt": 866,
+        "tp": 186,
+        "fp": 225,
+        "small_gt": 720,
+        "small_tp": 57,
+        "recall": 0.21478060046189376,
+        "small_recall": 0.07916666666666666,
+        "fppi": 1.0
+      },
+      "threshold": 0.7947952747344971
+    }
+  },
+  "frozen_before_other_sequences": true
+}

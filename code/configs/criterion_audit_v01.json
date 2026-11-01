@@ -1,0 +1,37 @@
+{
+  "version": "criterion-audit-v01",
+  "scope": "Exploratory allocation-criterion audit on two development sequences, not hypothesis confirmation or efficiency evidence",
+  "sequences": ["thun_00_a", "zurich_city_01_a"],
+  "source_commit": "90fc523215f6121d9dd9c6fc63ae9225361af8cb",
+  "checkpoint_sha256": "ddd76884f0889c36deea8442e426a8573612b91de41108a93dfb78cb2b362c8d",
+  "policies": ["random", "event_rate", "current_activity", "past_activity", "residual_ema", "residual_persistence"],
+  "retention_ratios": [0.2, 0.35, 0.6],
+  "predictor_alpha": 0.8,
+  "warmup_complete_windows": 10,
+  "seed": 0,
+  "age_priority": false,
+  "confidence_threshold": 0.3,
+  "nms_threshold": 0.5,
+  "iou_threshold": 0.5,
+  "small_area_fraction": 0.01,
+  "class_map_dsec_to_detector": {"0": 1, "2": 0},
+  "reliable_run_length": 3,
+  "deadline_seconds": 0.2,
+  "horizon_seconds": 0.5,
+  "max_annotation_gap_seconds": 0.075,
+  "counterfactual": {
+    "policy": "residual_ema", "retention": 0.35, "frame_stride": 20,
+    "rule": "For each dense-matched but missed target on scheduled frames, restore its omitted dense-anchor site and remove the lowest-scored selected site at the same scale; log unsuccessful restorations",
+    "privileged": true
+  },
+  "interpretation_limits": [
+    "Dense head outputs are computed everywhere, then subset before NMS; this is an offline criterion intervention, not saved execution.",
+    "The GEN1-trained detector is not adapted to DSEC; report dense detectability and domain limitation.",
+    "Fixed confidence does not establish equal FPPI; report achieved FPPI and withhold H1/H2/H3 verdicts.",
+    "No importance/hybrid implementation, no calibrated trust probability, no formal preregistration.",
+    "No age priority or tracks in allocation: this isolates the score, not the complete deployment policy.",
+    "The small-object split is descriptive, not a matched causal critical/ordinary comparison.",
+    "Two sequences and one checkpoint do not support generalization confidence intervals.",
+    "Ground-truth-aided exchanges are immediate diagnostics, not deployable corrections or restored temporal runs."
+  ]
+}

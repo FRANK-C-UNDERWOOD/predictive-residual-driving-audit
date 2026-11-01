@@ -1,0 +1,346 @@
+[
+  {
+    "sequence": "zurich_city_07_a",
+    "queries": 1449,
+    "populations": {
+      "all": {
+        "instances": 5793,
+        "tracks": 98,
+        "queries": 1449
+      },
+      "small": {
+        "instances": 5484,
+        "tracks": 98,
+        "queries": 1448
+      },
+      "large": {
+        "instances": 309,
+        "tracks": 19,
+        "queries": 260
+      },
+      "early": {
+        "instances": 244,
+        "tracks": 86,
+        "queries": 224
+      },
+      "established": {
+        "instances": 3383,
+        "tracks": 74,
+        "queries": 1258
+      },
+      "left_censored": {
+        "instances": 2166,
+        "tracks": 10,
+        "queries": 1449
+      },
+      "motion_low": {
+        "instances": 627,
+        "tracks": 50,
+        "queries": 518
+      },
+      "motion_middle": {
+        "instances": 2590,
+        "tracks": 81,
+        "queries": 1223
+      },
+      "motion_high": {
+        "instances": 2316,
+        "tracks": 80,
+        "queries": 1025
+      },
+      "motion_unknown": {
+        "instances": 260,
+        "tracks": 92,
+        "queries": 221
+      },
+      "car": {
+        "instances": 4947,
+        "tracks": 72,
+        "queries": 1449
+      },
+      "pedestrian": {
+        "instances": 846,
+        "tracks": 26,
+        "queries": 607
+      },
+      "small_early": {
+        "instances": 244,
+        "tracks": 86,
+        "queries": 224
+      },
+      "small_established": {
+        "instances": 3197,
+        "tracks": 74,
+        "queries": 1240
+      },
+      "large_early": {
+        "instances": 0,
+        "tracks": 0,
+        "queries": 0
+      },
+      "large_established": {
+        "instances": 186,
+        "tracks": 17,
+        "queries": 173
+      }
+    }
+  },
+  {
+    "sequence": "zurich_city_08_a",
+    "queries": 773,
+    "populations": {
+      "all": {
+        "instances": 4392,
+        "tracks": 62,
+        "queries": 773
+      },
+      "small": {
+        "instances": 3192,
+        "tracks": 60,
+        "queries": 773
+      },
+      "large": {
+        "instances": 1200,
+        "tracks": 33,
+        "queries": 547
+      },
+      "early": {
+        "instances": 162,
+        "tracks": 56,
+        "queries": 150
+      },
+      "established": {
+        "instances": 3787,
+        "tracks": 52,
+        "queries": 773
+      },
+      "left_censored": {
+        "instances": 443,
+        "tracks": 3,
+        "queries": 236
+      },
+      "motion_low": {
+        "instances": 545,
+        "tracks": 32,
+        "queries": 398
+      },
+      "motion_middle": {
+        "instances": 1707,
+        "tracks": 48,
+        "queries": 685
+      },
+      "motion_high": {
+        "instances": 2009,
+        "tracks": 56,
+        "queries": 657
+      },
+      "motion_unknown": {
+        "instances": 131,
+        "tracks": 59,
+        "queries": 121
+      },
+      "car": {
+        "instances": 4060,
+        "tracks": 55,
+        "queries": 773
+      },
+      "pedestrian": {
+        "instances": 332,
+        "tracks": 7,
+        "queries": 270
+      },
+      "small_early": {
+        "instances": 154,
+        "tracks": 53,
+        "queries": 142
+      },
+      "small_established": {
+        "instances": 2732,
+        "tracks": 51,
+        "queries": 766
+      },
+      "large_early": {
+        "instances": 8,
+        "tracks": 3,
+        "queries": 8
+      },
+      "large_established": {
+        "instances": 1055,
+        "tracks": 29,
+        "queries": 536
+      }
+    }
+  },
+  {
+    "sequence": "zurich_city_09_a",
+    "queries": 1799,
+    "populations": {
+      "all": {
+        "instances": 7190,
+        "tracks": 110,
+        "queries": 1516
+      },
+      "small": {
+        "instances": 4380,
+        "tracks": 105,
+        "queries": 1422
+      },
+      "large": {
+        "instances": 2810,
+        "tracks": 71,
+        "queries": 1093
+      },
+      "early": {
+        "instances": 312,
+        "tracks": 107,
+        "queries": 275
+      },
+      "established": {
+        "instances": 6595,
+        "tracks": 95,
+        "queries": 1458
+      },
+      "left_censored": {
+        "instances": 283,
+        "tracks": 3,
+        "queries": 194
+      },
+      "motion_low": {
+        "instances": 461,
+        "tracks": 56,
+        "queries": 363
+      },
+      "motion_middle": {
+        "instances": 2496,
+        "tracks": 89,
+        "queries": 1074
+      },
+      "motion_high": {
+        "instances": 3981,
+        "tracks": 100,
+        "queries": 1288
+      },
+      "motion_unknown": {
+        "instances": 252,
+        "tracks": 107,
+        "queries": 224
+      },
+      "car": {
+        "instances": 7098,
+        "tracks": 101,
+        "queries": 1511
+      },
+      "pedestrian": {
+        "instances": 92,
+        "tracks": 9,
+        "queries": 91
+      },
+      "small_early": {
+        "instances": 282,
+        "tracks": 98,
+        "queries": 248
+      },
+      "small_established": {
+        "instances": 3961,
+        "tracks": 92,
+        "queries": 1358
+      },
+      "large_early": {
+        "instances": 30,
+        "tracks": 12,
+        "queries": 30
+      },
+      "large_established": {
+        "instances": 2634,
+        "tracks": 63,
+        "queries": 1011
+      }
+    }
+  },
+  {
+    "sequence": "zurich_city_10_a",
+    "queries": 2301,
+    "populations": {
+      "all": {
+        "instances": 5466,
+        "tracks": 50,
+        "queries": 1320
+      },
+      "small": {
+        "instances": 3856,
+        "tracks": 50,
+        "queries": 1165
+      },
+      "large": {
+        "instances": 1610,
+        "tracks": 36,
+        "queries": 692
+      },
+      "early": {
+        "instances": 144,
+        "tracks": 49,
+        "queries": 124
+      },
+      "established": {
+        "instances": 4953,
+        "tracks": 45,
+        "queries": 1131
+      },
+      "left_censored": {
+        "instances": 369,
+        "tracks": 1,
+        "queries": 369
+      },
+      "motion_low": {
+        "instances": 495,
+        "tracks": 31,
+        "queries": 339
+      },
+      "motion_middle": {
+        "instances": 2085,
+        "tracks": 40,
+        "queries": 795
+      },
+      "motion_high": {
+        "instances": 2742,
+        "tracks": 46,
+        "queries": 893
+      },
+      "motion_unknown": {
+        "instances": 144,
+        "tracks": 49,
+        "queries": 136
+      },
+      "car": {
+        "instances": 5237,
+        "tracks": 45,
+        "queries": 1139
+      },
+      "pedestrian": {
+        "instances": 229,
+        "tracks": 5,
+        "queries": 192
+      },
+      "small_early": {
+        "instances": 137,
+        "tracks": 48,
+        "queries": 118
+      },
+      "small_established": {
+        "instances": 3404,
+        "tracks": 44,
+        "queries": 970
+      },
+      "large_early": {
+        "instances": 7,
+        "tracks": 4,
+        "queries": 7
+      },
+      "large_established": {
+        "instances": 1549,
+        "tracks": 35,
+        "queries": 686
+      }
+    }
+  }
+]

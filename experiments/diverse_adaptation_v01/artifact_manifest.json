@@ -1,0 +1,471 @@
+{
+  "sources": [
+    {
+      "path": "code/configs/diverse_adaptation_v01.json",
+      "sha256": "b008a5e0325b45eec816b0f3c2e66000693e4f80e1b2f45489d5d49dfa45a82f"
+    },
+    {
+      "path": "code/riskaware/calibration_audit.py",
+      "sha256": "dc92b4b857156a73516088204440b49729d8d22a7078215230343f33429806e0"
+    },
+    {
+      "path": "code/riskaware/criterion_audit.py",
+      "sha256": "7a4c32cf83128990ddac9e59e0db40dabbd8b55abe2de2b9fb98b5e2acda180f"
+    },
+    {
+      "path": "code/riskaware/dsec_pilot.py",
+      "sha256": "ceefbd3873dfa3bb003ed680d35ded91d5e092736dd3cd53efb6577964db5ad5"
+    },
+    {
+      "path": "code/riskaware/metrics.py",
+      "sha256": "7462d98679345826294b7bfbc021c2cd8607028d41bda11ba33808fd215c6ecd"
+    },
+    {
+      "path": "code/riskaware/readout_adaptation.py",
+      "sha256": "2191c9b3a1538777df551a96580a015d1369195cf0fc82e33b025a074b4af8c0"
+    },
+    {
+      "path": "code/riskaware/torch_spikefpn.py",
+      "sha256": "983a0db09023d22f1be3a92e9e1a167a35ee4a3e51c6fb7d8c1f3d20323bb246"
+    },
+    {
+      "path": "code/riskaware/trainable_backbone.py",
+      "sha256": "476e85e1766989ca152b099ef363c097d5ec9620b7ca1af034333669a906bf9f"
+    },
+    {
+      "path": "code/scripts/audit_diverse_anchors.py",
+      "sha256": "9431be531736cd09499abf82c674b6bec661944c1d283d11c1304963cfba8e43"
+    },
+    {
+      "path": "code/scripts/audit_input_sampling_geometry.py",
+      "sha256": "7d78ba26cde97a45aeaf5f1b552c6c302dcb39c451ee64f87106f01385436084"
+    },
+    {
+      "path": "code/scripts/diagnose_diverse_operating_points.py",
+      "sha256": "6adaf4ead86e4eb761f97031f494bdcb0ce25cfe8f407cbe87075369ad37d3d4"
+    },
+    {
+      "path": "code/scripts/fetch_diverse_adaptation.py",
+      "sha256": "b23ca1b7b587ace63a63e7fdaec7b43471bc91164f5fd682d9dfcf433bac601c"
+    },
+    {
+      "path": "code/scripts/run_backbone_adaptation.py",
+      "sha256": "a3a91cf375d20ef43d1daa510e49f9cd562d4063889e6214ce055ebddc390f79"
+    },
+    {
+      "path": "code/scripts/run_diverse_adaptation.py",
+      "sha256": "9747d94232235fb12c866956b3f59f3bbbd5d933ba6e34c535a01de9ab1d09b9"
+    },
+    {
+      "path": "code/scripts/summarize_diverse_adaptation.py",
+      "sha256": "cabc74edf3bd1711cf68b5084a4dd0a51372961ad21abe1327d47be88b887cef"
+    },
+    {
+      "path": "code/scripts/verify_diverse_adaptation.py",
+      "sha256": "60c746531e05e97c9c64f30444757d5d9b724cd7974c8d0ac74ee7448d55bb80"
+    },
+    {
+      "path": "code/scripts/verify_diverse_oracle_points.py",
+      "sha256": "f185d8cebfe8910f565a3de4346b77f15f0b8b50b50501b7bdf06f6b2d3378f6"
+    },
+    {
+      "path": "vendor/spikefpn_snapshot/utils/create_labels.py",
+      "sha256": "5ecf211e2e8f08325b2329ce6d98826f0fc24370bd5113775b5f62869a1bb3eb"
+    },
+    {
+      "path": "vendor/spikefpn_snapshot/utils/criterion.py",
+      "sha256": "1f2a5f3f4f0071beaae5aed91ac308f60f98d165ed2a9fc5ae12007aa372c045"
+    },
+    {
+      "path": "vendor/spikefpn_snapshot/utils/tools.py",
+      "sha256": "626bca20423f74dff74bd96af6d76b69d375f036a13d002bae20fee04ac9bf6c"
+    }
+  ],
+  "files": [
+    {
+      "path": "experiments/diverse_adaptation_v01/adaptation_points.png",
+      "bytes": 72916,
+      "sha256": "0b875f7b8c7defa202c5aa655af765a359be369968a33f5cfa49629f0e160256"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/adaptation_points.svg",
+      "bytes": 55871,
+      "sha256": "e7e5f6cca045fe617157df86accff81a5f0e035da9abdaab8ad77471405d72f3"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/alignment.json",
+      "bytes": 135876,
+      "sha256": "bb26cd14e9579c4c8baf329540ac775d80a56d628ceda345bdfe193c6d2fe006"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/data_receipt.json",
+      "bytes": 7827,
+      "sha256": "109f939b1038391abcbf3fb1ab6aaf2fb0359cfdd83962da7083f98eefa27bf2"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/data_selection.json",
+      "bytes": 2606,
+      "sha256": "2ee2e05f8634a67a443061cb61d055c8c94f6a311e821534933096f1f3faf2f7"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/dependency_manifest.json",
+      "bytes": 1807,
+      "sha256": "6304adb5514219f5f3ffa26efa400a66cf532f594d0c64256b7fe6b1de1fd3a8"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/environment.json",
+      "bytes": 654,
+      "sha256": "1bcd3840cbf9f6e748ea1a6b2dcd490d19957902a133208da6a462c77ba4a090"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/evaluation_progress.json",
+      "bytes": 9761,
+      "sha256": "b9c633ffedb994c0971fa083864e7b33b497ad7d7178552278051ad2d22795ca"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/evaluation_summary.json",
+      "bytes": 16583,
+      "sha256": "60aa04cbcafead62a701f89b1f26a06e052fad299a2e02e853030e591b990397"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/frames.jsonl",
+      "bytes": 1346845,
+      "sha256": "a1cbc88bcf60e0187191570fe3ad1ebe5f3c4a4102515c59cba48ec5a169ce26"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/frozen_thresholds.json",
+      "bytes": 2081,
+      "sha256": "56213aa744359e35d4665fcd7edfac5565e74e7fdbd75ae233f11de99c39c257"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/full_conv_progress.json",
+      "bytes": 156199,
+      "sha256": "6f9f5aa97629e75b11eb698ec7b749b33cbc743b616932d217d8fe7ee6affee7"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/full_conv_training.json",
+      "bytes": 157159,
+      "sha256": "e4e80713af57efc29394b32ff3d08e501af5e98941495eb3ee7d7b2acefc0ff0"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/full_conv_update116.pth",
+      "bytes": 86492758,
+      "sha256": "f944bd5be68f2cdadb0150fff8ad35ced0550ae28854e2b1e6903214d95a6a68"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/full_conv_update232.pth",
+      "bytes": 86492758,
+      "sha256": "b94d0e8fc79d03a621f960e6db2390507cc28997bc79f39c626b3cd93a8c106b"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/full_conv_update348.pth",
+      "bytes": 86492758,
+      "sha256": "4388e19c3054891765d5acabf1db3fa8f6042b0ad196e7a138ed0334ae0d3e50"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/full_conv_validation_116.json",
+      "bytes": 290,
+      "sha256": "9ffd585fbc1d6dae884954797921dab54efdc20cbaabecfcf85d9947ac7d4f7f"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/full_conv_validation_232.json",
+      "bytes": 290,
+      "sha256": "699e83e5a8639bd69a1873f10daa702bd3d75c0740911e8e40491104f7324a10"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/full_conv_validation_348.json",
+      "bytes": 289,
+      "sha256": "3bb6a55667e741719a3daec046c3023bfb50720e8a800c26004abb74500fbb86"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/input_manifest.json",
+      "bytes": 272099,
+      "sha256": "580388befd5042967c346cccbd85be9ac917e0ebd91ac565f8cf429057d3207d"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/input_sampling_geometry.json",
+      "bytes": 810,
+      "sha256": "e0050c40d8c874f4dac3dbd7a8e5c9c2500b88563a11d2a9b7817d329b972ce3"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/label_geometry_inventory.json",
+      "bytes": 3508,
+      "sha256": "9aa208c3fa3a15a06629dd9923b8cc2d5b9e9f2fd6a89d54e5fa1b2965c29b18"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/label_inventory.json",
+      "bytes": 2113,
+      "sha256": "6c59062718dd52aadea558715d375972b789c4d0dcb57af8698170eda70b2618"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/operating_points.csv",
+      "bytes": 4749,
+      "sha256": "e65eb3a5c1c7d52b000bc6c13975c927d5ef9634c6a0de09e08fe7b31957d363"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/oracle_diagnostic.json",
+      "bytes": 22739,
+      "sha256": "11dfb0f37dbabe0fa6978bb7652f97010a57e51036e040cdcd4a99c4d77c6e9f"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/oracle_verification.json",
+      "bytes": 7801,
+      "sha256": "9989801286a71e7f2460cd98131f94b888c4e2c237ac8a5453d61d84cd89099a"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/original_validation_0.json",
+      "bytes": 287,
+      "sha256": "56eb677783070208dff2d44c0051fbe99a88d3183f4f5defa66234c78ad8e887"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/posthoc_tradeoff.png",
+      "bytes": 221138,
+      "sha256": "d302bba8ac31a4174ff087c9d0307516b91e31e6424ab6672f90e02e6116b478"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/posthoc_tradeoff.svg",
+      "bytes": 94174,
+      "sha256": "e37535015a34ba587701a8aa70aaebe48fe275d9532ceedcfad24a8e3756f262"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/readout_progress.json",
+      "bytes": 155936,
+      "sha256": "51b4bffce7f206935557f17582def61fff018a04b2a63de6b3d16e838ae61467"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/readout_training.json",
+      "bytes": 156887,
+      "sha256": "b04e4b4037699db49b9e5a9f678c97bdc09c7667b719247aefe61b2881abcd5a"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/readout_update116.pth",
+      "bytes": 115820,
+      "sha256": "568d8aae3433828f6fcffaa21353dcd770d0916df2a702c25dd140f38e339685"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/readout_update232.pth",
+      "bytes": 115820,
+      "sha256": "fa76664b86742e42f583e887602c24c2f07e44523de5beebe4a386c91739d02b"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/readout_update348.pth",
+      "bytes": 115820,
+      "sha256": "b022d4a34e14df10a3be9e9bba0a915cb4ca52ff61694ba423441d846f20181a"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/readout_validation_116.json",
+      "bytes": 288,
+      "sha256": "9f7739c2375febc6f58e3daa58ef545650ce1f63548fe4bb44193c6c85e2fb78"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/readout_validation_232.json",
+      "bytes": 287,
+      "sha256": "0c6b22cd9b662cfea5e016f6eb29e019af373a5438ccb46c07be694f3fd51225"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/readout_validation_348.json",
+      "bytes": 288,
+      "sha256": "5665a8e27408a32beb10aad0ec3ba85fb272c59cb1c686219d06141b7cd0da54"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/REPORT.md",
+      "bytes": 7949,
+      "sha256": "6a4addb81e421054367c50d5be5c1812d46cf01c4203a11f3241dbc46d3a3f8d"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/run_manifest.json",
+      "bytes": 3143,
+      "sha256": "43322b1862a739d3d661f8373f5609006e00f69ca8e089947c63bab76eb5f1ef"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/schedule.npy",
+      "bytes": 22400,
+      "sha256": "57f3d141973d74ca1dc6ef35a6c5adf3b8bf33b44f3eaca815fbdc76e4ad2a66"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/STATUS.json",
+      "bytes": 123,
+      "sha256": "8b06c7e5edc274d600378ef6bb838b86f25685b4f2922165f6abefddfdfbefa9"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/training_anchor_audit.json",
+      "bytes": 1545,
+      "sha256": "f7265fb1c4e27f2b91130d8f2a6bf2de9650d4e974466401c782d9b5858d04ae"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/training_summary.json",
+      "bytes": 392263,
+      "sha256": "dff43330134672c75c17eb5a4b5deef656a9095bce9b494a1555a5acf03e0abe"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/verification.json",
+      "bytes": 10503,
+      "sha256": "f7e720d01ea2f98a15be6cb49e114a523992019bf8b3b9b541b78ea5c5613162"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/zurich_city_00_a_inputs.npy",
+      "bytes": 545587328,
+      "sha256": "af5cdad9a63f187bb40c64ff65d36c11bd438d6d234313768fda77384608b489"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/zurich_city_00_a_targets.npy",
+      "bytes": 104428928,
+      "sha256": "a27f56f2161a8ca902d9b273378c41793c3a8a07ded4777a686f06a05fac5c30"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/zurich_city_00_a_times.npy",
+      "bytes": 7528,
+      "sha256": "39bf4ed88203aad0abb29aba775cce02f6bc95944386299fd3875b8bb14c5a90"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/zurich_city_03_a_inputs.npy",
+      "bytes": 512557184,
+      "sha256": "d750abf116c185a38267aedc7a2e13863fe6302a358a3fe2d4db157b020fb200"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/zurich_city_03_a_targets.npy",
+      "bytes": 98106752,
+      "sha256": "b3302fa34c6f1b20ac4a7067585053566a80a20d93fa9ca2daea4933bc452226"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/zurich_city_03_a_times.npy",
+      "bytes": 7080,
+      "sha256": "c7be0cdb4cb69c3fca6ff68699081a2b2ec5ac54fa62b16826ae236ee5405f43"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/zurich_city_05_a_inputs.npy",
+      "bytes": 1025704064,
+      "sha256": "91fd6a0f0f7a836a9824962cb2d2da1c312473d56febad733ed53d4b6e3bf518"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/zurich_city_05_a_targets.npy",
+      "bytes": 196326272,
+      "sha256": "95d876e0501d1f2aeccd57d2f7bdb9588cba99eaa00192bd68c743385a51bdf5"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/zurich_city_05_a_times.npy",
+      "bytes": 14040,
+      "sha256": "ad7d7e213091f37f59dbe4b85a79d1d44538c3ec44957fba48e08c9a48857c37"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/zurich_city_06_a_inputs.npy",
+      "bytes": 890044544,
+      "sha256": "49487ef471141988949ccf67a29ee55e7ca7665696470c8f1a82863978221a20"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/zurich_city_06_a_times.npy",
+      "bytes": 12200,
+      "sha256": "68b4ac568d331329de988cc7f3f5b689c76997e033c6e9e35e3f88adf2484efa"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/predictions/interlaken_00_c_full_conv.npz",
+      "bytes": 45142248,
+      "sha256": "e6798bf262af8d03f1622c8136069141948407baa56f31fe65934d957e8f7216"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/predictions/interlaken_00_c_original.npz",
+      "bytes": 45112412,
+      "sha256": "18587921390645c3be5c3cd04372d8b887f8247a5972e40ecfc7a9c28e9e344f"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/predictions/interlaken_00_c_readout.npz",
+      "bytes": 45193762,
+      "sha256": "b661eb25578c7824844356800e24a9ff6cb5b8ea1ef562782b356658cc7b37f8"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/predictions/thun_00_a_full_conv.npz",
+      "bytes": 19404464,
+      "sha256": "1888cf0e4f32cbc162be998ddedacef1e3baeac129f0393ebd88dc2caf2727a4"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/predictions/thun_00_a_original.npz",
+      "bytes": 19386030,
+      "sha256": "a45f73e6beccb655d746c0a306b3dd88d51555212386d251de9cc8011e9a8538"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/predictions/thun_00_a_readout.npz",
+      "bytes": 19416441,
+      "sha256": "9068754868c5d34581d3abfe58b9cb6a842257acca5fa4610113ea6c098cbefa"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/predictions/zurich_city_01_a_full_conv.npz",
+      "bytes": 57566912,
+      "sha256": "f634dac8981be6afd12f71fa82a83201b8e0dfd7daec288a99ee5de3c7954ec4"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/predictions/zurich_city_01_a_original.npz",
+      "bytes": 57513095,
+      "sha256": "3a9246b9dd2609aab8b821f22a2af9e31340d1c8dc04480ff46ecc7698fd3290"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/predictions/zurich_city_01_a_readout.npz",
+      "bytes": 57618296,
+      "sha256": "43ee96b10595bd3a9375913c6bd30503b18e301af442b7adf5263f02ec0c115c"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/predictions/zurich_city_02_a_full_conv.npz",
+      "bytes": 19084850,
+      "sha256": "7b910d365c8820d00c050df72d5e9c372603d88b9d1923827e320aa3bdab3055"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/predictions/zurich_city_02_a_original.npz",
+      "bytes": 19063543,
+      "sha256": "24526cd5ea79f6efb003964589053a1cd886f9d2660ffc224011bfdb8ce1e3d4"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/predictions/zurich_city_02_a_readout.npz",
+      "bytes": 19101043,
+      "sha256": "30c0fc2773d7e24e901429cde3388176cd5741dc3ebd489cd691d6176a14c747"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/predictions/zurich_city_04_a_full_conv.npz",
+      "bytes": 59310358,
+      "sha256": "a2d52d803d776d774915eae4849725ddd13f0b5d63d8942a15156b95956a9a25"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/predictions/zurich_city_04_a_original.npz",
+      "bytes": 59258716,
+      "sha256": "3e949ff45b29858a3ff73e54c4919abb088dcf67ac1fd2ad4c8a13e163f60129"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/predictions/zurich_city_04_a_readout.npz",
+      "bytes": 59353548,
+      "sha256": "4f6780e8b1779bb085deb36369d5ab139173923b5b2cbc2ad112a4a5f8796bd8"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/validation_predictions/zurich_city_06_a_full_conv_116.npz",
+      "bytes": 130261480,
+      "sha256": "0cf95060269aabfef6d9bfaba02cabc77f4d1b4c034f72b1ab44c991e4c8af09"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/validation_predictions/zurich_city_06_a_full_conv_232.npz",
+      "bytes": 130250056,
+      "sha256": "9e78777f4b0fd35bbc40aaa98e071683cc46c52fc50fdf82873b6fda9abb4127"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/validation_predictions/zurich_city_06_a_full_conv_348.npz",
+      "bytes": 130109796,
+      "sha256": "d156801b1a76e5d936e981efc76835fc44d6e68df388c36a6ce6f2c8904e0de7"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/validation_predictions/zurich_city_06_a_original_0.npz",
+      "bytes": 130160974,
+      "sha256": "3632719566f65a2dd2f1b656f7c0847a4a4db20e23f2782ec9283fdb84bc2881"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/validation_predictions/zurich_city_06_a_readout_116.npz",
+      "bytes": 130385249,
+      "sha256": "e2fb08b4fdfd94f63287d11212ab71265987c2a9a52582b7d751659d902cd6fc"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/validation_predictions/zurich_city_06_a_readout_232.npz",
+      "bytes": 130409880,
+      "sha256": "14c29bd4fb53130f45ae9089fd00b2b842658675b5c0c489d0bc9a6a4abe8808"
+    },
+    {
+      "path": "experiments/diverse_adaptation_v01/validation_predictions/zurich_city_06_a_readout_348.npz",
+      "bytes": 130270081,
+      "sha256": "c83a686d28610ed3b19a52a29400c3ee81987d3eb756ad35b6cea870a51877cd"
+    }
+  ]
+}

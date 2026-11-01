@@ -1,0 +1,100 @@
+{
+  "config": {
+    "version": "fp-mechanism-v01",
+    "role": "Retrospective secondary analysis of exposed confirmation-v01 recordings. Not new confirmation or a deployable evaluation-label threshold policy.",
+    "parent": "experiments/confirmation_v01",
+    "calibration_sequence": "thun_00_a",
+    "sequences": [
+      "zurich_city_07_a",
+      "zurich_city_08_a",
+      "zurich_city_09_a",
+      "zurich_city_10_a"
+    ],
+    "models": [
+      "spike_original",
+      "spike_adapted",
+      "rvt_stream"
+    ],
+    "methods": [
+      "dense",
+      "ema/current",
+      "ema/absolute",
+      "ema_lag3/current",
+      "current_activity",
+      "ema_activity",
+      "persistence/absolute",
+      "ema_roll/absolute",
+      "unsigned_residual"
+    ],
+    "capacity": 0.2,
+    "fp_targets": [
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "primary_fp_target": 1.0,
+    "confidence_floor": 0.01,
+    "nms": 0.5,
+    "iou": 0.5,
+    "alpha": 0.8,
+    "match_tolerance": "Actual FP count spread between a named pair <=max(1, floor(0.01*target_FP_count)), both counts <=target. Report actual counts and attainment. Otherwise not matched; no threshold interpolation or invented fractional detections.",
+    "regimes": [
+      "thun_calibrated",
+      "retrospective_sequence_budget"
+    ],
+    "threshold_rule": "Initial threshold from floor-output FP confidences with float32 successor. Re-run actual upstream NMS and one-to-one matching at every reported threshold. If actual FP exceeds budget raise threshold using actual FP scores and re-run. Unused budget, ties and floor-limited operating range retained. Retrospective thresholds use the evaluated sequence labels and are diagnostic only.",
+    "reference": "Original fixed dense Thun threshold defines identity-query evidence denominator at every operating point. Full-GT recall is the primary matched-FP task endpoint. Dense under a changed threshold need not preserve 100% of this reference.",
+    "contrasts": [
+      [
+        "ema/absolute",
+        "current_activity"
+      ],
+      [
+        "ema_lag3/current",
+        "ema/current"
+      ],
+      [
+        "ema/absolute",
+        "ema/current"
+      ],
+      [
+        "ema/absolute",
+        "ema_roll/absolute"
+      ],
+      [
+        "unsigned_residual",
+        "ema/absolute"
+      ]
+    ],
+    "mechanism": "Fixed head outputs. Exact original dense TP anchor/site support; four-way residual/activity source coverage versus actual NMS/matching; score-head Spearman by query; padding and GT-center occupancy; signed-overlap identity N=M+B-2O; unsigned residual=sum||H|-|P||/C removes sign opposition, not a retrained detector. Spatial roll preserves historical value distribution but breaks its spatial correspondence. All variants reported; no chosen hybrid.",
+    "limits": [
+      "Four exposed same-city public training clips",
+      "Model, representation, resolution and state differ; no intrinsic ANN-vs-SNN causal claim",
+      "No frame-independent p-values",
+      "Only candidate admission; all detector work and state updates executed",
+      "No new risk policy, computation saving or safety claim"
+    ]
+  },
+  "sources": {
+    "code/scripts/run_fp_mechanism.py": "3f20feaa9724dbd8ce8cb41c4dfeea8563d06cfc295dc441ef5e3288e89eb74f",
+    "code/scripts/run_final_analyses.py": "76accb8d0510a48f9fe85c32d907cdae0669f724b31f800424095c5667d86c05",
+    "code/configs/fp_mechanism_v01.json": "5a43a263ef7d8aecc51a94d5394ea52cb7a07404ea871da1fb168af4e4bfd518",
+    "docs/31_\u540c\u8bef\u62a5\u4e0e\u53cd\u8f6c\u673a\u5236\u5206\u6790\u534f\u8bae.md": "9e15f8eec3c3576eed674e640b9602b31ed5384cf2096a4235ff8d53bf997877",
+    "code/scripts/confirmation_common.py": "c62a9742b6e036ff9a53deef9d12370122e069f3374368f05c70d0af796cdf2d",
+    "code/scripts/confirmation_evaluate.py": "20b4f1f4d34def7706db5cbd6b8c60b6cacff762892a720178f5c5163dc6c74f",
+    "code/riskaware/criterion_audit.py": "7a4c32cf83128990ddac9e59e0db40dabbd8b55abe2de2b9fb98b5e2acda180f",
+    "code/riskaware/metrics.py": "7462d98679345826294b7bfbc021c2cd8607028d41bda11ba33808fd215c6ecd",
+    "code/riskaware/calibration_audit.py": "dc92b4b857156a73516088204440b49729d8d22a7078215230343f33429806e0",
+    "vendor/spikefpn_snapshot/utils/tools.py": "626bca20423f74dff74bd96af6d76b69d375f036a13d002bae20fee04ac9bf6c"
+  },
+  "parents": {
+    "artifact_manifest.json": "0577699e95e70901c1f3887e1782caa1a291411babd842fa391f497e23ed8d6d",
+    "summary.json": "ebbe9d066ad78b971cc99db541525c4f2502d0c3102dc90e108778113c08dd7f",
+    "continuity_summary.json": "06e8a1aacaaed1920636cca65e4d05bcd9890ed9907572fad10945435df883bf",
+    "run_manifest.json": "51660ae4e7a47083597cb5c2ba54f1aba1f26308ffcf683faf6da1c0754eeddc",
+    "evaluation_freeze.json": "30769c31ea5eee3285a6e756b9e879970dfbd52fe6b00972cbe8a41b74fd47b8",
+    "frozen_thresholds.json": "80048d474c7050d98bbe9390ce4f660ae5a5bfc29e1b932f7a22923431465d28"
+  },
+  "paper_before_sha256": "4704de3bcdb42e2e9cfc003a454ecf063e099a1595b3f95f5342cd4b33624a03"
+}

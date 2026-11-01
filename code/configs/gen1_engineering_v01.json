@@ -1,0 +1,17 @@
+{
+  "status": "Fixed before GEN1 inference; engineering pilot, not an independent benchmark",
+  "raw_root": "datasets/gen1_engineering/detection_dataset_duration_60s_ratio_1.0",
+  "split": "train",
+  "selection_receipt": "datasets/downloads/gen1_pilot_segments/selection.json",
+  "extraction_receipt": "datasets/downloads/gen1_pilot_segments/extraction_receipt.json",
+  "output": "experiments/gen1_engineering_v01",
+  "confidence": 0.3,
+  "nms": 0.5,
+  "iou": 0.5,
+  "alignment_queries": "first, middle and last annotation timestamp of each complete selected sequence",
+  "atol": 0.00001,
+  "rtol": 0.00001,
+  "spike_mismatches_allowed": 0,
+  "evaluation": "All unique annotated timestamps, native clipped integer GT, upstream COCO conversion; no extra size/time filtering",
+  "claims_excluded": ["held-out GEN1 AP reproduction", "independent generalization", "allocation superiority", "certified sparse backend", "hardware speedup"]
+}

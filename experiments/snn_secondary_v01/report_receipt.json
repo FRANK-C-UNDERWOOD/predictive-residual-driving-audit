@@ -1,0 +1,17 @@
+{
+  "files": {
+    "experiments/snn_secondary_v01/secondary_results.json": "c2a3a8a349bfb76f42b5fac1ab715788e15ff20ff52885192c9eb7873a4d453a",
+    "experiments/snn_secondary_v01/conditions.json": "ef24b3b5cbb94b377b002178972f5f795e84aa60c9ac18b05723a54f4bb2caa9",
+    "experiments/snn_secondary_v01/size_interactions.json": "0288ef12b4c51a451f1619dc41255c0245d497e18897f33f3c926104533baadb",
+    "experiments/snn_secondary_v01/operating_points.csv": "9b6d66fb49cd26dcad392d3e0b59b8a02083be9e6936021431a269ad44185fcf",
+    "experiments/snn_secondary_v01/REPORT.md": "d316809579aa0912df43dadc88efb39f9b46398156f9fe3c5b8354c32229ed41",
+    "experiments/snn_secondary_v01/verification.json": "ae6a7c09ed73dfff781baff488ad19d5bd44a41302b9035f21a7f9c721265797",
+    "experiments/snn_secondary_v01/primary.texfrag": "e81c30689f47e922e046042152378e661e7bc327662d409810c99d64325e8d09",
+    "experiments/snn_secondary_v01/coverage.texfrag": "8e75a5a43288b3b6295723340905ae53eda0249f12a0796c3300c52658a9330f",
+    "experiments/snn_secondary_v01/budget.texfrag": "fbb80ac4ba2d8fdaa871b9797a0dc26fddcc63255af15437c1856d91d8ec4cbc",
+    "experiments/snn_secondary_v01/snn_size_secondary.png": "bd256e7a71a06df4217fc44cd0428027841292dd73c54bcede43d1dd05ac861c",
+    "experiments/snn_secondary_v01/snn_size_secondary.svg": "e6b0adf413916b4cc963c5ad0489a581130aeab26d429870aa0ec8c2debc1c75"
+  },
+  "source_sha256": "e29e231dba520c971024297fe89809f7be729d805dfb1db0f2c3482207ecf8be",
+  "role": "All planned secondary outcomes, not a new primary trial"
+}

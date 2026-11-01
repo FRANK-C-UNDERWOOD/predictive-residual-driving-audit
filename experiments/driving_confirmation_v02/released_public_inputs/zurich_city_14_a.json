@@ -1,0 +1,8 @@
+{
+  "path": "datasets/dsec_confirmation/test/zurich_city_14_a/events/left/events.h5",
+  "sha256": "af047eff216a2ec1732002e3ec609b5470fc1c3b108d1ea7ad57eaacc4c024af",
+  "source_url": "https://download.ifi.uzh.ch/rpg/DSEC/test/zurich_city_14_a/zurich_city_14_a_events_left.zip",
+  "reason": "Project disk budget; new public input only, after complete primary caches and actual points. Reacquire exact member for SNN secondary or raw-forward reproduction.",
+  "raw_cache_receipt": "carriers/rvt_stream__zurich_city_14_a.json",
+  "point_receipt": "points/rvt_stream__zurich_city_14_a.json"
+}

@@ -1,0 +1,16 @@
+\begin{table}[!htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{All four predeclared retrospective whole-recording FP targets in the new RVT cohort. The mean interaction equally weights recordings with defined low/high GT support; missing groups remain counted as undefined. Signs are negative/positive/tied interactions. Only the 1 FP/query target has the frozen primary interval/verdict; the others are descriptive sensitivity analyses. A defined point is not automatically FP-matched, so target attainment is reported separately.}\label{tab:new_budget}
+\begin{tabularx}{\linewidth}{@{}l*{4}{>{\raggedleft\arraybackslash}X}@{}}
+\toprule
+FP/query & FP matched & Defined & Mean $I$ (pp) & Negative/positive/tied \\
+\midrule
+0.25 & 7/7 & 7/7 & -7.25 & 7/0/0 \\
+0.5 & 7/7 & 7/7 & -8.98 & 6/1/0 \\
+1 & 7/7 & 7/7 & -10.40 & 6/1/0 \\
+2 & 7/7 & 7/7 & -10.67 & 7/0/0 \\
+\bottomrule
+\end{tabularx}
+\end{table}

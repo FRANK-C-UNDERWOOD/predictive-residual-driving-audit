@@ -1,0 +1,14 @@
+{
+  "version": "v0.19",
+  "target_owner": "FRANK-C-UNDERWOOD",
+  "visibility": "public",
+  "excludes": [
+    "raw events",
+    "annotation arrays",
+    "model weights",
+    "virtual environments",
+    "credentials",
+    "original raw candidate caches"
+  ],
+  "note": "Published aggregates permit CPU arithmetic reproduction. Full model replay requires provider data/checkpoints and native runtime. No fresh GPU validation of this exported checkout is claimed."
+}
